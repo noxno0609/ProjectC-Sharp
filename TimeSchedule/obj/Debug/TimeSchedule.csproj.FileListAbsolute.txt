@@ -34,3 +34,4 @@ C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\bin\Debug\TSProject.pdb
 C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\obj\Debug\TSProject.Properties.Resources.resources
 C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\obj\Debug\TSProject.exe
 C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\obj\Debug\TSProject.pdb
+C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\obj\Debug\TimeSchedule.csprojResolveAssemblyReference.cache
