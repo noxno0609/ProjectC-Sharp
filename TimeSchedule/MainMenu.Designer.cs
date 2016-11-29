@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication1
+﻿namespace TimeScheduleMain
 {
     partial class MainMenu
     {
