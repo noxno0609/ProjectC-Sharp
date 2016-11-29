@@ -12,6 +12,7 @@ namespace WindowsFormsApplication1.Design.WeekUI
 {
     public partial class WeekUIMain : UserControl
     {
+    
         public WeekUIMain()
         {
             InitializeComponent();

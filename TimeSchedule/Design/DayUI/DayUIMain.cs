@@ -17,7 +17,7 @@ namespace WindowsFormsApplication1.DayUI
         {
             InitializeComponent();
             //this.dayUITool1
-            this.Width = 580;
+            //this.Width = 580;
             autoSize(this);
             autoSizeIngredient(this);
         }
@@ -48,6 +48,11 @@ namespace WindowsFormsApplication1.DayUI
         }
 
         private void dayUISche1_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dayUISche1_Load_2(object sender, EventArgs e)
         {
 
         }

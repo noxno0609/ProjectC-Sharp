@@ -41,6 +41,7 @@
             this.dayUISche1.Name = "dayUISche1";
             this.dayUISche1.Size = new System.Drawing.Size(2402, 343);
             this.dayUISche1.TabIndex = 1;
+            this.dayUISche1.Load += new System.EventHandler(this.dayUISche1_Load_2);
             // 
             // dayUITool1
             // 
