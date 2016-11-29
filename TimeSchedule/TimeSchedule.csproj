@@ -71,6 +71,24 @@
     <Compile Include="Design\DayUI\Ingredient\DayUITool.Designer.cs">
       <DependentUpon>DayUITool.cs</DependentUpon>
     </Compile>
+    <Compile Include="Design\WeekUI\Ingredient\WeekUIToolBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\WeekUI\Ingredient\WeekUIToolBar.Designer.cs">
+      <DependentUpon>WeekUIToolBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Design\WeekUI\Ingredient\WeekUISche.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\WeekUI\Ingredient\WeekUISche.Designer.cs">
+      <DependentUpon>WeekUISche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Design\WeekUI\WeekUIMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\WeekUI\WeekUIMain.Designer.cs">
+      <DependentUpon>WeekUIMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +112,15 @@
     <EmbeddedResource Include="Design\DayUI\Ingredient\DayUITool.resx">
       <DependentUpon>DayUITool.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Design\WeekUI\Ingredient\WeekUIToolBar.resx">
+      <DependentUpon>WeekUIToolBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\WeekUI\Ingredient\WeekUISche.resx">
+      <DependentUpon>WeekUISche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\WeekUI\WeekUIMain.resx">
+      <DependentUpon>WeekUIMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -107,6 +134,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="ClassDiagram4.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -140,6 +171,7 @@
   <ItemGroup>
     <None Include="Resources\vzxcv.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
