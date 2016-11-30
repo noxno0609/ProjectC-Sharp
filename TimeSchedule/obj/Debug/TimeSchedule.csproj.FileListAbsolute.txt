@@ -1,51 +1,15 @@
-c:\users\benx\documents\visual studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
-c:\users\benx\documents\visual studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
-c:\users\benx\documents\visual studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
-c:\users\benx\documents\visual studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.DayUI.DayUIMain.resources
-c:\users\benx\documents\visual studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.DayUISche.resources
-c:\users\benx\documents\visual studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.DayUI.Ingredient.DayUITool.resources
-c:\users\benx\documents\visual studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.MainMenu.resources
-c:\users\benx\documents\visual studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
-c:\users\benx\documents\visual studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\TimeSchedule.csproj.GenerateResource.Cache
-c:\users\benx\documents\visual studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
-c:\users\benx\documents\visual studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
-C:\Users\BenX\Desktop\Project\TimeSchedule\bin\Debug\WindowsFormsApplication1.exe.config
-C:\Users\BenX\Desktop\Project\TimeSchedule\obj\Debug\WindowsFormsApplication1.exe
-C:\Users\BenX\Desktop\Project\TimeSchedule\obj\Debug\WindowsFormsApplication1.pdb
-C:\Users\BenX\Desktop\Project\TimeSchedule\obj\Debug\WindowsFormsApplication1.DayUI.DayUIMain.resources
-C:\Users\BenX\Desktop\Project\TimeSchedule\obj\Debug\WindowsFormsApplication1.DayUISche.resources
-C:\Users\BenX\Desktop\Project\TimeSchedule\obj\Debug\WindowsFormsApplication1.DayUI.Ingredient.DayUITool.resources
-C:\Users\BenX\Desktop\Project\TimeSchedule\obj\Debug\WindowsFormsApplication1.MainMenu.resources
-C:\Users\BenX\Desktop\Project\TimeSchedule\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
-C:\Users\BenX\Desktop\Project\TimeSchedule\obj\Debug\TimeSchedule.csproj.GenerateResource.Cache
-C:\Users\BenX\Desktop\Project\TimeSchedule\bin\Debug\WindowsFormsApplication1.exe
-C:\Users\BenX\Desktop\Project\TimeSchedule\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\BenX\Desktop\ProjectC#\Common\Bin\TimeSchedule\TSProject.exe.config
+C:\Users\BenX\Desktop\ProjectC#\Common\Bin\TimeSchedule\TSProject.exe
+C:\Users\BenX\Desktop\ProjectC#\Common\Bin\TimeSchedule\TSProject.pdb
+C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\obj\Debug\TimeSchedule.csprojResolveAssemblyReference.cache
 C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\obj\Debug\WindowsFormsApplication1.DayUI.DayUIMain.resources
 C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\obj\Debug\WindowsFormsApplication1.DayUISche.resources
 C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\obj\Debug\WindowsFormsApplication1.DayUI.Ingredient.DayUITool.resources
-C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\obj\Debug\TimeSchedule.csproj.GenerateResource.Cache
+C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\obj\Debug\WindowsFormsApplication1.Design.WeekUI.Ingredient.WeekUIToolBar.resources
 C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\obj\Debug\WindowsFormsApplication1.Design.WeekUI.Ingredient.WeekUISche.resources
 C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\obj\Debug\WindowsFormsApplication1.Design.WeekUI.WeekUIMain.resources
-C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\obj\Debug\WindowsFormsApplication1.Design.WeekUI.Ingredient.WeekUIToolBar.resources
 C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\obj\Debug\TimeScheduleMain.MainMenu.resources
-C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\bin\Debug\TSProject.exe.config
-C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\bin\Debug\TSProject.exe
-C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\bin\Debug\TSProject.pdb
 C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\obj\Debug\TSProject.Properties.Resources.resources
+C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\obj\Debug\TimeSchedule.csproj.GenerateResource.Cache
 C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\obj\Debug\TSProject.exe
 C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\obj\Debug\TSProject.pdb
-C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\obj\Debug\TimeSchedule.csprojResolveAssemblyReference.cache
-C:\Users\Vanminhphan\Desktop\C#\TimeSchedule\TimeSchedule\bin\Debug\TSProject.exe.config
-C:\Users\Vanminhphan\Desktop\C#\TimeSchedule\TimeSchedule\bin\Debug\TSProject.exe
-C:\Users\Vanminhphan\Desktop\C#\TimeSchedule\TimeSchedule\bin\Debug\TSProject.pdb
-C:\Users\Vanminhphan\Desktop\C#\TimeSchedule\TimeSchedule\obj\Debug\WindowsFormsApplication1.DayUI.DayUIMain.resources
-C:\Users\Vanminhphan\Desktop\C#\TimeSchedule\TimeSchedule\obj\Debug\WindowsFormsApplication1.DayUISche.resources
-C:\Users\Vanminhphan\Desktop\C#\TimeSchedule\TimeSchedule\obj\Debug\WindowsFormsApplication1.DayUI.Ingredient.DayUITool.resources
-C:\Users\Vanminhphan\Desktop\C#\TimeSchedule\TimeSchedule\obj\Debug\WindowsFormsApplication1.Design.WeekUI.Ingredient.WeekUIToolBar.resources
-C:\Users\Vanminhphan\Desktop\C#\TimeSchedule\TimeSchedule\obj\Debug\WindowsFormsApplication1.Design.WeekUI.Ingredient.WeekUISche.resources
-C:\Users\Vanminhphan\Desktop\C#\TimeSchedule\TimeSchedule\obj\Debug\WindowsFormsApplication1.Design.WeekUI.WeekUIMain.resources
-C:\Users\Vanminhphan\Desktop\C#\TimeSchedule\TimeSchedule\obj\Debug\TimeScheduleMain.MainMenu.resources
-C:\Users\Vanminhphan\Desktop\C#\TimeSchedule\TimeSchedule\obj\Debug\TSProject.Properties.Resources.resources
-C:\Users\Vanminhphan\Desktop\C#\TimeSchedule\TimeSchedule\obj\Debug\TimeSchedule.csproj.GenerateResource.Cache
-C:\Users\Vanminhphan\Desktop\C#\TimeSchedule\TimeSchedule\obj\Debug\TSProject.exe
-C:\Users\Vanminhphan\Desktop\C#\TimeSchedule\TimeSchedule\obj\Debug\TSProject.pdb
