@@ -23,16 +23,19 @@ namespace WindowsFormsApplication1
             for(int i=0; i<table.ColumnCount; i++)
             {
                 string number = Convert.ToString(i+1);
-                Label tableLabel = new Label();
-                tableLabel.Text = number;
-                tableLabel.FlatStyle = FlatStyle.System;
-                tableLabel.AutoSize = false;
-                tableLabel.BorderStyle = BorderStyle.FixedSingle;
-                tableLabel.Padding = new Padding(0);
-                tableLabel.Margin = new Padding(0);
-                tableLabel.Dock = DockStyle.Fill;
-                tableLabel.TextAlign = ContentAlignment.MiddleCenter;
-                table.Controls.Add(tableLabel, i, 0);
+                TextBox textbox = new TextBox();
+                textbox.Text = number;
+                textbox.TextAlign = HorizontalAlignment.Center;
+                // textbox.FlatStyle = FlatStyle.System;
+                textbox.AutoSize = false;
+                textbox.BorderStyle = BorderStyle.FixedSingle;
+                textbox.Padding = new Padding(0);
+                textbox.Margin = new Padding(0);
+                textbox.Dock = DockStyle.Fill;
+                textbox.Padding = new Padding(0, textbox.Height / 2, 0, 0);
+                //textbox.TextAlign = ContentAlignment.MiddleCenter;
+                table.Controls.Add(textbox, i, 0);
+
             }
         }
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)

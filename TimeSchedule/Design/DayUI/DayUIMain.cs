@@ -39,8 +39,7 @@ namespace WindowsFormsApplication1.DayUI
             ui.dayUITool1.Height = ui.Height;
             ui.dayUITool1.Width = (int)(ui.Width * 0.15);
 
-            ui.dayUISche1.Height = ui.Height;
-            ui.dayUISche1.Width = (int)(ui.Width * 0.85);
+       
         }
         private void dayUISche1_Load(object sender, EventArgs e)
         {

@@ -35,3 +35,17 @@ C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\obj\Debug\TSProject.Properties.Reso
 C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\obj\Debug\TSProject.exe
 C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\obj\Debug\TSProject.pdb
 C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\obj\Debug\TimeSchedule.csprojResolveAssemblyReference.cache
+C:\Users\Vanminhphan\Desktop\C#\TimeSchedule\TimeSchedule\bin\Debug\TSProject.exe.config
+C:\Users\Vanminhphan\Desktop\C#\TimeSchedule\TimeSchedule\bin\Debug\TSProject.exe
+C:\Users\Vanminhphan\Desktop\C#\TimeSchedule\TimeSchedule\bin\Debug\TSProject.pdb
+C:\Users\Vanminhphan\Desktop\C#\TimeSchedule\TimeSchedule\obj\Debug\WindowsFormsApplication1.DayUI.DayUIMain.resources
+C:\Users\Vanminhphan\Desktop\C#\TimeSchedule\TimeSchedule\obj\Debug\WindowsFormsApplication1.DayUISche.resources
+C:\Users\Vanminhphan\Desktop\C#\TimeSchedule\TimeSchedule\obj\Debug\WindowsFormsApplication1.DayUI.Ingredient.DayUITool.resources
+C:\Users\Vanminhphan\Desktop\C#\TimeSchedule\TimeSchedule\obj\Debug\WindowsFormsApplication1.Design.WeekUI.Ingredient.WeekUIToolBar.resources
+C:\Users\Vanminhphan\Desktop\C#\TimeSchedule\TimeSchedule\obj\Debug\WindowsFormsApplication1.Design.WeekUI.Ingredient.WeekUISche.resources
+C:\Users\Vanminhphan\Desktop\C#\TimeSchedule\TimeSchedule\obj\Debug\WindowsFormsApplication1.Design.WeekUI.WeekUIMain.resources
+C:\Users\Vanminhphan\Desktop\C#\TimeSchedule\TimeSchedule\obj\Debug\TimeScheduleMain.MainMenu.resources
+C:\Users\Vanminhphan\Desktop\C#\TimeSchedule\TimeSchedule\obj\Debug\TSProject.Properties.Resources.resources
+C:\Users\Vanminhphan\Desktop\C#\TimeSchedule\TimeSchedule\obj\Debug\TimeSchedule.csproj.GenerateResource.Cache
+C:\Users\Vanminhphan\Desktop\C#\TimeSchedule\TimeSchedule\obj\Debug\TSProject.exe
+C:\Users\Vanminhphan\Desktop\C#\TimeSchedule\TimeSchedule\obj\Debug\TSProject.pdb
