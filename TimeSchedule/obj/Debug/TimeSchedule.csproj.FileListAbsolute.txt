@@ -1,7 +1,6 @@
 C:\Users\BenX\Desktop\ProjectC#\Common\Bin\TimeSchedule\TSProject.exe.config
 C:\Users\BenX\Desktop\ProjectC#\Common\Bin\TimeSchedule\TSProject.exe
 C:\Users\BenX\Desktop\ProjectC#\Common\Bin\TimeSchedule\TSProject.pdb
-C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\obj\Debug\TimeSchedule.csprojResolveAssemblyReference.cache
 C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\obj\Debug\WindowsFormsApplication1.DayUI.DayUIMain.resources
 C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\obj\Debug\WindowsFormsApplication1.DayUISche.resources
 C:\Users\BenX\Desktop\ProjectC#\TimeSchedule\obj\Debug\WindowsFormsApplication1.DayUI.Ingredient.DayUITool.resources
