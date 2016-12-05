@@ -28,23 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.dayUIMain1 = new WindowsFormsApplication1.DayUI.DayUIMain();
             this.SuspendLayout();
+            // 
+            // dayUIMain1
+            // 
+            this.dayUIMain1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.dayUIMain1.Location = new System.Drawing.Point(271, 62);
+            this.dayUIMain1.Margin = new System.Windows.Forms.Padding(0);
+            this.dayUIMain1.Name = "dayUIMain1";
+            this.dayUIMain1.Size = new System.Drawing.Size(504, 297);
+            this.dayUIMain1.TabIndex = 0;
             // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(830, 480);
+            this.Controls.Add(this.dayUIMain1);
             this.Name = "MainMenu";
             this.Text = "Form1";
             this.ResumeLayout(false);
 
         }
 
+
+
+
         #endregion
 
-
-
-
+        private WindowsFormsApplication1.DayUI.DayUIMain dayUIMain1;
     }
 }
