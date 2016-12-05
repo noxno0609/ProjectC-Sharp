@@ -63,7 +63,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(80, 286);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(76, 282);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // pictureBox3
@@ -71,10 +71,10 @@
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox3.Image = global::TSProject.Properties.Resources.arrowdown;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 241);
+            this.pictureBox3.Location = new System.Drawing.Point(0, 239);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(80, 45);
+            this.pictureBox3.Size = new System.Drawing.Size(76, 43);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
@@ -88,7 +88,7 @@
             this.pictureBox2.Location = new System.Drawing.Point(0, 28);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(80, 42);
+            this.pictureBox2.Size = new System.Drawing.Size(76, 42);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
@@ -102,7 +102,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(80, 28);
+            this.pictureBox1.Size = new System.Drawing.Size(76, 28);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -128,7 +128,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(80, 171);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(76, 169);
             this.tableLayoutPanel2.TabIndex = 6;
             // 
             // label5
@@ -138,7 +138,7 @@
             this.label5.Location = new System.Drawing.Point(0, 137);
             this.label5.Margin = new System.Windows.Forms.Padding(0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 34);
+            this.label5.Size = new System.Drawing.Size(76, 32);
             this.label5.TabIndex = 4;
             this.label5.Text = "abc";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -150,7 +150,7 @@
             this.label4.Location = new System.Drawing.Point(0, 107);
             this.label4.Margin = new System.Windows.Forms.Padding(0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 30);
+            this.label4.Size = new System.Drawing.Size(76, 30);
             this.label4.TabIndex = 3;
             this.label4.Text = "abc";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -163,7 +163,7 @@
             this.label3.Location = new System.Drawing.Point(0, 60);
             this.label3.Margin = new System.Windows.Forms.Padding(0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 47);
+            this.label3.Size = new System.Drawing.Size(76, 47);
             this.label3.TabIndex = 2;
             this.label3.Text = "abc";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -175,7 +175,7 @@
             this.label2.Location = new System.Drawing.Point(0, 30);
             this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 30);
+            this.label2.Size = new System.Drawing.Size(76, 30);
             this.label2.TabIndex = 1;
             this.label2.Text = "abc";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -187,7 +187,7 @@
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 30);
+            this.label1.Size = new System.Drawing.Size(76, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "abc";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -196,10 +196,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "DayUITool";
-            this.Size = new System.Drawing.Size(80, 286);
+            this.Size = new System.Drawing.Size(76, 282);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

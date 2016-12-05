@@ -12,9 +12,10 @@ namespace WindowsFormsApplication1.DayUI.Ingredient
 {
     public partial class DayUITool : UserControl
     {
+
         public DayUITool()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
 
         private void button2_Click(object sender, EventArgs e)
