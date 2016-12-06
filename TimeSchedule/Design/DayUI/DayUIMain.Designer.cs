@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.dayUITool1 = new WindowsFormsApplication1.DayUI.Ingredient.DayUITool();
             this.dayUISche1 = new WindowsFormsApplication1.DayUISche();
+            this.dayUITool2 = new WindowsFormsApplication1.DayUI.Ingredient.DayUITool();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -39,8 +39,8 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tableLayoutPanel1.Controls.Add(this.dayUITool1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.dayUISche1, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.dayUITool2, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
@@ -50,23 +50,24 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(635, 391);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // dayUITool1
-            // 
-            this.dayUITool1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dayUITool1.Location = new System.Drawing.Point(0, 0);
-            this.dayUITool1.Margin = new System.Windows.Forms.Padding(0);
-            this.dayUITool1.Name = "dayUITool1";
-            this.dayUITool1.Size = new System.Drawing.Size(63, 391);
-            this.dayUITool1.TabIndex = 0;
-            // 
             // dayUISche1
             // 
+            this.dayUISche1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.dayUISche1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dayUISche1.Location = new System.Drawing.Point(63, 0);
             this.dayUISche1.Margin = new System.Windows.Forms.Padding(0);
             this.dayUISche1.Name = "dayUISche1";
             this.dayUISche1.Size = new System.Drawing.Size(572, 391);
             this.dayUISche1.TabIndex = 1;
+            // 
+            // dayUITool2
+            // 
+            this.dayUITool2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dayUITool2.Location = new System.Drawing.Point(0, 0);
+            this.dayUITool2.Margin = new System.Windows.Forms.Padding(0);
+            this.dayUITool2.Name = "dayUITool2";
+            this.dayUITool2.Size = new System.Drawing.Size(63, 391);
+            this.dayUITool2.TabIndex = 2;
             // 
             // DayUIMain
             // 
@@ -87,5 +88,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private Ingredient.DayUITool dayUITool1;
         private DayUISche dayUISche1;
+        private Ingredient.DayUITool dayUITool2;
     }
 }

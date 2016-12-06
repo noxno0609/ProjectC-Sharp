@@ -63,16 +63,6 @@ namespace TSProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap arrow {
-            get {
-                object obj = ResourceManager.GetObject("arrow", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap arrowchuyen {
             get {
                 object obj = ResourceManager.GetObject("arrowchuyen", resourceCulture);
@@ -116,16 +106,6 @@ namespace TSProject.Properties {
         internal static System.Drawing.Bitmap arrowup {
             get {
                 object obj = ResourceManager.GetObject("arrowup", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap mocTG {
-            get {
-                object obj = ResourceManager.GetObject("mocTG", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

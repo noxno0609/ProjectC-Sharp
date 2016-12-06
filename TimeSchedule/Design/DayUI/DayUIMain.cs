@@ -16,28 +16,6 @@ namespace WindowsFormsApplication1.DayUI
         public DayUIMain()
         {
             InitializeComponent();
-            //this.dayUITool1
-            //this.Width = 580;
-            autoSize(this);
-            autoSizeIngredient(this);
-        }
-
-        public static void autoSize(DayUIMain ui)
-        {
-            int firstWidth = ui.Width;
-            int temp = Convert.ToInt32(firstWidth * 0.85);
-            int temp2 = Convert.ToInt32(firstWidth * 0.15);
-            while (temp % 24 != 0)
-            {
-                temp++;
-            }
-            ui.Width = temp;
-        }
-
-        public static void autoSizeIngredient(DayUIMain ui)
-        {
-            ui.dayUITool1.Height = ui.Height;
-            ui.dayUITool1.Width = (int)(ui.Width * 0.15);
         }
     }
 }

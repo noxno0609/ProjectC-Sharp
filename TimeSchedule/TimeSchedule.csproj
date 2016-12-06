@@ -134,9 +134,6 @@
     <EmbeddedResource Include="Design\WeekUI\WeekUIMain.resx">
       <DependentUpon>WeekUIMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainMenu.resx">
-      <DependentUpon>MainMenu.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>

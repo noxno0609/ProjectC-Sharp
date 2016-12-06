@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TSProject;
 
 namespace TimeScheduleMain
 {
@@ -16,7 +17,7 @@ namespace TimeScheduleMain
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainMenu());
+            Application.Run(new TSProject.MainMenu());
         }
     }
 }
