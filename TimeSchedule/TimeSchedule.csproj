@@ -75,17 +75,17 @@
     <Compile Include="Design\DayUI\Ingredient\DayUITool.Designer.cs">
       <DependentUpon>DayUITool.cs</DependentUpon>
     </Compile>
-    <Compile Include="Design\List\ListMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\List\ListMain.Designer.cs">
-      <DependentUpon>ListMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Design\WeekUI\Ingredient\WeekUIToolBar.cs">
+    <Compile Include="Design\WeekUI\Ingredient\WeekUITool.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Design\WeekUI\Ingredient\WeekUIToolBar.Designer.cs">
-      <DependentUpon>WeekUIToolBar.cs</DependentUpon>
+    <Compile Include="Design\WeekUI\Ingredient\WeekUITool.Designer.cs">
+      <DependentUpon>WeekUITool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Design\WeekUI\Ingredient\WeekUITop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\WeekUI\Ingredient\WeekUITop.Designer.cs">
+      <DependentUpon>WeekUITop.cs</DependentUpon>
     </Compile>
     <Compile Include="Design\WeekUI\Ingredient\WeekUISche.cs">
       <SubType>UserControl</SubType>
@@ -122,8 +122,11 @@
     <EmbeddedResource Include="Design\DayUI\Ingredient\DayUITool.resx">
       <DependentUpon>DayUITool.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Design\WeekUI\Ingredient\WeekUIToolBar.resx">
-      <DependentUpon>WeekUIToolBar.cs</DependentUpon>
+    <EmbeddedResource Include="Design\WeekUI\Ingredient\WeekUITool.resx">
+      <DependentUpon>WeekUITool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\WeekUI\Ingredient\WeekUITop.resx">
+      <DependentUpon>WeekUITop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Design\WeekUI\Ingredient\WeekUISche.resx">
       <DependentUpon>WeekUISche.cs</DependentUpon>
@@ -136,18 +139,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -175,34 +178,28 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\vzxcv.png" />
+    <None Include="Resources\ResDayUI\mocTG2.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\59090-up-and-down-arrows-button-200x200.png" />
+    <None Include="Resources\ResDayUI\arrow.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Design\List\Ingredient\" />
+    <None Include="Resources\ResDayUI\arrowdown.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\arrow.png" />
+    <None Include="Resources\ResDayUI\arrowup.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\arrow-icon-clip-art-file-down-arrow-icon-png-balin-icon-arrow-right--32.png" />
+    <None Include="Resources\ResDayUI\arrowchuyen.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\arrowdown.png" />
+    <None Include="Resources\ResDayUI\mocTG.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\arrowup.png" />
+    <None Include="Resources\ResDayUI\arrowleft.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\arrowchuyen.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\mocTG.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\qaphai.png" />
+    <None Include="Resources\ResDayUI\arrowright.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

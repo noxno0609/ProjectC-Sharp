@@ -34,10 +34,10 @@
             // dayUIMain1
             // 
             this.dayUIMain1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.dayUIMain1.Location = new System.Drawing.Point(271, 62);
+            this.dayUIMain1.Location = new System.Drawing.Point(9, 9);
             this.dayUIMain1.Margin = new System.Windows.Forms.Padding(0);
             this.dayUIMain1.Name = "dayUIMain1";
-            this.dayUIMain1.Size = new System.Drawing.Size(504, 297);
+            this.dayUIMain1.Size = new System.Drawing.Size(603, 235);
             this.dayUIMain1.TabIndex = 0;
             // 
             // MainMenu

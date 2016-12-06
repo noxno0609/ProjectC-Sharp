@@ -15,7 +15,7 @@ namespace WindowsFormsApplication1
         public DayUISche()
         {
             InitializeComponent();
-            setNumberforTable(this.tableLayoutPanel1);
+            //setNumberforTable(this.tableLayoutPanel1);
         }
 
         public static void setNumberforTable(TableLayoutPanel table)
@@ -35,16 +35,7 @@ namespace WindowsFormsApplication1
                 textbox.Padding = new Padding(0, textbox.Height / 2, 0, 0);
                 //textbox.TextAlign = ContentAlignment.MiddleCenter;
                 table.Controls.Add(textbox, i, 0);
-
             }
-        }
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-        }
-
-        private void tableLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

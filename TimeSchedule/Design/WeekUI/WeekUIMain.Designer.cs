@@ -28,37 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.weekUIToolBar1 = new WindowsFormsApplication1.Design.WeekUI.Ingredient.WeekUITop();
+            this.weekUITool1 = new TSProject.Design.WeekUI.Ingredient.WeekUITool();
             this.weekUISche1 = new WindowsFormsApplication1.Design.WeekUI.Ingredient.WeekUISche();
-            this.weekUIToolBar1 = new WindowsFormsApplication1.Design.WeekUI.Ingredient.WeekUIToolBar();
+            this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 84F));
+            this.tableLayoutPanel2.Controls.Add(this.weekUITool1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.weekUISche1, 1, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 23);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(498, 313);
+            this.tableLayoutPanel2.TabIndex = 0;
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Controls.Add(this.weekUISche1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.weekUIToolBar1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 93F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(498, 336);
             this.tableLayoutPanel1.TabIndex = 1;
-            // 
-            // weekUISche1
-            // 
-            this.weekUISche1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.weekUISche1.Location = new System.Drawing.Point(0, 67);
-            this.weekUISche1.Margin = new System.Windows.Forms.Padding(0);
-            this.weekUISche1.Name = "weekUISche1";
-            this.weekUISche1.Size = new System.Drawing.Size(498, 269);
-            this.weekUISche1.TabIndex = 0;
             // 
             // weekUIToolBar1
             // 
@@ -66,8 +75,26 @@
             this.weekUIToolBar1.Location = new System.Drawing.Point(0, 0);
             this.weekUIToolBar1.Margin = new System.Windows.Forms.Padding(0);
             this.weekUIToolBar1.Name = "weekUIToolBar1";
-            this.weekUIToolBar1.Size = new System.Drawing.Size(498, 67);
+            this.weekUIToolBar1.Size = new System.Drawing.Size(498, 23);
             this.weekUIToolBar1.TabIndex = 1;
+            // 
+            // weekUITool1
+            // 
+            this.weekUITool1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.weekUITool1.Location = new System.Drawing.Point(0, 0);
+            this.weekUITool1.Margin = new System.Windows.Forms.Padding(0);
+            this.weekUITool1.Name = "weekUITool1";
+            this.weekUITool1.Size = new System.Drawing.Size(79, 313);
+            this.weekUITool1.TabIndex = 0;
+            // 
+            // weekUISche1
+            // 
+            this.weekUISche1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.weekUISche1.Location = new System.Drawing.Point(79, 0);
+            this.weekUISche1.Margin = new System.Windows.Forms.Padding(0);
+            this.weekUISche1.Name = "weekUISche1";
+            this.weekUISche1.Size = new System.Drawing.Size(419, 313);
+            this.weekUISche1.TabIndex = 1;
             // 
             // WeekUIMain
             // 
@@ -78,6 +105,7 @@
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "WeekUIMain";
             this.Size = new System.Drawing.Size(498, 336);
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -85,9 +113,12 @@
 
         #endregion
 
+        private Ingredient.WeekUITop weekUIToolBar1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private TSProject.Design.WeekUI.Ingredient.WeekUITool weekUITool1;
         private Ingredient.WeekUISche weekUISche1;
-        private Ingredient.WeekUIToolBar weekUIToolBar1;
+
 
 
     }

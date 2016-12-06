@@ -47,27 +47,25 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(592, 297);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(635, 391);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // dayUITool1
             // 
-            this.dayUITool1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.dayUITool1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dayUITool1.Location = new System.Drawing.Point(0, 0);
             this.dayUITool1.Margin = new System.Windows.Forms.Padding(0);
             this.dayUITool1.Name = "dayUITool1";
-            this.dayUITool1.Size = new System.Drawing.Size(59, 297);
+            this.dayUITool1.Size = new System.Drawing.Size(63, 391);
             this.dayUITool1.TabIndex = 0;
             // 
             // dayUISche1
             // 
-            this.dayUISche1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.dayUISche1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dayUISche1.Location = new System.Drawing.Point(59, 0);
+            this.dayUISche1.Location = new System.Drawing.Point(63, 0);
             this.dayUISche1.Margin = new System.Windows.Forms.Padding(0);
             this.dayUISche1.Name = "dayUISche1";
-            this.dayUISche1.Size = new System.Drawing.Size(533, 297);
+            this.dayUISche1.Size = new System.Drawing.Size(572, 391);
             this.dayUISche1.TabIndex = 1;
             // 
             // DayUIMain
@@ -78,7 +76,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "DayUIMain";
-            this.Size = new System.Drawing.Size(592, 297);
+            this.Size = new System.Drawing.Size(635, 391);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -86,7 +84,6 @@
 
         #endregion
 
-        private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private Ingredient.DayUITool dayUITool1;
         private DayUISche dayUISche1;
