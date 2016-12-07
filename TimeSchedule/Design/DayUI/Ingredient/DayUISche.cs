@@ -15,7 +15,8 @@ namespace WindowsFormsApplication1
         public DayUISche()
         {
             InitializeComponent();
-            //setNumberforTable(this.tableLayoutPanel1);
+            ///setNumberforTable(this.tableLayoutPanel1);
+            
         }
 
         public static void setNumberforTable(TableLayoutPanel table)
