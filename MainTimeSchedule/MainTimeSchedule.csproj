@@ -33,8 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CommonTimeSchedule">
-      <HintPath>..\Common\Library\CommonTimeSchedule.dll</HintPath>
+    <Reference Include="MySql.Data, Version=6.8.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="SQLTS">
+      <HintPath>..\Common\Library\SQLTS.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,22 +47,19 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="TSSQL">
-      <HintPath>..\Common\Library\TSSQL.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Design\AddUI\DayEventMain.cs">
+    <Compile Include="Design\EditUI\EditDayUIMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Design\AddUI\DayEventMain.Designer.cs">
-      <DependentUpon>DayEventMain.cs</DependentUpon>
+    <Compile Include="Design\EditUI\EditDayUIMain.Designer.cs">
+      <DependentUpon>EditDayUIMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Design\AddUI\EditEventMain.cs">
+    <Compile Include="Design\AddUI\AddUIMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Design\AddUI\EditEventMain.Designer.cs">
-      <DependentUpon>EditEventMain.cs</DependentUpon>
+    <Compile Include="Design\AddUI\AddUIMain.Designer.cs">
+      <DependentUpon>AddUIMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Design\AddUI\Ingredient\DayEventUI.cs">
       <SubType>UserControl</SubType>
@@ -75,28 +73,28 @@
     <Compile Include="Design\AddUI\Ingredient\WeekEventUI.Designer.cs">
       <DependentUpon>WeekEventUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="Design\AddUI\WeekEventMain.cs">
+    <Compile Include="Design\EditUI\EditWeekUIMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Design\AddUI\WeekEventMain.Designer.cs">
-      <DependentUpon>WeekEventMain.cs</DependentUpon>
+    <Compile Include="Design\EditUI\EditWeekUIMain.Designer.cs">
+      <DependentUpon>EditWeekUIMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Design\DayUI\DayUIMain.cs">
+    <Compile Include="Design\MainUI\DayUI\DayUIMain.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Design\DayUI\DayUIMain.Designer.cs">
+    <Compile Include="Design\MainUI\DayUI\DayUIMain.Designer.cs">
       <DependentUpon>DayUIMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Design\DayUI\Ingredient\DayUISche.cs">
+    <Compile Include="Design\MainUI\DayUI\Ingredient\DayUISche.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Design\DayUI\Ingredient\DayUISche.Designer.cs">
+    <Compile Include="Design\MainUI\DayUI\Ingredient\DayUISche.Designer.cs">
       <DependentUpon>DayUISche.cs</DependentUpon>
     </Compile>
-    <Compile Include="Design\DayUI\Ingredient\DayUITool.cs">
+    <Compile Include="Design\MainUI\DayUI\Ingredient\DayUITool.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Design\DayUI\Ingredient\DayUITool.Designer.cs">
+    <Compile Include="Design\MainUI\DayUI\Ingredient\DayUITool.Designer.cs">
       <DependentUpon>DayUITool.cs</DependentUpon>
     </Compile>
     <Compile Include="Design\ListEventUI\ListEventForm.cs">
@@ -105,28 +103,28 @@
     <Compile Include="Design\ListEventUI\ListEventForm.Designer.cs">
       <DependentUpon>ListEventForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Design\WeekUI\Ingredient\WeekUISche.cs">
+    <Compile Include="Design\MainUI\WeekUI\Ingredient\WeekUISche.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Design\WeekUI\Ingredient\WeekUISche.Designer.cs">
+    <Compile Include="Design\MainUI\WeekUI\Ingredient\WeekUISche.Designer.cs">
       <DependentUpon>WeekUISche.cs</DependentUpon>
     </Compile>
-    <Compile Include="Design\WeekUI\Ingredient\WeekUITool.cs">
+    <Compile Include="Design\MainUI\WeekUI\Ingredient\WeekUITool.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Design\WeekUI\Ingredient\WeekUITool.Designer.cs">
+    <Compile Include="Design\MainUI\WeekUI\Ingredient\WeekUITool.Designer.cs">
       <DependentUpon>WeekUITool.cs</DependentUpon>
     </Compile>
-    <Compile Include="Design\WeekUI\Ingredient\WeekUITop.cs">
+    <Compile Include="Design\MainUI\WeekUI\Ingredient\WeekUITop.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Design\WeekUI\Ingredient\WeekUITop.Designer.cs">
+    <Compile Include="Design\MainUI\WeekUI\Ingredient\WeekUITop.Designer.cs">
       <DependentUpon>WeekUITop.cs</DependentUpon>
     </Compile>
-    <Compile Include="Design\WeekUI\WeekUIMain.cs">
+    <Compile Include="Design\MainUI\WeekUI\WeekUIMain.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Design\WeekUI\WeekUIMain.Designer.cs">
+    <Compile Include="Design\MainUI\WeekUI\WeekUIMain.Designer.cs">
       <DependentUpon>WeekUIMain.cs</DependentUpon>
     </Compile>
     <Compile Include="MainUI.cs">
@@ -137,11 +135,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Design\AddUI\DayEventMain.resx">
-      <DependentUpon>DayEventMain.cs</DependentUpon>
+    <Compile Include="Utils\DBUtils.cs" />
+    <EmbeddedResource Include="Design\EditUI\EditDayUIMain.resx">
+      <DependentUpon>EditDayUIMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Design\AddUI\EditEventMain.resx">
-      <DependentUpon>EditEventMain.cs</DependentUpon>
+    <EmbeddedResource Include="Design\AddUI\AddUIMain.resx">
+      <DependentUpon>AddUIMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Design\AddUI\Ingredient\DayEventUI.resx">
       <DependentUpon>DayEventUI.cs</DependentUpon>
@@ -149,32 +148,35 @@
     <EmbeddedResource Include="Design\AddUI\Ingredient\WeekEventUI.resx">
       <DependentUpon>WeekEventUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Design\AddUI\WeekEventMain.resx">
-      <DependentUpon>WeekEventMain.cs</DependentUpon>
+    <EmbeddedResource Include="Design\EditUI\EditWeekUIMain.resx">
+      <DependentUpon>EditWeekUIMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Design\DayUI\DayUIMain.resx">
+    <EmbeddedResource Include="Design\MainUI\DayUI\DayUIMain.resx">
       <DependentUpon>DayUIMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Design\DayUI\Ingredient\DayUISche.resx">
+    <EmbeddedResource Include="Design\MainUI\DayUI\Ingredient\DayUISche.resx">
       <DependentUpon>DayUISche.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Design\DayUI\Ingredient\DayUITool.resx">
+    <EmbeddedResource Include="Design\MainUI\DayUI\Ingredient\DayUITool.resx">
       <DependentUpon>DayUITool.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Design\ListEventUI\ListEventForm.resx">
       <DependentUpon>ListEventForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Design\WeekUI\Ingredient\WeekUISche.resx">
+    <EmbeddedResource Include="Design\MainUI\WeekUI\Ingredient\WeekUISche.resx">
       <DependentUpon>WeekUISche.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Design\WeekUI\Ingredient\WeekUITool.resx">
+    <EmbeddedResource Include="Design\MainUI\WeekUI\Ingredient\WeekUITool.resx">
       <DependentUpon>WeekUITool.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Design\WeekUI\Ingredient\WeekUITop.resx">
+    <EmbeddedResource Include="Design\MainUI\WeekUI\Ingredient\WeekUITop.resx">
       <DependentUpon>WeekUITop.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Design\WeekUI\WeekUIMain.resx">
+    <EmbeddedResource Include="Design\MainUI\WeekUI\WeekUIMain.resx">
       <DependentUpon>WeekUIMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUI.resx">
+      <DependentUpon>MainUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -209,7 +211,10 @@
     <Content Include="Resources\ResDayUI\arrowright.png" />
     <Content Include="Resources\ResDayUI\arrowup.png" />
     <Content Include="Resources\ResDayUI\mocTG2.png" />
+    <Content Include="Resources\ResMainUI\addbutton.png" />
+    <None Include="Resources\ResMainUI\editbutton.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

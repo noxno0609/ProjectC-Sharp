@@ -37,7 +37,7 @@
             // 
             // button3
             // 
-            this.button3.BackgroundImage = global::TSProject.Properties.Resources.arrowright;
+            this.button3.BackgroundImage = global::MainTimeSchedule.Properties.Resources.arrowright;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button3.Location = new System.Drawing.Point(405, 0);
@@ -98,7 +98,7 @@
             // 
             // button1
             // 
-            this.button1.BackgroundImage = global::TSProject.Properties.Resources.arrowleft;
+            this.button1.BackgroundImage = global::MainTimeSchedule.Properties.Resources.arrowleft;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.Location = new System.Drawing.Point(0, 0);

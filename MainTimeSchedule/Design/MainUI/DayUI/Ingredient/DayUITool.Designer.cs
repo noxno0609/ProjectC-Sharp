@@ -69,7 +69,7 @@
             // 
             // buttonDayUIDownDay
             // 
-            this.buttonDayUIDownDay.BackgroundImage = global::TSProject.Properties.Resources.arrowdown;
+            this.buttonDayUIDownDay.BackgroundImage = global::MainTimeSchedule.Properties.Resources.arrowdown;
             this.buttonDayUIDownDay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonDayUIDownDay.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonDayUIDownDay.Location = new System.Drawing.Point(0, 241);
@@ -81,7 +81,7 @@
             // 
             // buttonDayUIUpDay
             // 
-            this.buttonDayUIUpDay.BackgroundImage = global::TSProject.Properties.Resources.arrowup;
+            this.buttonDayUIUpDay.BackgroundImage = global::MainTimeSchedule.Properties.Resources.arrowup;
             this.buttonDayUIUpDay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonDayUIUpDay.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonDayUIUpDay.Location = new System.Drawing.Point(0, 28);
@@ -185,7 +185,7 @@
             // 
             this.buttonDayUIDaynow.AutoSize = true;
             this.buttonDayUIDaynow.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.buttonDayUIDaynow.BackgroundImage = global::TSProject.Properties.Resources.mocTG2;
+            this.buttonDayUIDaynow.BackgroundImage = global::MainTimeSchedule.Properties.Resources.mocTG2;
             this.buttonDayUIDaynow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonDayUIDaynow.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonDayUIDaynow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -210,7 +210,7 @@
             // 
             // buttonDayUIChange
             // 
-            this.buttonDayUIChange.BackgroundImage = global::TSProject.Properties.Resources.arrowchuyen;
+            this.buttonDayUIChange.BackgroundImage = global::MainTimeSchedule.Properties.Resources.arrowchuyen;
             this.buttonDayUIChange.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonDayUIChange.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonDayUIChange.Location = new System.Drawing.Point(0, 0);

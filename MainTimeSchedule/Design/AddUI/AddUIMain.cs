@@ -11,9 +11,9 @@ using TSProject.Design.EditEvent.Ingredient;
 
 namespace MainTimeSchedule.Design.AddUI
 {
-    public partial class EditEventMain : Form
+    public partial class AddUIMain : Form
     {
-        public EditEventMain()
+        public AddUIMain()
         {
             InitializeComponent();
         }

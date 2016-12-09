@@ -1,6 +1,6 @@
 ﻿namespace MainTimeSchedule.Design.AddUI
 {
-    partial class EditEventMain
+    partial class AddUIMain
     {
         /// <summary>
         /// Required designer variable.
