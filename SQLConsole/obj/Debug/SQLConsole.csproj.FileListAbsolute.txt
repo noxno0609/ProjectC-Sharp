@@ -1,0 +1,5 @@
+C:\Users\BenX\Desktop\ProjectC#\Common\Bin\SQLConsole\SQLConsole.exe
+C:\Users\BenX\Desktop\ProjectC#\Common\Bin\SQLConsole\SQLConsole.pdb
+C:\Users\BenX\Desktop\ProjectC#\SQLConsole\obj\Debug\SQLConsole.exe
+C:\Users\BenX\Desktop\ProjectC#\SQLConsole\obj\Debug\SQLConsole.pdb
+C:\Users\BenX\Desktop\ProjectC#\SQLConsole\obj\Debug\SQLConsole.csprojResolveAssemblyReference.cache

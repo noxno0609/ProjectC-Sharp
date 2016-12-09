@@ -1,4 +1,4 @@
-C:\Users\BenX\Desktop\ProjectC#\Common\Library\TSSQL.dll
-C:\Users\BenX\Desktop\ProjectC#\Common\Library\TSSQL.pdb
-C:\Users\BenX\Desktop\ProjectC#\SQLTimeSchedule\obj\Debug\TSSQL.dll
-C:\Users\BenX\Desktop\ProjectC#\SQLTimeSchedule\obj\Debug\TSSQL.pdb
+C:\Users\BenX\Desktop\ProjectC#\Common\Library\SQLTS.dll
+C:\Users\BenX\Desktop\ProjectC#\Common\Library\SQLTS.pdb
+C:\Users\BenX\Desktop\ProjectC#\SQLTimeSchedule\obj\Debug\SQLTS.dll
+C:\Users\BenX\Desktop\ProjectC#\SQLTimeSchedule\obj\Debug\SQLTS.pdb
