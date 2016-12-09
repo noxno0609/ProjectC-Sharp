@@ -41,38 +41,40 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 6;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanel1.Controls.Add(this.button1, 3, 2);
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tableLayoutPanel1.Controls.Add(this.button1, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.button2, 4, 2);
-            this.tableLayoutPanel1.Controls.Add(this.button3, 4, 3);
+            this.tableLayoutPanel1.Controls.Add(this.button3, 4, 4);
             this.tableLayoutPanel1.Controls.Add(this.groupBox1, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
+            this.tableLayoutPanel1.RowCount = 6;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 73F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 76.68712F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.202454F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.65644F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(473, 348);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(434, 321);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button1.Location = new System.Drawing.Point(244, 275);
-            this.button1.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.button1.Location = new System.Drawing.Point(233, 240);
+            this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 31);
-            this.button1.TabIndex = 2;
+            this.button1.Size = new System.Drawing.Size(78, 32);
+            this.button1.TabIndex = 0;
             this.button1.Text = "Sửa";
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -80,11 +82,11 @@
             // 
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button2.Location = new System.Drawing.Point(352, 275);
-            this.button2.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.button2.Location = new System.Drawing.Point(345, 240);
+            this.button2.Margin = new System.Windows.Forms.Padding(0);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(88, 31);
-            this.button2.TabIndex = 2;
+            this.button2.Size = new System.Drawing.Size(78, 32);
+            this.button2.TabIndex = 1;
             this.button2.Text = "Xóa";
             this.button2.UseVisualStyleBackColor = true;
             // 
@@ -92,10 +94,10 @@
             // 
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button3.Location = new System.Drawing.Point(352, 313);
-            this.button3.Margin = new System.Windows.Forms.Padding(10, 7, 10, 4);
+            this.button3.Location = new System.Drawing.Point(345, 284);
+            this.button3.Margin = new System.Windows.Forms.Padding(0);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(88, 31);
+            this.button3.Size = new System.Drawing.Size(78, 32);
             this.button3.TabIndex = 2;
             this.button3.Text = "Đóng";
             this.button3.UseVisualStyleBackColor = true;
@@ -106,12 +108,12 @@
             this.groupBox1.Controls.Add(this.listBox1);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.groupBox1.Location = new System.Drawing.Point(21, 16);
+            this.groupBox1.Location = new System.Drawing.Point(11, 9);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(426, 256);
+            this.groupBox1.Size = new System.Drawing.Size(409, 228);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Danh sách :";
+            this.groupBox1.Text = "Danh Sách:";
             // 
             // listBox1
             // 
@@ -121,14 +123,14 @@
             this.listBox1.Location = new System.Drawing.Point(3, 22);
             this.listBox1.Margin = new System.Windows.Forms.Padding(0);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(420, 231);
+            this.listBox1.Size = new System.Drawing.Size(403, 203);
             this.listBox1.TabIndex = 0;
             // 
             // ListEventForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(473, 348);
+            this.ClientSize = new System.Drawing.Size(434, 321);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "ListEventForm";
             this.Text = "Danh sách sự kiện";
