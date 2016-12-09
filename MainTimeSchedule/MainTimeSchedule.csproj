@@ -57,6 +57,12 @@
     <Compile Include="Design\AddUI\DayEventMain.Designer.cs">
       <DependentUpon>DayEventMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Design\AddUI\EditEventMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\AddUI\EditEventMain.Designer.cs">
+      <DependentUpon>EditEventMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="Design\AddUI\Ingredient\DayEventUI.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Design\AddUI\DayEventMain.resx">
       <DependentUpon>DayEventMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\AddUI\EditEventMain.resx">
+      <DependentUpon>EditEventMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Design\AddUI\Ingredient\DayEventUI.resx">
       <DependentUpon>DayEventUI.cs</DependentUpon>
