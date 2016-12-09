@@ -93,9 +93,7 @@
     <Compile Include="Design\AddUI\EditEventMain.Designer.cs">
       <DependentUpon>EditEventMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Design\AddUI\Ingredient\EventMainUI.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="Design\AddUI\Ingredient\EventMainUI.cs" />
     <Compile Include="Design\AddUI\Ingredient\EventMainUI.Designer.cs">
       <DependentUpon>EventMainUI.cs</DependentUpon>
     </Compile>
@@ -110,6 +108,12 @@
     </Compile>
     <Compile Include="Design\AddUI\Ingredient\WeekEventUI.Designer.cs">
       <DependentUpon>WeekEventUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Design\ListEvent\ListEventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\ListEvent\ListEventForm.Designer.cs">
+      <DependentUpon>ListEventForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Design\WeekUI\Ingredient\WeekUITool.cs">
       <SubType>UserControl</SubType>
@@ -175,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Design\AddUI\Ingredient\WeekEventUI.resx">
       <DependentUpon>WeekEventUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ListEvent\ListEventForm.resx">
+      <DependentUpon>ListEventForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Design\WeekUI\Ingredient\WeekUITool.resx">
       <DependentUpon>WeekUITool.cs</DependentUpon>
@@ -255,6 +262,7 @@
   <ItemGroup>
     <None Include="Resources\ResDayUI\arrowright.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
