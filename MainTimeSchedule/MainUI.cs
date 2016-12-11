@@ -16,5 +16,21 @@ namespace MainTimeSchedule
         {
             InitializeComponent();
         }
+
+        private void filemenuexit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void MainUI_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Bạn có thực muốn thoát chương trình??", "Thoát",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                e.Cancel = false;
+            }
+            else e.Cancel = true;
+        }
     }
 }
