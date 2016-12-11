@@ -10,8 +10,8 @@ namespace SQLTS
     {
         public int ID;
         public string Note;
-        public DateTime DateStart;
-        public DateTime DateEnd;
+        public DateTime DayStart;
+        public DateTime DayEnd;
         public string DaySelect;
         public DateTime TimeStart;
         public DateTime TimeEnd;
