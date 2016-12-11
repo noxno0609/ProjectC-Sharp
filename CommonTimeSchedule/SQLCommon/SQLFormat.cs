@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SQLTS
+namespace SQLCommon
 {
-    class SQLFormat
+    public class SQLFormat
     {
         public static string addDateTime(DateTime date)
         {
