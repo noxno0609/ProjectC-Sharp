@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\TimeEventDAO\Insert.cs" />
+    <Compile Include="DTO\PeriodEventDTO.cs" />
     <Compile Include="DTO\TimeEventDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
