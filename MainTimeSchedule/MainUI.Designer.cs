@@ -30,8 +30,6 @@
         {
             this.footer = new System.Windows.Forms.StatusStrip();
             this.menuicon = new System.Windows.Forms.ToolStrip();
-            this.addicon = new System.Windows.Forms.ToolStripButton();
-            this.editicon = new System.Windows.Forms.ToolStripButton();
             this.menumain = new System.Windows.Forms.MenuStrip();
             this.filemenu = new System.Windows.Forms.ToolStripMenuItem();
             this.filemenuexit = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,6 +37,8 @@
             this.helpmenu = new System.Windows.Forms.ToolStripMenuItem();
             this.contentbone = new System.Windows.Forms.TableLayoutPanel();
             this.weekUIMain = new WindowsFormsApplication1.Design.WeekUI.WeekUIMain();
+            this.addicon = new System.Windows.Forms.ToolStripButton();
+            this.editicon = new System.Windows.Forms.ToolStripButton();
             this.menuicon.SuspendLayout();
             this.menumain.SuspendLayout();
             this.contentbone.SuspendLayout();
@@ -65,24 +65,6 @@
             this.menuicon.TabIndex = 1;
             this.menuicon.Text = "toolStrip1";
             // 
-            // addicon
-            // 
-            this.addicon.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.addicon.Image = global::MainTimeSchedule.Properties.Resources.addbutton;
-            this.addicon.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.addicon.Name = "addicon";
-            this.addicon.Size = new System.Drawing.Size(24, 24);
-            this.addicon.Text = "Thêm mốc/lịch";
-            // 
-            // editicon
-            // 
-            this.editicon.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.editicon.Image = global::MainTimeSchedule.Properties.Resources.editbutton;
-            this.editicon.ImageTransparentColor = System.Drawing.Color.White;
-            this.editicon.Name = "editicon";
-            this.editicon.Size = new System.Drawing.Size(24, 24);
-            this.editicon.Text = "Chỉnh mốc";
-            // 
             // menumain
             // 
             this.menumain.GripMargin = new System.Windows.Forms.Padding(0);
@@ -92,7 +74,7 @@
             this.helpmenu});
             this.menumain.Location = new System.Drawing.Point(0, 0);
             this.menumain.Name = "menumain";
-            this.menumain.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.menumain.Padding = new System.Windows.Forms.Padding(0);
             this.menumain.Size = new System.Drawing.Size(984, 24);
             this.menumain.TabIndex = 2;
             this.menumain.Text = "ToolMenu";
@@ -148,6 +130,24 @@
             this.weekUIMain.Name = "weekUIMain";
             this.weekUIMain.Size = new System.Drawing.Size(837, 539);
             this.weekUIMain.TabIndex = 0;
+            // 
+            // addicon
+            // 
+            this.addicon.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.addicon.Image = global::MainTimeSchedule.Properties.Resources.addbutton;
+            this.addicon.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.addicon.Name = "addicon";
+            this.addicon.Size = new System.Drawing.Size(24, 24);
+            this.addicon.Text = "Thêm mốc/lịch";
+            // 
+            // editicon
+            // 
+            this.editicon.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.editicon.Image = global::MainTimeSchedule.Properties.Resources.editbutton;
+            this.editicon.ImageTransparentColor = System.Drawing.Color.White;
+            this.editicon.Name = "editicon";
+            this.editicon.Size = new System.Drawing.Size(24, 24);
+            this.editicon.Text = "Chỉnh mốc";
             // 
             // MainUI
             // 

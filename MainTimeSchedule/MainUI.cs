@@ -32,5 +32,10 @@ namespace MainTimeSchedule
             }
             else e.Cancel = true;
         }
+
+        private void calenderPicker1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

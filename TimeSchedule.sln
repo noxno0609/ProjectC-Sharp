@@ -8,8 +8,16 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonTimeSchedule", "CommonTimeSchedule\CommonTimeSchedule.csproj", "{1ED0FF27-C365-4B5E-AD73-2673FEB73EAD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLConsole", "SQLConsole\SQLConsole.csproj", "{9DE4F388-DF13-4B2D-BC0F-36814A0A57A8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1ED0FF27-C365-4B5E-AD73-2673FEB73EAD} = {1ED0FF27-C365-4B5E-AD73-2673FEB73EAD}
+		{07C56436-DF3A-48FA-ACDA-963BADB00AB1} = {07C56436-DF3A-48FA-ACDA-963BADB00AB1}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainTimeSchedule", "MainTimeSchedule\MainTimeSchedule.csproj", "{9FFD7547-1423-4C9E-8614-AD5513EF7BEA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1ED0FF27-C365-4B5E-AD73-2673FEB73EAD} = {1ED0FF27-C365-4B5E-AD73-2673FEB73EAD}
+		{07C56436-DF3A-48FA-ACDA-963BADB00AB1} = {07C56436-DF3A-48FA-ACDA-963BADB00AB1}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

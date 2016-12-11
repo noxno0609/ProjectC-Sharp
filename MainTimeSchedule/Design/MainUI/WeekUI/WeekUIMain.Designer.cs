@@ -28,97 +28,97 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.weekUITool1 = new TSProject.Design.WeekUI.Ingredient.WeekUITool();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.weekUIToolBar1 = new WindowsFormsApplication1.Design.WeekUI.Ingredient.WeekUITop();
-            this.weekUISche2 = new WindowsFormsApplication1.Design.WeekUI.Ingredient.WeekUISche();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.weekUIContentBone = new System.Windows.Forms.TableLayoutPanel();
+            this.weekUITopBone = new System.Windows.Forms.TableLayoutPanel();
+            this.weekUITool = new TSProject.Design.WeekUI.Ingredient.WeekUITool();
+            this.weekUISche = new WindowsFormsApplication1.Design.WeekUI.Ingredient.WeekUISche();
+            this.weekUITop = new WindowsFormsApplication1.Design.WeekUI.Ingredient.WeekUITop();
+            this.weekUIContentBone.SuspendLayout();
+            this.weekUITopBone.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel2
+            // weekUIContentBone
             // 
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 84F));
-            this.tableLayoutPanel2.Controls.Add(this.weekUITool1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.weekUISche2, 1, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 23);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(498, 313);
-            this.tableLayoutPanel2.TabIndex = 0;
+            this.weekUIContentBone.ColumnCount = 2;
+            this.weekUIContentBone.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
+            this.weekUIContentBone.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 84F));
+            this.weekUIContentBone.Controls.Add(this.weekUITool, 0, 0);
+            this.weekUIContentBone.Controls.Add(this.weekUISche, 1, 0);
+            this.weekUIContentBone.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.weekUIContentBone.Location = new System.Drawing.Point(0, 23);
+            this.weekUIContentBone.Margin = new System.Windows.Forms.Padding(0);
+            this.weekUIContentBone.Name = "weekUIContentBone";
+            this.weekUIContentBone.RowCount = 1;
+            this.weekUIContentBone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.weekUIContentBone.Size = new System.Drawing.Size(498, 313);
+            this.weekUIContentBone.TabIndex = 0;
             // 
-            // weekUITool1
+            // weekUITopBone
             // 
-            this.weekUITool1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.weekUITool1.Location = new System.Drawing.Point(0, 0);
-            this.weekUITool1.Margin = new System.Windows.Forms.Padding(0);
-            this.weekUITool1.Name = "weekUITool1";
-            this.weekUITool1.Size = new System.Drawing.Size(79, 313);
-            this.weekUITool1.TabIndex = 0;
+            this.weekUITopBone.ColumnCount = 1;
+            this.weekUITopBone.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.weekUITopBone.Controls.Add(this.weekUIContentBone, 0, 1);
+            this.weekUITopBone.Controls.Add(this.weekUITop, 0, 0);
+            this.weekUITopBone.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.weekUITopBone.Location = new System.Drawing.Point(0, 0);
+            this.weekUITopBone.Margin = new System.Windows.Forms.Padding(0);
+            this.weekUITopBone.Name = "weekUITopBone";
+            this.weekUITopBone.RowCount = 2;
+            this.weekUITopBone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.weekUITopBone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 93F));
+            this.weekUITopBone.Size = new System.Drawing.Size(498, 336);
+            this.weekUITopBone.TabIndex = 1;
             // 
-            // tableLayoutPanel1
+            // weekUITool
             // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.weekUIToolBar1, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 93F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(498, 336);
-            this.tableLayoutPanel1.TabIndex = 1;
+            this.weekUITool.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.weekUITool.Location = new System.Drawing.Point(0, 0);
+            this.weekUITool.Margin = new System.Windows.Forms.Padding(0);
+            this.weekUITool.Name = "weekUITool";
+            this.weekUITool.Size = new System.Drawing.Size(79, 313);
+            this.weekUITool.TabIndex = 0;
             // 
-            // weekUIToolBar1
+            // weekUISche
             // 
-            this.weekUIToolBar1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.weekUIToolBar1.Location = new System.Drawing.Point(0, 0);
-            this.weekUIToolBar1.Margin = new System.Windows.Forms.Padding(0);
-            this.weekUIToolBar1.Name = "weekUIToolBar1";
-            this.weekUIToolBar1.Size = new System.Drawing.Size(498, 23);
-            this.weekUIToolBar1.TabIndex = 1;
+            this.weekUISche.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.weekUISche.Location = new System.Drawing.Point(79, 0);
+            this.weekUISche.Margin = new System.Windows.Forms.Padding(0);
+            this.weekUISche.Name = "weekUISche";
+            this.weekUISche.Size = new System.Drawing.Size(419, 313);
+            this.weekUISche.TabIndex = 1;
             // 
-            // weekUISche2
+            // weekUITop
             // 
-            this.weekUISche2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.weekUISche2.Location = new System.Drawing.Point(79, 0);
-            this.weekUISche2.Margin = new System.Windows.Forms.Padding(0);
-            this.weekUISche2.Name = "weekUISche2";
-            this.weekUISche2.Size = new System.Drawing.Size(419, 313);
-            this.weekUISche2.TabIndex = 1;
+            this.weekUITop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.weekUITop.Location = new System.Drawing.Point(0, 0);
+            this.weekUITop.Margin = new System.Windows.Forms.Padding(0);
+            this.weekUITop.Name = "weekUITop";
+            this.weekUITop.Size = new System.Drawing.Size(498, 23);
+            this.weekUITop.TabIndex = 1;
             // 
             // WeekUIMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.weekUITopBone);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "WeekUIMain";
             this.Size = new System.Drawing.Size(498, 336);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this.weekUIContentBone.ResumeLayout(false);
+            this.weekUITopBone.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Ingredient.WeekUITop weekUIToolBar1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private TSProject.Design.WeekUI.Ingredient.WeekUITool weekUITool1;
+        private Ingredient.WeekUITop weekUITop;
+        private System.Windows.Forms.TableLayoutPanel weekUIContentBone;
+        private System.Windows.Forms.TableLayoutPanel weekUITopBone;
+        private TSProject.Design.WeekUI.Ingredient.WeekUITool weekUITool;
         private Ingredient.WeekUISche weekUISche1;
-        private Ingredient.WeekUISche weekUISche2;
+        private Ingredient.WeekUISche weekUISche;
 
 
 
