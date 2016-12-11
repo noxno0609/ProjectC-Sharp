@@ -10,6 +10,7 @@ namespace SQLTS
     public class TimeEventDTO
     {
         public int ID;
+        public string Note;
         public DateTime TimeStart;
         public DateTime TimeEnd;
         public DateTime DaySelect;
