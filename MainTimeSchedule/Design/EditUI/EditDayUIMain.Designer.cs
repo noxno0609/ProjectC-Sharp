@@ -51,7 +51,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(552, 314);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(741, 314);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -74,17 +74,17 @@
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(552, 41);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(741, 41);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button1.Location = new System.Drawing.Point(270, 0);
+            this.button1.Location = new System.Drawing.Point(363, 0);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(77, 36);
+            this.button1.Size = new System.Drawing.Size(103, 36);
             this.button1.TabIndex = 0;
             this.button1.Text = "Lưu";
             this.button1.UseVisualStyleBackColor = true;
@@ -93,10 +93,10 @@
             // 
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button2.Location = new System.Drawing.Point(363, 0);
+            this.button2.Location = new System.Drawing.Point(488, 0);
             this.button2.Margin = new System.Windows.Forms.Padding(0);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(77, 36);
+            this.button2.Size = new System.Drawing.Size(103, 36);
             this.button2.TabIndex = 0;
             this.button2.Text = "Xóa";
             this.button2.UseVisualStyleBackColor = true;
@@ -105,10 +105,10 @@
             // 
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button3.Location = new System.Drawing.Point(456, 0);
+            this.button3.Location = new System.Drawing.Point(613, 0);
             this.button3.Margin = new System.Windows.Forms.Padding(0);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(77, 36);
+            this.button3.Size = new System.Drawing.Size(103, 36);
             this.button3.TabIndex = 0;
             this.button3.Text = "Đóng";
             this.button3.UseVisualStyleBackColor = true;
@@ -119,14 +119,14 @@
             this.dayEventUI1.Location = new System.Drawing.Point(0, 0);
             this.dayEventUI1.Margin = new System.Windows.Forms.Padding(0);
             this.dayEventUI1.Name = "dayEventUI1";
-            this.dayEventUI1.Size = new System.Drawing.Size(552, 273);
+            this.dayEventUI1.Size = new System.Drawing.Size(741, 273);
             this.dayEventUI1.TabIndex = 1;
             // 
             // DayEventMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(552, 314);
+            this.ClientSize = new System.Drawing.Size(741, 314);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "DayEventMain";
             this.Text = "Sửa sự kiện";
