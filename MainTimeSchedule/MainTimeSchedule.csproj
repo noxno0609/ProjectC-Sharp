@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CommonTimeSchedule, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Common\Library\CommonTimeSchedule.dll</HintPath>
+    </Reference>
     <Reference Include="MessageBoxManager">
       <HintPath>..\Common\Library\MessageBoxManager.dll</HintPath>
     </Reference>
@@ -106,6 +110,12 @@
     <Compile Include="Design\ListEventUI\ListEventForm.Designer.cs">
       <DependentUpon>ListEventForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Design\MainUI\WeekUI\Ingredient\WeekCalenderPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\MainUI\WeekUI\Ingredient\WeekCalenderPicker.Designer.cs">
+      <DependentUpon>WeekCalenderPicker.cs</DependentUpon>
+    </Compile>
     <Compile Include="Design\MainUI\WeekUI\Ingredient\WeekUISche.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -129,12 +139,6 @@
     </Compile>
     <Compile Include="Design\MainUI\WeekUI\WeekUIMain.Designer.cs">
       <DependentUpon>WeekUIMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Design\ToolBarUI\ToolBarMain.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Design\ToolBarUI\ToolBarMain.Designer.cs">
-      <DependentUpon>ToolBarMain.cs</DependentUpon>
     </Compile>
     <Compile Include="MainUI.cs">
       <SubType>Form</SubType>
@@ -172,6 +176,9 @@
     <EmbeddedResource Include="Design\ListEventUI\ListEventForm.resx">
       <DependentUpon>ListEventForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Design\MainUI\WeekUI\Ingredient\WeekCalenderPicker.resx">
+      <DependentUpon>WeekCalenderPicker.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Design\MainUI\WeekUI\Ingredient\WeekUISche.resx">
       <DependentUpon>WeekUISche.cs</DependentUpon>
     </EmbeddedResource>
@@ -183,9 +190,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Design\MainUI\WeekUI\WeekUIMain.resx">
       <DependentUpon>WeekUIMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Design\ToolBarUI\ToolBarMain.resx">
-      <DependentUpon>ToolBarMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainUI.resx">
       <DependentUpon>MainUI.cs</DependentUpon>
