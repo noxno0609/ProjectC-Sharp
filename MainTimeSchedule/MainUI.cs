@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MainTimeSchedule.Design.AddUI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -35,6 +36,13 @@ namespace MainTimeSchedule
         private void toolBarMain_Load(object sender, EventArgs e)
         {
             //toolBarMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+        }
+
+        private void addicon_Click(object sender, EventArgs e)
+        {
+            AddUIMain addUI = new AddUIMain();
+            addUI.StartPosition = FormStartPosition.CenterParent;
+            addUI.ShowDialog();
         }
     }
 }

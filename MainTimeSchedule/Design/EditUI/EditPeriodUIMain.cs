@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TSProject.Design.EditEvent
 {
-    public partial class WeekEventMain : Form
+    public partial class EditPeriodUIMain : Form
     {
-        public WeekEventMain()
+        public EditPeriodUIMain()
         {
             InitializeComponent();
         }

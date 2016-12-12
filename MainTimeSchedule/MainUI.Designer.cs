@@ -74,6 +74,7 @@
             this.addicon.Name = "addicon";
             this.addicon.Size = new System.Drawing.Size(24, 24);
             this.addicon.Text = "Thêm mốc/lịch";
+            this.addicon.Click += new System.EventHandler(this.addicon_Click);
             // 
             // editicon
             // 

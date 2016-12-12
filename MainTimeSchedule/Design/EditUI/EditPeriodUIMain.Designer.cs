@@ -1,6 +1,6 @@
 ﻿namespace TSProject.Design.EditEvent
 {
-    partial class WeekEventMain
+    partial class EditPeriodUIMain
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.weekEventUI1 = new TSProject.Design.EditEvent.Ingredient.WeekEventUI();
+            this.weekEventUI1 = new TSProject.Design.EditEvent.Ingredient.PeriodEventUI();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -128,6 +128,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private Ingredient.WeekEventUI weekEventUI1;
+        private Ingredient.PeriodEventUI weekEventUI1;
     }
 }

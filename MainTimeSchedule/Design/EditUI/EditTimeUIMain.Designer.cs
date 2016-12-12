@@ -1,6 +1,6 @@
 ﻿namespace TSProject.Design.EditEvent
 {
-    partial class DayEventMain
+    partial class EditTimeUIMain
     {
         /// <summary>
         /// Required designer variable.
@@ -33,7 +33,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.dayEventUI1 = new TSProject.Design.EditEvent.Ingredient.DayEventUI();
+            this.dayEventUI1 = new TSProject.Design.EditEvent.Ingredient.TimeEventUI();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -143,6 +143,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private Ingredient.DayEventUI dayEventUI1;
+        private Ingredient.TimeEventUI dayEventUI1;
     }
 }

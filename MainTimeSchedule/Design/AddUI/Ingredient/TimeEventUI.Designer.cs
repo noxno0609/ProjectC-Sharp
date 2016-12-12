@@ -1,6 +1,6 @@
 ﻿namespace TSProject.Design.EditEvent.Ingredient
 {
-    partial class DayEventUI
+    partial class TimeEventUI
     {
         /// <summary> 
         /// Required designer variable.
@@ -33,8 +33,8 @@
             this.labelTime = new System.Windows.Forms.Label();
             this.labelNoidung = new System.Windows.Forms.Label();
             this.textBoxnoidung = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
             this.labeltimeend = new System.Windows.Forms.Label();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
@@ -110,7 +110,7 @@
             this.labelTime.Name = "labelTime";
             this.labelTime.Size = new System.Drawing.Size(126, 34);
             this.labelTime.TabIndex = 1;
-            this.labelTime.Text = "Thời gian bắt đầu:";
+            this.labelTime.Text = "Giờ bắt đầu:";
             this.labelTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelNoidung
@@ -141,16 +141,6 @@
             this.textBoxnoidung.Size = new System.Drawing.Size(462, 80);
             this.textBoxnoidung.TabIndex = 4;
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.SetColumnSpan(this.dateTimePicker1, 2);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(201, 50);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(126, 20);
-            this.dateTimePicker1.TabIndex = 2;
-            // 
             // numericUpDown1
             // 
             this.numericUpDown1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -163,6 +153,16 @@
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(60, 20);
             this.numericUpDown1.TabIndex = 6;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.SetColumnSpan(this.dateTimePicker1, 2);
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(201, 50);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(126, 20);
+            this.dateTimePicker1.TabIndex = 2;
             // 
             // numericUpDown3
             // 
@@ -188,7 +188,7 @@
             this.labeltimeend.Name = "labeltimeend";
             this.labeltimeend.Size = new System.Drawing.Size(126, 34);
             this.labeltimeend.TabIndex = 7;
-            this.labeltimeend.Text = "Thời gian kết thúc:";
+            this.labeltimeend.Text = "Giờ kết thúc:";
             this.labeltimeend.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // numericUpDown2

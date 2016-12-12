@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace TSProject.Design.EditEvent.Ingredient
 {
-    public partial class DayEventUI : UserControl
+    public partial class TimeEventUI : UserControl
     {
-        public DayEventUI()
+        public TimeEventUI()
         {
             InitializeComponent();
         }
 
         private void buttonCancel_Click(object sender, EventArgs e)
         {
-            DayEventMain d = (DayEventMain)this.Parent;
-            d.Close();
+            TimeEventUI d = (TimeEventUI)this.Parent;
+            d.Hide();
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
