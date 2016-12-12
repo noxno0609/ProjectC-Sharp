@@ -32,10 +32,9 @@ namespace MainTimeSchedule
             }
             else e.Cancel = true;
         }
-
-        private void calenderPicker1_Load(object sender, EventArgs e)
+        private void toolBarMain_Load(object sender, EventArgs e)
         {
-
+            //toolBarMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
         }
     }
 }

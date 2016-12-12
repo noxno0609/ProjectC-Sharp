@@ -14,6 +14,8 @@ namespace WindowsFormsApplication1.Design.WeekUI.Ingredient
 {
     public partial class WeekUITop : UserControl
     {
+        WeekCalenderPicker weekpicker = new WeekCalenderPicker();
+
         public DateTime daypicked = DateTime.Now;
         public WeekUITop()
         {
@@ -41,11 +43,10 @@ namespace WindowsFormsApplication1.Design.WeekUI.Ingredient
 
         private void buttonDate_Click(object sender, EventArgs e)
         {
-            WeekCalenderPicker weekpicker = new WeekCalenderPicker();
             weekpicker.SelectionStart = daypicked;
             weekpicker.FormClosed += new FormClosedEventHandler(weekpicker_FormClosed);
             weekpicker.Text = "Chọn Tuần";
-            weekpicker.StartPosition = FormStartPosition.CenterScreen;
+            weekpicker.StartPosition = FormStartPosition.CenterParent;
             weekpicker.ShowDialog();
         }
         private void weekpicker_FormClosed(object sender, FormClosedEventArgs e)

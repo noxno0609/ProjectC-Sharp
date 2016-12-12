@@ -40,8 +40,8 @@
             // weekUIContentBone
             // 
             this.weekUIContentBone.ColumnCount = 2;
-            this.weekUIContentBone.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
-            this.weekUIContentBone.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 84F));
+            this.weekUIContentBone.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.weekUIContentBone.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
             this.weekUIContentBone.Controls.Add(this.weekUITool, 0, 0);
             this.weekUIContentBone.Controls.Add(this.weekUISche, 1, 0);
             this.weekUIContentBone.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -75,16 +75,16 @@
             this.weekUITool.Location = new System.Drawing.Point(0, 0);
             this.weekUITool.Margin = new System.Windows.Forms.Padding(0);
             this.weekUITool.Name = "weekUITool";
-            this.weekUITool.Size = new System.Drawing.Size(79, 313);
+            this.weekUITool.Size = new System.Drawing.Size(49, 313);
             this.weekUITool.TabIndex = 0;
             // 
             // weekUISche
             // 
             this.weekUISche.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.weekUISche.Location = new System.Drawing.Point(79, 0);
+            this.weekUISche.Location = new System.Drawing.Point(49, 0);
             this.weekUISche.Margin = new System.Windows.Forms.Padding(0);
             this.weekUISche.Name = "weekUISche";
-            this.weekUISche.Size = new System.Drawing.Size(419, 313);
+            this.weekUISche.Size = new System.Drawing.Size(449, 313);
             this.weekUISche.TabIndex = 1;
             // 
             // weekUITop
@@ -117,7 +117,6 @@
         private System.Windows.Forms.TableLayoutPanel weekUIContentBone;
         private System.Windows.Forms.TableLayoutPanel weekUITopBone;
         private TSProject.Design.WeekUI.Ingredient.WeekUITool weekUITool;
-        private Ingredient.WeekUISche weekUISche1;
         private Ingredient.WeekUISche weekUISche;
 
 

@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             this.monthCalendar = new System.Windows.Forms.MonthCalendar();
+            this.labelNote = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // monthCalendar
             // 
-            this.monthCalendar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.monthCalendar.Dock = System.Windows.Forms.DockStyle.Top;
             this.monthCalendar.FirstDayOfWeek = System.Windows.Forms.Day.Monday;
             this.monthCalendar.ForeColor = System.Drawing.SystemColors.MenuText;
             this.monthCalendar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -46,11 +47,26 @@
             this.monthCalendar.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.WeekCalenderPicker_DateChanged);
             this.monthCalendar.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.WeekCalenderPicker_DateSelected);
             // 
+            // labelNote
+            // 
+            this.labelNote.BackColor = System.Drawing.Color.White;
+            this.labelNote.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelNote.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.labelNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNote.Location = new System.Drawing.Point(0, 162);
+            this.labelNote.Margin = new System.Windows.Forms.Padding(0);
+            this.labelNote.Name = "labelNote";
+            this.labelNote.Size = new System.Drawing.Size(227, 26);
+            this.labelNote.TabIndex = 2;
+            this.labelNote.Text = "Ấn \'Enter\' để chọn tuần";
+            this.labelNote.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // WeekCalenderPicker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(222, 157);
+            this.ClientSize = new System.Drawing.Size(227, 188);
+            this.Controls.Add(this.labelNote);
             this.Controls.Add(this.monthCalendar);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -63,5 +79,6 @@
         #endregion
 
         private System.Windows.Forms.MonthCalendar monthCalendar;
+        private System.Windows.Forms.Label labelNote;
     }
 }

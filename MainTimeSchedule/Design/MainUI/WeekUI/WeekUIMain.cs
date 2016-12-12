@@ -18,7 +18,6 @@ namespace WindowsFormsApplication1.Design.WeekUI
             InitializeComponent();
             weekUITool.buttonswitch.Click += new EventHandler(ButtonSwitch_Click);
         }
-
         private void ButtonSwitch_Click(object sender, EventArgs e)
         {
             this.Controls.Clear();
