@@ -1,6 +1,6 @@
 ﻿namespace TSProject.Design.EditEvent.Ingredient
 {
-    partial class WeekEventUI
+    partial class PeriodEventUI
     {
         /// <summary> 
         /// Required designer variable.

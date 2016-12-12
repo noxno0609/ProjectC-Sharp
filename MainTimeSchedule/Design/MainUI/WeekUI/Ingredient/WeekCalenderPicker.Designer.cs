@@ -69,7 +69,9 @@
             this.Controls.Add(this.labelNote);
             this.Controls.Add(this.monthCalendar);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(243, 226);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(243, 226);
             this.Name = "WeekCalenderPicker";
             this.Text = "Chọn Tuần";
             this.ResumeLayout(false);

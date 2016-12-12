@@ -28,13 +28,13 @@ namespace MainTimeSchedule.Design.AddUI
 
         private void radioButtonday_CheckedChanged(object sender, EventArgs e)
         {
-            DayEventUI dayform = new DayEventUI();
+            TimeEventUI dayform = new TimeEventUI();
             showControl(dayform);
         }
 
         private void radioButtonweek_CheckedChanged(object sender, EventArgs e)
         {
-            WeekEventUI weekform = new WeekEventUI();
+            PeriodEventUI weekform = new PeriodEventUI();
             showControl(weekform);
         }
     }

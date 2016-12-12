@@ -56,11 +56,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Design\EditUI\EditDayUIMain.cs">
+    <Compile Include="Design\EditUI\EditTimeUIMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Design\EditUI\EditDayUIMain.Designer.cs">
-      <DependentUpon>EditDayUIMain.cs</DependentUpon>
+    <Compile Include="Design\EditUI\EditTimeUIMain.Designer.cs">
+      <DependentUpon>EditTimeUIMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Design\AddUI\AddUIMain.cs">
       <SubType>Form</SubType>
@@ -68,23 +68,23 @@
     <Compile Include="Design\AddUI\AddUIMain.Designer.cs">
       <DependentUpon>AddUIMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Design\AddUI\Ingredient\DayEventUI.cs">
+    <Compile Include="Design\AddUI\Ingredient\TimeEventUI.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Design\AddUI\Ingredient\DayEventUI.Designer.cs">
-      <DependentUpon>DayEventUI.cs</DependentUpon>
+    <Compile Include="Design\AddUI\Ingredient\TimeEventUI.Designer.cs">
+      <DependentUpon>TimeEventUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="Design\AddUI\Ingredient\WeekEventUI.cs">
+    <Compile Include="Design\AddUI\Ingredient\PeriodEventUI.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Design\AddUI\Ingredient\WeekEventUI.Designer.cs">
-      <DependentUpon>WeekEventUI.cs</DependentUpon>
+    <Compile Include="Design\AddUI\Ingredient\PeriodEventUI.Designer.cs">
+      <DependentUpon>PeriodEventUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="Design\EditUI\EditWeekUIMain.cs">
+    <Compile Include="Design\EditUI\EditPeriodUIMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Design\EditUI\EditWeekUIMain.Designer.cs">
-      <DependentUpon>EditWeekUIMain.cs</DependentUpon>
+    <Compile Include="Design\EditUI\EditPeriodUIMain.Designer.cs">
+      <DependentUpon>EditPeriodUIMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Design\MainUI\DayUI\DayUIMain.cs">
       <SubType>UserControl</SubType>
@@ -155,20 +155,20 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\DBUtils.cs" />
-    <EmbeddedResource Include="Design\EditUI\EditDayUIMain.resx">
-      <DependentUpon>EditDayUIMain.cs</DependentUpon>
+    <EmbeddedResource Include="Design\EditUI\EditTimeUIMain.resx">
+      <DependentUpon>EditTimeUIMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Design\AddUI\AddUIMain.resx">
       <DependentUpon>AddUIMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Design\AddUI\Ingredient\DayEventUI.resx">
-      <DependentUpon>DayEventUI.cs</DependentUpon>
+    <EmbeddedResource Include="Design\AddUI\Ingredient\TimeEventUI.resx">
+      <DependentUpon>TimeEventUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Design\AddUI\Ingredient\WeekEventUI.resx">
-      <DependentUpon>WeekEventUI.cs</DependentUpon>
+    <EmbeddedResource Include="Design\AddUI\Ingredient\PeriodEventUI.resx">
+      <DependentUpon>PeriodEventUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Design\EditUI\EditWeekUIMain.resx">
-      <DependentUpon>EditWeekUIMain.cs</DependentUpon>
+    <EmbeddedResource Include="Design\EditUI\EditPeriodUIMain.resx">
+      <DependentUpon>EditPeriodUIMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Design\MainUI\DayUI\DayUIMain.resx">
       <DependentUpon>DayUIMain.cs</DependentUpon>

@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace TSProject.Design.EditEvent.Ingredient
 {
-    public partial class WeekEventUI : UserControl
+    public partial class PeriodEventUI : UserControl
     {
-        public WeekEventUI()
+        public PeriodEventUI()
         {
             InitializeComponent();
         }
 
         private void buttonCancel_Click(object sender, EventArgs e)
         {
-            WeekEventMain w = (WeekEventMain)this.Parent;
-            w.Close();
+            PeriodEventUI w = (PeriodEventUI)this.Parent;
+            w.Hide();
         }
 
         private void labelstart_Click(object sender, EventArgs e)
