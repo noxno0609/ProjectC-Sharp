@@ -140,6 +140,12 @@
     <Compile Include="Design\MainUI\WeekUI\WeekUIMain.Designer.cs">
       <DependentUpon>WeekUIMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Design\ToolBarUI\ToolBarMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\ToolBarUI\ToolBarMain.Designer.cs">
+      <DependentUpon>ToolBarMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Design\MainUI\WeekUI\WeekUIMain.resx">
       <DependentUpon>WeekUIMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ToolBarUI\ToolBarMain.resx">
+      <DependentUpon>ToolBarMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainUI.resx">
       <DependentUpon>MainUI.cs</DependentUpon>
