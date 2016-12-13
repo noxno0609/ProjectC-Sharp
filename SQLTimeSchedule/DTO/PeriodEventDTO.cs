@@ -8,10 +8,10 @@ namespace SQLTS
 {
     public class PeriodEventDTO
     {
-        public int ID;
+        public int PE_ID;
         public string Note;
-        public DateTime DayStart;
-        public DateTime DayEnd;
+        public DateTime DateStart;
+        public DateTime DateEnd;
         public string DaySelect;
         public DateTime TimeStart;
         public DateTime TimeEnd;

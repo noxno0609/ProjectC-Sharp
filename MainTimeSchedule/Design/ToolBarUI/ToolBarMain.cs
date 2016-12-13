@@ -7,13 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using TSProject.Design.EditEvent.Ingredient;
 
-namespace TSProject.Design.WeekUI.Ingredient
+namespace MainTimeSchedule.Design.ToolBarUI
 {
-    public partial class WeekUITool : UserControl
+    public partial class ToolBarMain : UserControl
     {
-        public WeekUITool()
+        public ToolBarMain()
         {
             InitializeComponent();
         }
