@@ -13,8 +13,8 @@ namespace SQLTS
         public static int insert(TimeEventDTO dto, MySqlConnection conn)
         {
             conn.Open();
-            string sql = String.Format(@"INSERT INTO timeevent (Timestart, Timeend, Dayselect)
-                                        VALUES ('{0}', '{1}', '{2}')",
+            string sql = String.Format(@"INSERT INTO TimeEvent (ID, PE_ID, Note, TimeStart, TimeEnd, DaySelect)
+                                        VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}')",
             SQLFormat.addDateTime(dto.TimeStart),
             SQLFormat.addDateTime(dto.TimeEnd),
             SQLFormat.addDateTime(dto.DaySelect));
