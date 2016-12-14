@@ -34,7 +34,7 @@
             // 
             // monthCalendar
             // 
-            this.monthCalendar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.monthCalendar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.monthCalendar.FirstDayOfWeek = System.Windows.Forms.Day.Monday;
             this.monthCalendar.ForeColor = System.Drawing.SystemColors.MenuText;
             this.monthCalendar.ImeMode = System.Windows.Forms.ImeMode.NoControl;

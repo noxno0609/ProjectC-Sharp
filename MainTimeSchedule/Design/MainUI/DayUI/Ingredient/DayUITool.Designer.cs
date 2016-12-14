@@ -64,7 +64,7 @@
             this.tableLayoutPanelDayUITool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanelDayUITool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanelDayUITool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanelDayUITool.Size = new System.Drawing.Size(58, 284);
+            this.tableLayoutPanelDayUITool.Size = new System.Drawing.Size(56, 282);
             this.tableLayoutPanelDayUITool.TabIndex = 0;
             // 
             // buttonDayUIDownDay
@@ -72,10 +72,10 @@
             this.buttonDayUIDownDay.BackgroundImage = global::MainTimeSchedule.Properties.Resources.arrowdown;
             this.buttonDayUIDownDay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonDayUIDownDay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonDayUIDownDay.Location = new System.Drawing.Point(0, 240);
+            this.buttonDayUIDownDay.Location = new System.Drawing.Point(0, 239);
             this.buttonDayUIDownDay.Margin = new System.Windows.Forms.Padding(0);
             this.buttonDayUIDownDay.Name = "buttonDayUIDownDay";
-            this.buttonDayUIDownDay.Size = new System.Drawing.Size(58, 44);
+            this.buttonDayUIDownDay.Size = new System.Drawing.Size(56, 43);
             this.buttonDayUIDownDay.TabIndex = 9;
             this.buttonDayUIDownDay.UseVisualStyleBackColor = true;
             // 
@@ -87,19 +87,18 @@
             this.buttonDayUIUpDay.Location = new System.Drawing.Point(0, 28);
             this.buttonDayUIUpDay.Margin = new System.Windows.Forms.Padding(0);
             this.buttonDayUIUpDay.Name = "buttonDayUIUpDay";
-            this.buttonDayUIUpDay.Size = new System.Drawing.Size(58, 42);
+            this.buttonDayUIUpDay.Size = new System.Drawing.Size(56, 42);
             this.buttonDayUIUpDay.TabIndex = 8;
             this.buttonDayUIUpDay.UseVisualStyleBackColor = true;
             // 
             // panelDayUIDay
             // 
-            this.panelDayUIDay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelDayUIDay.Controls.Add(this.tableLayoutPanelDayUIDay);
             this.panelDayUIDay.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDayUIDay.Location = new System.Drawing.Point(0, 70);
             this.panelDayUIDay.Margin = new System.Windows.Forms.Padding(0);
             this.panelDayUIDay.Name = "panelDayUIDay";
-            this.panelDayUIDay.Size = new System.Drawing.Size(58, 170);
+            this.panelDayUIDay.Size = new System.Drawing.Size(56, 169);
             this.panelDayUIDay.TabIndex = 6;
             // 
             // tableLayoutPanelDayUIDay
@@ -122,7 +121,7 @@
             this.tableLayoutPanelDayUIDay.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28F));
             this.tableLayoutPanelDayUIDay.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18F));
             this.tableLayoutPanelDayUIDay.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18F));
-            this.tableLayoutPanelDayUIDay.Size = new System.Drawing.Size(56, 168);
+            this.tableLayoutPanelDayUIDay.Size = new System.Drawing.Size(56, 169);
             this.tableLayoutPanelDayUIDay.TabIndex = 0;
             // 
             // labelDayUIDay5
@@ -134,7 +133,7 @@
             this.labelDayUIDay5.Location = new System.Drawing.Point(0, 137);
             this.labelDayUIDay5.Margin = new System.Windows.Forms.Padding(0);
             this.labelDayUIDay5.Name = "labelDayUIDay5";
-            this.labelDayUIDay5.Size = new System.Drawing.Size(56, 31);
+            this.labelDayUIDay5.Size = new System.Drawing.Size(56, 32);
             this.labelDayUIDay5.TabIndex = 4;
             this.labelDayUIDay5.Text = "27";
             this.labelDayUIDay5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -202,10 +201,10 @@
             this.panelDayUIChange.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelDayUIChange.Controls.Add(this.buttonDayUIChange);
             this.panelDayUIChange.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDayUIChange.Location = new System.Drawing.Point(0, 0);
-            this.panelDayUIChange.Margin = new System.Windows.Forms.Padding(0);
+            this.panelDayUIChange.Location = new System.Drawing.Point(1, 1);
+            this.panelDayUIChange.Margin = new System.Windows.Forms.Padding(1);
             this.panelDayUIChange.Name = "panelDayUIChange";
-            this.panelDayUIChange.Size = new System.Drawing.Size(58, 28);
+            this.panelDayUIChange.Size = new System.Drawing.Size(54, 26);
             this.panelDayUIChange.TabIndex = 7;
             // 
             // buttonDayUIChange
@@ -216,7 +215,7 @@
             this.buttonDayUIChange.Location = new System.Drawing.Point(0, 0);
             this.buttonDayUIChange.Margin = new System.Windows.Forms.Padding(0);
             this.buttonDayUIChange.Name = "buttonDayUIChange";
-            this.buttonDayUIChange.Size = new System.Drawing.Size(56, 26);
+            this.buttonDayUIChange.Size = new System.Drawing.Size(52, 24);
             this.buttonDayUIChange.TabIndex = 0;
             this.buttonDayUIChange.UseVisualStyleBackColor = true;
             // 
@@ -224,10 +223,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.tableLayoutPanelDayUITool);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "DayUITool";
-            this.Size = new System.Drawing.Size(58, 284);
+            this.Size = new System.Drawing.Size(56, 282);
             this.tableLayoutPanelDayUITool.ResumeLayout(false);
             this.panelDayUIDay.ResumeLayout(false);
             this.tableLayoutPanelDayUIDay.ResumeLayout(false);
