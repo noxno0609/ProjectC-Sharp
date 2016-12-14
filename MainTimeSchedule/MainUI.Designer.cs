@@ -144,7 +144,6 @@
             // 
             // weekUIMain
             // 
-            this.weekUIMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.weekUIMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.weekUIMain.Location = new System.Drawing.Point(137, 0);
             this.weekUIMain.Margin = new System.Windows.Forms.Padding(0);

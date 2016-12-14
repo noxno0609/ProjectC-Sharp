@@ -59,10 +59,10 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.buttonswitch);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(0);
+            this.panel2.Location = new System.Drawing.Point(1, 1);
+            this.panel2.Margin = new System.Windows.Forms.Padding(1);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(181, 40);
+            this.panel2.Size = new System.Drawing.Size(179, 38);
             this.panel2.TabIndex = 1;
             // 
             // buttonswitch
@@ -73,13 +73,12 @@
             this.buttonswitch.Location = new System.Drawing.Point(0, 0);
             this.buttonswitch.Margin = new System.Windows.Forms.Padding(0);
             this.buttonswitch.Name = "buttonswitch";
-            this.buttonswitch.Size = new System.Drawing.Size(179, 38);
+            this.buttonswitch.Size = new System.Drawing.Size(177, 36);
             this.buttonswitch.TabIndex = 0;
             this.buttonswitch.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.tableLayoutPanel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 40);
@@ -122,7 +121,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.166668F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.166668F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.166668F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(179, 359);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(181, 361);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // WeekUITool

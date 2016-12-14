@@ -45,16 +45,17 @@
             this.weekUIContentBone.Controls.Add(this.weekUITool, 0, 0);
             this.weekUIContentBone.Controls.Add(this.weekUISche, 1, 0);
             this.weekUIContentBone.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.weekUIContentBone.Location = new System.Drawing.Point(0, 23);
+            this.weekUIContentBone.Location = new System.Drawing.Point(1, 25);
             this.weekUIContentBone.Margin = new System.Windows.Forms.Padding(0);
             this.weekUIContentBone.Name = "weekUIContentBone";
             this.weekUIContentBone.RowCount = 1;
             this.weekUIContentBone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.weekUIContentBone.Size = new System.Drawing.Size(498, 313);
+            this.weekUIContentBone.Size = new System.Drawing.Size(498, 312);
             this.weekUIContentBone.TabIndex = 0;
             // 
             // weekUITopBone
             // 
+            this.weekUITopBone.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.weekUITopBone.ColumnCount = 1;
             this.weekUITopBone.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.weekUITopBone.Controls.Add(this.weekUIContentBone, 0, 1);
@@ -66,16 +67,17 @@
             this.weekUITopBone.RowCount = 2;
             this.weekUITopBone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
             this.weekUITopBone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 93F));
-            this.weekUITopBone.Size = new System.Drawing.Size(498, 336);
+            this.weekUITopBone.Size = new System.Drawing.Size(500, 338);
             this.weekUITopBone.TabIndex = 1;
             // 
             // weekUITool
             // 
+            this.weekUITool.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.weekUITool.Dock = System.Windows.Forms.DockStyle.Fill;
             this.weekUITool.Location = new System.Drawing.Point(0, 0);
             this.weekUITool.Margin = new System.Windows.Forms.Padding(0);
             this.weekUITool.Name = "weekUITool";
-            this.weekUITool.Size = new System.Drawing.Size(49, 313);
+            this.weekUITool.Size = new System.Drawing.Size(49, 312);
             this.weekUITool.TabIndex = 0;
             // 
             // weekUISche
@@ -84,13 +86,14 @@
             this.weekUISche.Location = new System.Drawing.Point(49, 0);
             this.weekUISche.Margin = new System.Windows.Forms.Padding(0);
             this.weekUISche.Name = "weekUISche";
-            this.weekUISche.Size = new System.Drawing.Size(449, 313);
+            this.weekUISche.Size = new System.Drawing.Size(449, 312);
             this.weekUISche.TabIndex = 1;
             // 
             // weekUITop
             // 
+            this.weekUITop.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.weekUITop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.weekUITop.Location = new System.Drawing.Point(0, 0);
+            this.weekUITop.Location = new System.Drawing.Point(1, 1);
             this.weekUITop.Margin = new System.Windows.Forms.Padding(0);
             this.weekUITop.Name = "weekUITop";
             this.weekUITop.Size = new System.Drawing.Size(498, 23);
@@ -100,11 +103,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.weekUITopBone);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "WeekUIMain";
-            this.Size = new System.Drawing.Size(498, 336);
+            this.Size = new System.Drawing.Size(500, 338);
             this.weekUIContentBone.ResumeLayout(false);
             this.weekUITopBone.ResumeLayout(false);
             this.ResumeLayout(false);

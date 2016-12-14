@@ -52,7 +52,7 @@
             this.tableLayoutPanelDayUISche.RowCount = 2;
             this.tableLayoutPanelDayUISche.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanelDayUISche.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tableLayoutPanelDayUISche.Size = new System.Drawing.Size(577, 306);
+            this.tableLayoutPanelDayUISche.Size = new System.Drawing.Size(579, 308);
             this.tableLayoutPanelDayUISche.TabIndex = 0;
             // 
             // panelContent
@@ -63,7 +63,7 @@
             this.panelContent.Location = new System.Drawing.Point(0, 30);
             this.panelContent.Margin = new System.Windows.Forms.Padding(0);
             this.panelContent.Name = "panelContent";
-            this.panelContent.Size = new System.Drawing.Size(577, 276);
+            this.panelContent.Size = new System.Drawing.Size(579, 278);
             this.panelContent.TabIndex = 0;
             // 
             // tableLayoutPanelContent
@@ -100,7 +100,7 @@
             this.tableLayoutPanelContent.RowCount = 1;
             this.tableLayoutPanelContent.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanelContent.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 274F));
-            this.tableLayoutPanelContent.Size = new System.Drawing.Size(575, 274);
+            this.tableLayoutPanelContent.Size = new System.Drawing.Size(577, 276);
             this.tableLayoutPanelContent.TabIndex = 0;
             // 
             // panelHour
@@ -111,7 +111,7 @@
             this.panelHour.Location = new System.Drawing.Point(0, 0);
             this.panelHour.Margin = new System.Windows.Forms.Padding(0);
             this.panelHour.Name = "panelHour";
-            this.panelHour.Size = new System.Drawing.Size(577, 30);
+            this.panelHour.Size = new System.Drawing.Size(579, 30);
             this.panelHour.TabIndex = 1;
             // 
             // tableLayoutPanelHour
@@ -148,18 +148,17 @@
             this.tableLayoutPanelHour.RowCount = 1;
             this.tableLayoutPanelHour.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanelHour.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tableLayoutPanelHour.Size = new System.Drawing.Size(575, 28);
+            this.tableLayoutPanelHour.Size = new System.Drawing.Size(577, 28);
             this.tableLayoutPanelHour.TabIndex = 0;
             // 
             // DayUISche
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.tableLayoutPanelDayUISche);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "DayUISche";
-            this.Size = new System.Drawing.Size(577, 306);
+            this.Size = new System.Drawing.Size(579, 308);
             this.tableLayoutPanelDayUISche.ResumeLayout(false);
             this.panelContent.ResumeLayout(false);
             this.panelHour.ResumeLayout(false);
