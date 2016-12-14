@@ -32,34 +32,15 @@ namespace WindowsFormsApplication1.DayUI.Ingredient
         {
             int z = checkday(daypicked);
             if (z == 1)
-                buttonDayUIDaynow.Text = Get_Day(daypicked) + "/" + Get_Month(daypicked) + "/ " + Get_Year(daypicked);
+                buttonDayUIDaynow.Text = daypicked.Day + "/" + daypicked.Month + "/" + daypicked.Year;
             if (z == 2)
-                buttonDayUIDaynow.Text = Get_Day(daypicked) + "/" + Get_Month(daypicked);
-            if(z==0)
-                buttonDayUIDaynow.Text = Get_Day(daypicked);
-            labelDayUIDay1.Text = Get_Day(daypicked.AddDays(2));
-            labelDayUIDay2.Text = Get_Day(daypicked.AddDays(1));
-            labelDayUIDay4.Text = Get_Day(daypicked.AddDays(-1));
-            labelDayUIDay5.Text = Get_Day(daypicked.AddDays(-2));
-
-        }
-        public string Get_Day(DateTime a)
-        {
-            string str = a.ToString().Trim();
-            str = str.Substring(0, 2);
-            return str;
-        }
-        public string Get_Month(DateTime a)
-        {
-            string str = a.ToString().Trim();
-            str = str.Substring(3, 2);
-            return str;
-        }
-        public string Get_Year(DateTime a)
-        {
-            string str = a.ToString().Trim();
-            str = str.Substring(6, 4);
-            return str;
+                buttonDayUIDaynow.Text = daypicked.Day + "/" + daypicked.Month;
+            if (z == 0)
+                buttonDayUIDaynow.Text = Convert.ToString(daypicked.Day);
+            labelDayUIDay1.Text = Convert.ToString(daypicked.AddDays(2).Day);
+            labelDayUIDay2.Text = Convert.ToString(daypicked.AddDays(1).Day);
+            labelDayUIDay4.Text = Convert.ToString(daypicked.AddDays(-1).Day);
+            labelDayUIDay5.Text = Convert.ToString(daypicked.AddDays(-2).Day);
         }
         private void buttonUp_click(object sender, EventArgs e)
         {
@@ -73,9 +54,9 @@ namespace WindowsFormsApplication1.DayUI.Ingredient
         }
         public int checkday(DateTime a)
         {
-            int d = Convert.ToInt32(Get_Day(daypicked));
-            int m = Convert.ToInt32(Get_Month(daypicked));
-            int y = Convert.ToInt32(Get_Year(daypicked));
+            int d = Convert.ToInt32(daypicked.Day);
+            int m = Convert.ToInt32(daypicked.Month);
+            int y = Convert.ToInt32(daypicked.Year);
             if (d == 1)
             {
                 if (m == 1)
