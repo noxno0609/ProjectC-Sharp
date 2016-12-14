@@ -30,17 +30,33 @@ namespace WindowsFormsApplication1.DayUI.Ingredient
         }
         public void Updateday()
         {
-            int z = checkday(daypicked);
+            buttonDayUIDaynow.Text = formatcontentlabel(daypicked);
+            labelDayUIDay1.Text = formatcontentlabel(daypicked.AddDays(2));
+            labelDayUIDay2.Text = formatcontentlabel(daypicked.AddDays(1));
+            labelDayUIDay4.Text = formatcontentlabel(daypicked.AddDays(-1));
+            labelDayUIDay5.Text = formatcontentlabel(daypicked.AddDays(-2)); 
+        }
+        public string formatcontentlabel(DateTime a)
+        {
+            int z = checkday(a);
             if (z == 1)
-                buttonDayUIDaynow.Text = daypicked.Day + "/" + daypicked.Month + "/" + daypicked.Year;
+                return a.Day.ToString("00") + "/" + a.Month.ToString("00") + "\n" + a.Year.ToString("0000");
             if (z == 2)
-                buttonDayUIDaynow.Text = daypicked.Day + "/" + daypicked.Month;
-            if (z == 0)
-                buttonDayUIDaynow.Text = Convert.ToString(daypicked.Day);
-            labelDayUIDay1.Text = Convert.ToString(daypicked.AddDays(2).Day);
-            labelDayUIDay2.Text = Convert.ToString(daypicked.AddDays(1).Day);
-            labelDayUIDay4.Text = Convert.ToString(daypicked.AddDays(-1).Day);
-            labelDayUIDay5.Text = Convert.ToString(daypicked.AddDays(-2).Day);
+                return a.Day.ToString("00") + "/" + a.Month.ToString("00");
+            return a.Day.ToString("00");
+        }
+        public int checkday(DateTime a)
+        {
+            int d = a.Day;
+            int m = a.Month;
+            int y = a.Year;
+            if (d == 1)
+            {
+                if (m == 1)
+                    return 1;
+                return 2;
+            }
+            return 0;
         }
         private void buttonUp_click(object sender, EventArgs e)
         {
@@ -51,19 +67,6 @@ namespace WindowsFormsApplication1.DayUI.Ingredient
         {
             daypicked = daypicked.AddDays(-1);
             Updateday();
-        }
-        public int checkday(DateTime a)
-        {
-            int d = Convert.ToInt32(daypicked.Day);
-            int m = Convert.ToInt32(daypicked.Month);
-            int y = Convert.ToInt32(daypicked.Year);
-            if (d == 1)
-            {
-                if (m == 1)
-                    return 1;
-                return 2;
-            }
-            return 0;
         }
         private void buttonDayUIDaynow_Click(object sender, EventArgs e)
         {
