@@ -20,5 +20,21 @@ namespace SQLCommon
 
             return year + "-" + month + "-" + day + " " + hour + ":" + minute + ":" + second;
         }
+
+        public static DateTime formatTime(string time)
+        {
+            DateTime datetime = new DateTime();
+
+            string[] timesplit = time.Split(':');
+            int hour = Convert.ToInt32(timesplit[0]);
+            int minute = Convert.ToInt32(timesplit[1]);
+            int second = Convert.ToInt32(timesplit[2]);
+
+            TimeSpan timetemp = new TimeSpan(hour, minute, second);
+
+            datetime = datetime.Date + timetemp;
+
+            return datetime;
+        }
     }
 }
