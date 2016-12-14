@@ -52,7 +52,6 @@
             // 
             // dayUISche
             // 
-            this.dayUISche.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.dayUISche.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dayUISche.Location = new System.Drawing.Point(51, 0);
             this.dayUISche.Margin = new System.Windows.Forms.Padding(0);
