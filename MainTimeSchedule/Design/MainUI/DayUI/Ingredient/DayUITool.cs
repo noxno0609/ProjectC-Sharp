@@ -20,7 +20,7 @@ namespace WindowsFormsApplication1.DayUI.Ingredient
             get { return buttonDayUIChange; }
         }
         public DateTime daypicked = DateTime.Now;
-        DateTimePicker selectday = new DateTimePicker();
+        MonthCalendar selectday = new MonthCalendar();
         public DayUITool()
         {
             InitializeComponent();
@@ -30,7 +30,13 @@ namespace WindowsFormsApplication1.DayUI.Ingredient
         }
         public void Updateday()
         {
-            buttonDayUIDaynow.Text = Get_Day(daypicked) + "/" + Get_Month(daypicked);
+            int z = checkday(daypicked);
+            if (z == 1)
+                buttonDayUIDaynow.Text = Get_Day(daypicked) + "/" + Get_Month(daypicked) + "/" + Get_Year(daypicked);
+            if (z == 2)
+                buttonDayUIDaynow.Text = Get_Day(daypicked) + "/" + Get_Month(daypicked);
+            if(z==0)
+                buttonDayUIDaynow.Text = Get_Day(daypicked);
             labelDayUIDay1.Text = Get_Day(daypicked.AddDays(2));
             labelDayUIDay2.Text = Get_Day(daypicked.AddDays(1));
             labelDayUIDay4.Text = Get_Day(daypicked.AddDays(-1));
@@ -49,6 +55,12 @@ namespace WindowsFormsApplication1.DayUI.Ingredient
             str = str.Substring(3, 2);
             return str;
         }
+        public string Get_Year(DateTime a)
+        {
+            string str = a.ToString().Trim();
+            str = str.Substring(6, 4);
+            return str;
+        }
         private void buttonUp_click(object sender, EventArgs e)
         {
             daypicked = daypicked.AddDays(1);
@@ -59,10 +71,24 @@ namespace WindowsFormsApplication1.DayUI.Ingredient
             daypicked = daypicked.AddDays(-1);
             Updateday();
         }
-
+        public int checkday(DateTime a)
+        {
+            int d = Convert.ToInt32(Get_Day(daypicked));
+            int m = Convert.ToInt32(Get_Month(daypicked));
+            int y = Convert.ToInt32(Get_Year(daypicked));
+            if (d == 1)
+            {
+                if (m == 1)
+                    return 1;
+                return 2;
+            }
+            return 0;
+        }
         private void buttonDayUIDaynow_Click(object sender, EventArgs e)
         {
-            
+
         }
-    }        
-}
+        
+    }
+}   
+
