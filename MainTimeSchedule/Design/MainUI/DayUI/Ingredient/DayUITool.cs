@@ -32,7 +32,7 @@ namespace WindowsFormsApplication1.DayUI.Ingredient
         {
             int z = checkday(daypicked);
             if (z == 1)
-                buttonDayUIDaynow.Text = Get_Day(daypicked) + "/" + Get_Month(daypicked) + "/" + Get_Year(daypicked);
+                buttonDayUIDaynow.Text = Get_Day(daypicked) + "/" + Get_Month(daypicked) + "/ " + Get_Year(daypicked);
             if (z == 2)
                 buttonDayUIDaynow.Text = Get_Day(daypicked) + "/" + Get_Month(daypicked);
             if(z==0)
