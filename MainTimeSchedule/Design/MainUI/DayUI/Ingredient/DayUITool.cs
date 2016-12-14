@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
+using MainTimeSchedule;
 
 namespace WindowsFormsApplication1.DayUI.Ingredient
 {
@@ -19,72 +20,49 @@ namespace WindowsFormsApplication1.DayUI.Ingredient
             get { return buttonDayUIChange; }
         }
         public DateTime daypicked = DateTime.Now;
+        DateTimePicker selectday = new DateTimePicker();
         public DayUITool()
         {
             InitializeComponent();
-            UpdateButtonDate();
+            Updateday();
             buttonDayUIUpDay.Click += new EventHandler(buttonUp_click);
             buttonDayUIDownDay.Click += new EventHandler(buttonDown_click);
         }
-        public void UpdateButtonDate()
+        public void Updateday()
         {
-            buttonDayUIDaynow.Text = Get_Day();
+            buttonDayUIDaynow.Text = Get_Day(daypicked) + "/" + Get_Month(daypicked);
+            labelDayUIDay1.Text = Get_Day(daypicked.AddDays(2));
+            labelDayUIDay2.Text = Get_Day(daypicked.AddDays(1));
+            labelDayUIDay4.Text = Get_Day(daypicked.AddDays(-1));
+            labelDayUIDay5.Text = Get_Day(daypicked.AddDays(-2));
+
         }
-        public string Get_Day()
+        public string Get_Day(DateTime a)
         {
-            string str = DateTime.Now.ToString().Trim();
+            string str = a.ToString().Trim();
             str = str.Substring(0, 2);
             return str;
         }
-        public string Get_Month()
+        public string Get_Month(DateTime a)
         {
-            string str = DateTime.Now.ToString().Trim();
+            string str = a.ToString().Trim();
             str = str.Substring(3, 2);
             return str;
         }
-        public string Get_Year()
-        {
-            string str = DateTime.Now.ToString().Trim();
-            str = str.Substring(6, 4);
-            return str;
-        }
-        public DateTime GetLastDayOfMonth(int year, int month )
-        {
-            DateTime aday = new DateTime(year,month,1);
-            DateTime retday = aday.AddMonths(1).AddDays(-1);
-            return retday;
-        }
-
         private void buttonUp_click(object sender, EventArgs e)
         {
-            int c = int.Parse(buttonDayUIDaynow.Text)+1;
-            int a = c-1;
-            int b = a-1;
-            int d = c+1;
-            int f =d+1;
-            buttonDayUIDaynow.Text = Convert.ToString(c);
-            labelDayUIDay1.Text = Convert.ToString(b);
-            labelDayUIDay2.Text = Convert.ToString(a);
-            labelDayUIDay4.Text = Convert.ToString(d);
-            labelDayUIDay5.Text = Convert.ToString(f);
-            //MessageBox.Show
-            //    (
-            //     GetLastDayOfMonth(Convert.ToInt32(Get_Year), Convert.ToInt32(month));
-            //    );
-
+            daypicked = daypicked.AddDays(1);
+            Updateday();
         }
         private void buttonDown_click(object sender, EventArgs e)
         {
-            int c = int.Parse(buttonDayUIDaynow.Text) - 1;
-            int a = c - 1;
-            int b = a - 1;
-            int d = c + 1;
-            int f = d + 1;
-            buttonDayUIDaynow.Text = Convert.ToString(c);
-            labelDayUIDay1.Text = Convert.ToString(b);
-            labelDayUIDay2.Text = Convert.ToString(a);
-            labelDayUIDay4.Text = Convert.ToString(d);
-            labelDayUIDay5.Text = Convert.ToString(f);
+            daypicked = daypicked.AddDays(-1);
+            Updateday();
         }
-    }
+
+        private void buttonDayUIDaynow_Click(object sender, EventArgs e)
+        {
+            
+        }
+    }        
 }

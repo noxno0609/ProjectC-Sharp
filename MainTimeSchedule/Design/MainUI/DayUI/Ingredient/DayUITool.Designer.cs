@@ -135,7 +135,6 @@
             this.labelDayUIDay5.Name = "labelDayUIDay5";
             this.labelDayUIDay5.Size = new System.Drawing.Size(56, 32);
             this.labelDayUIDay5.TabIndex = 4;
-            this.labelDayUIDay5.Text = "27";
             this.labelDayUIDay5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelDayUIDay4
@@ -149,7 +148,6 @@
             this.labelDayUIDay4.Name = "labelDayUIDay4";
             this.labelDayUIDay4.Size = new System.Drawing.Size(56, 30);
             this.labelDayUIDay4.TabIndex = 3;
-            this.labelDayUIDay4.Text = "26";
             this.labelDayUIDay4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelDayUIDay2
@@ -163,7 +161,6 @@
             this.labelDayUIDay2.Name = "labelDayUIDay2";
             this.labelDayUIDay2.Size = new System.Drawing.Size(56, 30);
             this.labelDayUIDay2.TabIndex = 1;
-            this.labelDayUIDay2.Text = "24";
             this.labelDayUIDay2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelDayUIDay1
@@ -177,7 +174,6 @@
             this.labelDayUIDay1.Name = "labelDayUIDay1";
             this.labelDayUIDay1.Size = new System.Drawing.Size(56, 30);
             this.labelDayUIDay1.TabIndex = 0;
-            this.labelDayUIDay1.Text = "23";
             this.labelDayUIDay1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // buttonDayUIDaynow
@@ -193,8 +189,8 @@
             this.buttonDayUIDaynow.Name = "buttonDayUIDaynow";
             this.buttonDayUIDaynow.Size = new System.Drawing.Size(56, 47);
             this.buttonDayUIDaynow.TabIndex = 5;
-            this.buttonDayUIDaynow.Text = "25";
             this.buttonDayUIDaynow.UseVisualStyleBackColor = true;
+            this.buttonDayUIDaynow.Click += new System.EventHandler(this.buttonDayUIDaynow_Click);
             // 
             // panelDayUIChange
             // 
