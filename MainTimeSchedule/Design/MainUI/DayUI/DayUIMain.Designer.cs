@@ -47,17 +47,17 @@
             this.tableLayoutPanelDayUI.Name = "tableLayoutPanelDayUI";
             this.tableLayoutPanelDayUI.RowCount = 1;
             this.tableLayoutPanelDayUI.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelDayUI.Size = new System.Drawing.Size(550, 276);
+            this.tableLayoutPanelDayUI.Size = new System.Drawing.Size(508, 270);
             this.tableLayoutPanelDayUI.TabIndex = 1;
             // 
             // dayUISche
             // 
             this.dayUISche.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.dayUISche.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dayUISche.Location = new System.Drawing.Point(55, 0);
+            this.dayUISche.Location = new System.Drawing.Point(50, 0);
             this.dayUISche.Margin = new System.Windows.Forms.Padding(0);
             this.dayUISche.Name = "dayUISche";
-            this.dayUISche.Size = new System.Drawing.Size(495, 276);
+            this.dayUISche.Size = new System.Drawing.Size(458, 270);
             this.dayUISche.TabIndex = 1;
             // 
             // dayUITool
@@ -66,7 +66,7 @@
             this.dayUITool.Location = new System.Drawing.Point(0, 0);
             this.dayUITool.Margin = new System.Windows.Forms.Padding(0);
             this.dayUITool.Name = "dayUITool";
-            this.dayUITool.Size = new System.Drawing.Size(55, 276);
+            this.dayUITool.Size = new System.Drawing.Size(50, 270);
             this.dayUITool.TabIndex = 2;
             // 
             // DayUIMain
@@ -77,7 +77,7 @@
             this.Controls.Add(this.tableLayoutPanelDayUI);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "DayUIMain";
-            this.Size = new System.Drawing.Size(550, 276);
+            this.Size = new System.Drawing.Size(508, 270);
             this.tableLayoutPanelDayUI.ResumeLayout(false);
             this.ResumeLayout(false);
 
