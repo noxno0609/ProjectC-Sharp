@@ -44,15 +44,18 @@ namespace TestSQL
             //SQLTS.TSSQL("Nam", 4, conn);
             //TSSQL.updateSQL("Nam", 4, conn);
 
-            TimeEventDTO dto = new TimeEventDTO();
-            dto.TimeEnd = DateTime.Now;
-            dto.TimeStart = DateTime.Now;
-            dto.DaySelect = DateTime.Now;
+            //TimeEventDTO dto = new TimeEventDTO();
+            //dto.TimeEnd = DateTime.Now;
+            //dto.TimeStart = DateTime.Now;
+            //dto.DaySelect = DateTime.Now;
 
-            int insertid = TimeEventDAO.insert(dto, conn);
+            //int insertid = TimeEventDAO.insert(dto, conn);
 
-            Console.WriteLine(insertid);
-
+            //Console.WriteLine(insertid);
+            Console.Write("nhap id: ");
+            int id = Convert.ToInt32(Console.ReadLine());
+            PeriodEventDTO dto = PeriodEventDAO.GetOneByID(id, conn);
+            Console.Write(dto.PE_ID + dto.Note + dto.DaySelect);
             Console.ReadKey();
         }
     }

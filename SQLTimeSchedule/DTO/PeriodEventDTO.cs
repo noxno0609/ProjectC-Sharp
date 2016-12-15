@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SQLCommon;
 
 namespace SQLTS
 {
@@ -15,6 +16,5 @@ namespace SQLTS
         public string DaySelect;
         public DateTime TimeStart;
         public DateTime TimeEnd;
-       
     }
 }
