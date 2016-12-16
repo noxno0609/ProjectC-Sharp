@@ -22,7 +22,7 @@ namespace TestSQL
             //MySqlCommand cmd = new MySqlCommand(sql, conn);
             //cmd.ExecuteNonQuery();
             
-            //Lấy một giá trị từ duy nhất
+            //Lấy một giá trị duy nhất
             //string sql = "SELECT NgayTruyCap FROM user WHERE ID = 1";
             //MySqlCommand cmd = new MySqlCommand(sql, conn);
             //DateTime dem = Convert.ToDateTime(cmd.ExecuteScalar());
@@ -52,10 +52,45 @@ namespace TestSQL
             //int insertid = TimeEventDAO.insert(dto, conn);
 
             //Console.WriteLine(insertid);
-            Console.Write("nhap id: ");
-            int id = Convert.ToInt32(Console.ReadLine());
-            TimeEventDTO dto = TimeEventDAO.GetOneByID(id, conn);
-            Console.Write(dto.PE_ID + dto.Note + dto.DaySelect);
+
+            //List<TimeEventDTO> list = TimeEventDAO.GetAllDTO(conn);
+            //foreach(TimeEventDTO dto in list)
+            //{
+            //    Console.WriteLine(dto.ID + " - " + dto.TimeStart + " - " + dto.TimeEnd);
+            //}
+
+            //for (DateTime date = DateStart; date.Date <= DateEnd; date = date.AddDays(1))
+            //{
+            //    if(date.DayOfWeek == "Monday" || date.DayOfWeek == "Wednesday")
+            //    {
+            //        TimeEventDTO dto = new TimeEventDTO();
+            //        dto.DaySelect = date;
+            //        dto.TimeStart = Peridod.TimeStart;
+            //        dto.TimeStart = PeriodEvent
+            //        dto.PE_ID = Period.ID
+            //    }
+            //}
+            //void UpdateDTO(dto, conn)
+
+                
+            //int result = cmd.ExcuteScalar();
+
+            //if(result == 0) return;
+
+            //dto
+            //    dto.TimeStart = "asdasd"
+            //    dto.TimeEnd = "asdasdas"
+
+            //UPDATE timeevent
+            //SET
+
+            //    TimeStart = dto.TimeStart;
+            //    TimeEnd = dto.TimeEnd;
+            //    DaySelect = dto.
+            //    Note = dto.
+            //WHERE TE_ID = dto.ID;
+
+
             Console.ReadKey();
         }
     }

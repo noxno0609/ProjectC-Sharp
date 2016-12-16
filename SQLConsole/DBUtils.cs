@@ -19,6 +19,7 @@ namespace TestSQL
             MySqlConnection conn = new MySqlConnection(connString);
             return conn;
         }
+
         public static void open(MySqlConnection conn)
         {
             conn.Open();
