@@ -22,20 +22,19 @@ namespace WindowsFormsApplication1
         public static void setNumberforTable(TableLayoutPanel table)
         {
             for(int i=0; i<table.ColumnCount; i++)
-            {
+            { 
                 string number = Convert.ToString(i+1);
-                TextBox textbox = new TextBox();
+                Label textbox = new Label();
                 textbox.Text = number;
-                textbox.TextAlign = HorizontalAlignment.Center;
+                textbox.TextAlign = ContentAlignment.MiddleCenter;
                 // textbox.FlatStyle = FlatStyle.System;
                 textbox.AutoSize = false;
                 textbox.BorderStyle = BorderStyle.FixedSingle;
                 textbox.Padding = new Padding(0);
                 textbox.Margin = new Padding(0);
                 textbox.Dock = DockStyle.Fill;
-                textbox.Padding = new Padding(0, textbox.Height / 2, 0, 0);
-                textbox.BackColor = Color.LightGray;
-                //textbox.TextAlign = ContentAlignment.MiddleCenter;
+                textbox.Padding = new Padding(0, textbox.Height/6, 0, 0);
+                //textbox.BackColor = Color.LightGray;
                 table.Controls.Add(textbox, i, 0);
 
             }
