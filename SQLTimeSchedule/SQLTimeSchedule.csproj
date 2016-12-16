@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\PeriodEventDAO\GetAllDTO.cs" />
     <Compile Include="DAO\PeriodEventDAO\GetOneDTOByID.cs" />
     <Compile Include="DAO\TimeEventDAO\GetAllDTO.cs" />
     <Compile Include="DAO\TimeEventDAO\GetOneDTOByID.cs" />
