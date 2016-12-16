@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using MainTimeSchedule;
+using MainTimeSchedule.Design.MainUI.DayUI.Ingredient;
 
 namespace WindowsFormsApplication1.DayUI.Ingredient
 {
@@ -20,7 +21,7 @@ namespace WindowsFormsApplication1.DayUI.Ingredient
             get { return buttonDayUIChange; }
         }
         public DateTime daypicked = DateTime.Now;
-        MonthCalendar selectday = new MonthCalendar();
+        DayCalenderPicker dayselect = new DayCalenderPicker();
         public DayUITool()
         {
             InitializeComponent();
@@ -70,9 +71,20 @@ namespace WindowsFormsApplication1.DayUI.Ingredient
         }
         private void buttonDayUIDaynow_Click(object sender, EventArgs e)
         {
-
+            dayselect.SelectionStart = daypicked;
+            dayselect.FormClosed += new FormClosedEventHandler(dayselect_FormClosed);
+            dayselect.Text = "Chọn ngày";
+            dayselect.ShowDialog();
         }
-        
+        private void dayselect_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            DayCalenderPicker dayselect = (DayCalenderPicker)sender;
+            if (dayselect.DayPicked != DateTime.MinValue)
+            {
+                daypicked = dayselect.DayPicked;
+                Updateday();
+            }
+        }
     }
 }   
 
