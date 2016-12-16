@@ -12,22 +12,25 @@ namespace SQLTS
 {
     public partial class TimeEventDAO 
     {
-        public static TimeEventDTO GetOneByID(int id, MySqlConnection conn)
+        public static TimeEventDTO GetOneDTOByID(int id, MySqlConnection conn)
         {
             TimeEventDTO dto = new TimeEventDTO();
             conn.Open();
-            string sql = "SELECT * FROM TimeEvent WHERE PE_ID = " + id;
+            string sql = "SELECT * FROM TimeEvent WHERE TE_ID = " + id;
             MySqlDataAdapter adapter = new MySqlDataAdapter(sql, conn);
             DataTable dt = new DataTable();
             adapter.Fill(dt);
             DataRow dr = dt.Rows[0];
-            dto.PE_ID = Convert.ToInt32(dr["PE_ID"]);
-            dto.TimeStart = SQLFormat.formatTime(dr["TimeStart"].ToString());
-            dto.TimeEnd = SQLFormat.formatTime(dr["TimeEnd"].ToString());
-            dto.DaySelect = SQLFormat.formatTime(dr["Dayselect"].ToString());
+
+            dto.ID = Convert.ToInt32(dr["TE_ID"]);
+            dto.TimeStart = SQLFormat.formatTime(Convert.ToString(dr["TimeStart"]));
+            dto.TimeEnd = SQLFormat.formatTime(Convert.ToString(dr["TimeEnd"]));
+            dto.DaySelect = Convert.ToDateTime(dr["Dayselect"]);
             dto.Note = Convert.ToString(dr["Note"]);
+            dto.PE_ID = Convert.ToInt32(dr["PE_ID"]);
 
             conn.Close();
+
             return dto;
         }
     }

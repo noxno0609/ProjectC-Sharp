@@ -10,7 +10,7 @@ namespace SQLTS
 {
     public partial class TimeEventDAO
     {
-        public static int insert(TimeEventDTO dto, MySqlConnection conn)
+        public static int Insert(TimeEventDTO dto, MySqlConnection conn)
         {
             conn.Open();
             string sql = String.Format(@"INSERT INTO TimeEvent (PE_ID, Note, TimeStart, TimeEnd, DaySelect)

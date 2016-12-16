@@ -7,7 +7,7 @@ using SQLCommon;
 
 namespace SQLTS
 {
-    public class TimeEventDTO
+    public class TimeEventDTO //Data Transfer Object
     {
         public int ID;
         public int PE_ID;

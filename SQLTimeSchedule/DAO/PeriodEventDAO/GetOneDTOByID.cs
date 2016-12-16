@@ -12,7 +12,7 @@ namespace SQLTS
 {
     public partial class PeriodEventDAO 
     {
-        public static PeriodEventDTO GetOneByID(int id, MySqlConnection conn)
+        public static PeriodEventDTO GetOneDTOByID(int id, MySqlConnection conn)
         {   
             PeriodEventDTO dto = new PeriodEventDTO();
             conn.Open();
@@ -22,7 +22,7 @@ namespace SQLTS
             adapter.Fill(dt);
 
             DataRow dr = dt.Rows[0];
-            dto.PE_ID = Convert.ToInt32(dr["PE_ID"]);
+            dto.ID = Convert.ToInt32(dr["PE_ID"]);
             dto.DateStart = Convert.ToDateTime(dr["DayStart"]);
             dto.DateEnd = Convert.ToDateTime(dr["DayEnd"]);
             dto.TimeStart = SQLFormat.formatTime(dr["TimeStart"].ToString());
