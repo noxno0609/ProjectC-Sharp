@@ -18,7 +18,7 @@ namespace MainTimeSchedule.Design.ToolBarUI
             InitializeComponent();
         }
 
-        private void buttondelete_Click(object sender, EventArgs e)
+        private void buttonxem_Click(object sender, EventArgs e)
         {
             EditPeriodUIMain frm = new EditPeriodUIMain();
             frm.ShowDialog();
