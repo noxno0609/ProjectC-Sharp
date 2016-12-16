@@ -54,7 +54,7 @@ namespace TestSQL
             //Console.WriteLine(insertid);
             Console.Write("nhap id: ");
             int id = Convert.ToInt32(Console.ReadLine());
-            PeriodEventDTO dto = PeriodEventDAO.GetOneByID(id, conn);
+            TimeEventDTO dto = TimeEventDAO.GetOneByID(id, conn);
             Console.Write(dto.PE_ID + dto.Note + dto.DaySelect);
             Console.ReadKey();
         }
