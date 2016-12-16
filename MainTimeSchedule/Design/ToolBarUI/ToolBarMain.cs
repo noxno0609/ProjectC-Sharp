@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TSProject.Design.EditEvent;
 
 namespace MainTimeSchedule.Design.ToolBarUI
 {
@@ -15,6 +16,12 @@ namespace MainTimeSchedule.Design.ToolBarUI
         public ToolBarMain()
         {
             InitializeComponent();
+        }
+
+        private void buttondelete_Click(object sender, EventArgs e)
+        {
+            EditPeriodUIMain frm = new EditPeriodUIMain();
+            frm.ShowDialog();
         }
     }
 }

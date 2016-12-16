@@ -98,6 +98,7 @@
             this.button3.TabIndex = 0;
             this.button3.Text = "Đóng";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // weekEventUI1
             // 
@@ -108,13 +109,13 @@
             this.weekEventUI1.Size = new System.Drawing.Size(661, 332);
             this.weekEventUI1.TabIndex = 1;
             // 
-            // WeekEventMain
+            // EditPeriodUIMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(661, 382);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "WeekEventMain";
+            this.Name = "EditPeriodUIMain";
             this.Text = "Sửa sự kiện";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
