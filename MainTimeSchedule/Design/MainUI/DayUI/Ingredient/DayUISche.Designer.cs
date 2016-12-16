@@ -99,7 +99,7 @@
             this.tableLayoutPanelContent.Name = "tableLayoutPanelContent";
             this.tableLayoutPanelContent.RowCount = 1;
             this.tableLayoutPanelContent.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelContent.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 274F));
+            this.tableLayoutPanelContent.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 276F));
             this.tableLayoutPanelContent.Size = new System.Drawing.Size(577, 276);
             this.tableLayoutPanelContent.TabIndex = 0;
             // 
@@ -150,6 +150,7 @@
             this.tableLayoutPanelHour.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.tableLayoutPanelHour.Size = new System.Drawing.Size(577, 28);
             this.tableLayoutPanelHour.TabIndex = 0;
+            this.tableLayoutPanelHour.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanelHour_Paint);
             // 
             // DayUISche
             // 

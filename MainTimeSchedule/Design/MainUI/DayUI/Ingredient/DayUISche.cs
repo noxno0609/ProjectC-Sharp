@@ -15,7 +15,7 @@ namespace WindowsFormsApplication1
         public DayUISche()
         {
             InitializeComponent();
-            ///setNumberforTable(this.tableLayoutPanel1);
+            setNumberforTable(tableLayoutPanelHour);
             
         }
 
@@ -34,9 +34,16 @@ namespace WindowsFormsApplication1
                 textbox.Margin = new Padding(0);
                 textbox.Dock = DockStyle.Fill;
                 textbox.Padding = new Padding(0, textbox.Height / 2, 0, 0);
+                textbox.BackColor = Color.LightGray;
                 //textbox.TextAlign = ContentAlignment.MiddleCenter;
                 table.Controls.Add(textbox, i, 0);
+
             }
+        }
+
+        private void tableLayoutPanelHour_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
