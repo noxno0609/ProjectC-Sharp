@@ -2,3 +2,8 @@ C:\Users\BenX\Desktop\ProjectC#\Common\Library\SQLTS.dll
 C:\Users\BenX\Desktop\ProjectC#\Common\Library\SQLTS.pdb
 C:\Users\BenX\Desktop\ProjectC#\SQLTimeSchedule\obj\Debug\SQLTS.dll
 C:\Users\BenX\Desktop\ProjectC#\SQLTimeSchedule\obj\Debug\SQLTS.pdb
+C:\Users\Ankh\Desktop\ProjectC-Sharp\Common\Library\SQLTS.dll
+C:\Users\Ankh\Desktop\ProjectC-Sharp\Common\Library\SQLTS.pdb
+C:\Users\Ankh\Desktop\ProjectC-Sharp\SQLTimeSchedule\obj\Debug\SQLTS.dll
+C:\Users\Ankh\Desktop\ProjectC-Sharp\SQLTimeSchedule\obj\Debug\SQLTS.pdb
+C:\Users\Ankh\Desktop\ProjectC-Sharp\SQLTimeSchedule\obj\Debug\SQLTimeSchedule.csprojResolveAssemblyReference.cache
