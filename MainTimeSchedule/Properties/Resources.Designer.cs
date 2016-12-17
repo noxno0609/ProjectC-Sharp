@@ -123,9 +123,39 @@ namespace MainTimeSchedule.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap daytimefullstick {
+            get {
+                object obj = ResourceManager.GetObject("daytimefullstick", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap daytimeleftstick {
+            get {
+                object obj = ResourceManager.GetObject("daytimeleftstick", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap daytimeonestick {
             get {
                 object obj = ResourceManager.GetObject("daytimeonestick", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap daytimerightstick {
+            get {
+                object obj = ResourceManager.GetObject("daytimerightstick", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +183,39 @@ namespace MainTimeSchedule.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap weektimedownstick {
+            get {
+                object obj = ResourceManager.GetObject("weektimedownstick", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap weektimefullstick {
+            get {
+                object obj = ResourceManager.GetObject("weektimefullstick", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap weektimeonestick {
             get {
                 object obj = ResourceManager.GetObject("weektimeonestick", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap weektimeupstick {
+            get {
+                object obj = ResourceManager.GetObject("weektimeupstick", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
