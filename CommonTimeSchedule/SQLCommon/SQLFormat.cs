@@ -36,5 +36,31 @@ namespace SQLCommon
 
             return datetime;
         }
+
+        public static List<DayOfWeek> formatDaySelect(string dayselect)
+        {
+            if (dayselect.Length != 7) return null;
+
+            List<DayOfWeek> listDay = new List<DayOfWeek>();
+            for(int i=0; i<dayselect.Length; i++)
+            {
+                if(dayselect[i] == '1')
+                {
+                    DayOfWeek day = new DayOfWeek();
+                    switch(i)
+                    {
+                        case 0: { day = DayOfWeek.Monday; break; }
+                        case 1: { day = DayOfWeek.Tuesday; break; }
+                        case 2: { day = DayOfWeek.Wednesday; break; }
+                        case 3: { day = DayOfWeek.Thursday; break; }
+                        case 4: { day = DayOfWeek.Friday; break; }
+                        case 5: { day = DayOfWeek.Saturday; break; }
+                        case 6: { day = DayOfWeek.Sunday; break; }
+                    }
+                    listDay.Add(day);
+                }
+            }
+            return listDay;
+        }
     }
 }
