@@ -23,8 +23,8 @@ namespace SQLTS
 
             DataRow dr = dt.Rows[0];
             dto.ID = Convert.ToInt32(dr["PE_ID"]);
-            dto.DateStart = Convert.ToDateTime(dr["DayStart"]);
-            dto.DateEnd = Convert.ToDateTime(dr["DayEnd"]);
+            dto.DateStart = Convert.ToDateTime(dr["DateStart"]);
+            dto.DateEnd = Convert.ToDateTime(dr["DateEnd"]);
             dto.TimeStart = SQLFormat.formatTime(dr["TimeStart"].ToString());
             dto.TimeEnd = SQLFormat.formatTime(dr["TimeEnd"].ToString());
             dto.DaySelect = Convert.ToString(dr["Dayselect"]);
