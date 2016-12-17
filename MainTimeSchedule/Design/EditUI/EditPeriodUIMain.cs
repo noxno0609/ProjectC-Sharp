@@ -24,9 +24,9 @@ namespace TSProject.Design.EditEvent
 
         private void button3_Click(object sender, EventArgs e)
         { 
-            DialogResult answer;
-            answer = MessageBox.Show("Bạn muốn đóng bảng sửa?", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (answer == DialogResult.OK)
+            //DialogResult answer;
+            //answer = MessageBox.Show("Bạn muốn đóng bảng sửa?", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            //if (answer == DialogResult.OK)
                 Close();
         }
     }

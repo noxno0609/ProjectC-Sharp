@@ -48,7 +48,7 @@
             this.buttonOK.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonOK.Location = new System.Drawing.Point(491, 377);
             this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(116, 32);
+            this.buttonOK.Size = new System.Drawing.Size(116, 31);
             this.buttonOK.TabIndex = 2;
             this.buttonOK.Text = "Thêm";
             this.buttonOK.UseVisualStyleBackColor = true;
@@ -60,7 +60,7 @@
             this.buttonCancel.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCancel.Location = new System.Drawing.Point(613, 377);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(118, 32);
+            this.buttonCancel.Size = new System.Drawing.Size(118, 31);
             this.buttonCancel.TabIndex = 2;
             this.buttonCancel.Text = "Thoát";
             this.buttonCancel.UseVisualStyleBackColor = true;
@@ -144,7 +144,7 @@
             this.editbone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.editbone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.editbone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.editbone.Size = new System.Drawing.Size(734, 412);
+            this.editbone.Size = new System.Drawing.Size(734, 411);
             this.editbone.TabIndex = 0;
             // 
             // panelcontrol
@@ -205,13 +205,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(734, 412);
+            this.ClientSize = new System.Drawing.Size(734, 411);
             this.Controls.Add(this.editbone);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(750, 450);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(750, 450);
             this.Name = "AddUIMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm mốc/sự kiện";
             this.editbone.ResumeLayout(false);
             this.selectpanelcontrol.ResumeLayout(false);
