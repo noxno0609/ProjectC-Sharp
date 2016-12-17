@@ -29,7 +29,7 @@ namespace TSProject.Design.WeekUI.Ingredient
                contentbone.Controls.Add(timepanel, 0, i);
 
                int timepos = i;
-               if(timepos == 0 || timepos == 6 || timepos == 12 || timepos == 18 || timepos == 24)
+               if(timepos == 0 || timepos == 12 || timepos == 24)
                {
                    Label label = new Label();
                    label.Text = timepos.ToString();

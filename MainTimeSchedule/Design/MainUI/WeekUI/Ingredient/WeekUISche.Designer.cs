@@ -110,7 +110,6 @@
             // 
             // bordertopbone
             // 
-            this.bordertopbone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.bordertopbone.Controls.Add(this.topbone);
             this.bordertopbone.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bordertopbone.Location = new System.Drawing.Point(0, 0);
@@ -137,7 +136,7 @@
             this.topbone.RowCount = 1;
             this.topbone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.topbone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.topbone.Size = new System.Drawing.Size(581, 30);
+            this.topbone.Size = new System.Drawing.Size(583, 32);
             this.topbone.TabIndex = 1;
             // 
             // WeekUISche
