@@ -15,38 +15,35 @@ namespace WindowsFormsApplication1
         public DayUISche()
         {
             InitializeComponent();
-            setNumberforTable(tableLayoutPanelHour);
-            
+            setNumberforTable();
         }
 
-        public static void setNumberforTable(TableLayoutPanel table)
+        private  void setNumberforTable()
         {
-            for(int i=0; i<table.ColumnCount; i++)
-            { 
-                string number = Convert.ToString(i+1);
-                int t = Convert.ToInt32(number);
-                if (t == 12)
+            for (int i = 0; i < tableLayoutPanelHour.ColumnCount ; i++)
+            {
+                Panel timepanel = new Panel();
+                timepanel.Dock = DockStyle.Fill;
+                timepanel.Margin = new Padding(0);
+                timepanel.Padding = new Padding(0);
+                tableLayoutPanelHour.Controls.Add(timepanel, i,0);
+
+                int timepos = i + 1;
+                if (timepos == tableLayoutPanelHour.ColumnCount / 2)
                 {
-                    Label textbox = new Label();
-                    textbox.Text = number;
-                    textbox.TextAlign = ContentAlignment.MiddleCenter;
-                    // textbox.FlatStyle = FlatStyle.System;
-                    textbox.AutoSize = false;
-                    //textbox.BorderStyle = BorderStyle.FixedSingle;
-                    textbox.Padding = new Padding(0);
-                    textbox.Margin = new Padding(0);
-                    textbox.Dock = DockStyle.Fill;
-                    textbox.Padding = new Padding(0, textbox.Height / 6, 0, 0);
-                    //textbox.BackColor = Color.LightGray;
-                    table.Controls.Add(textbox, i, 0);
+                    Label label = new Label();
+                    label.Text = "12";
+                    label.Dock = DockStyle.Fill;
+                    label.TextAlign = ContentAlignment.MiddleCenter;
+                    label.Padding = new Padding(0);
+                    label.Margin = new Padding(0);
+                    label.BackColor = System.Drawing.Color.Transparent;
+                    timepanel.Controls.Add(label);
+
+                    timepanel.BackgroundImage = global::MainTimeSchedule.Properties.Resources.daytimeonestick;
+                    timepanel.BackgroundImageLayout = ImageLayout.Stretch;
                 }
-
             }
-        }
-
-        private void tableLayoutPanelHour_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

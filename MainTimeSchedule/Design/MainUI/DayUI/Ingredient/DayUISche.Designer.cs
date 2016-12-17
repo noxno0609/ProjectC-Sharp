@@ -150,7 +150,6 @@
             this.tableLayoutPanelHour.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.tableLayoutPanelHour.Size = new System.Drawing.Size(577, 28);
             this.tableLayoutPanelHour.TabIndex = 0;
-            this.tableLayoutPanelHour.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanelHour_Paint);
             // 
             // DayUISche
             // 
