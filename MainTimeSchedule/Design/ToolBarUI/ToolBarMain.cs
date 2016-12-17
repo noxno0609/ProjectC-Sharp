@@ -22,12 +22,14 @@ namespace MainTimeSchedule.Design.ToolBarUI
         private void buttonxem_Click(object sender, EventArgs e)
         {
             ListEventForm frm = new ListEventForm();
+            frm.StartPosition = FormStartPosition.CenterParent;
             frm.ShowDialog();
         }
 
         private void buttonadd_Click(object sender, EventArgs e)
         {
             AddUIMain frm = new AddUIMain();
+            frm.StartPosition = FormStartPosition.CenterParent;
             frm.ShowDialog();
         }
     }

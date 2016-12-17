@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using SQLTS;
 using TestSQL;
+using SQLCommon;
 
 namespace TestSQL
 {
@@ -53,12 +54,6 @@ namespace TestSQL
 
             //Console.WriteLine(insertid);
 
-            //List<TimeEventDTO> list = TimeEventDAO.GetAllDTO(conn);
-            //foreach(TimeEventDTO dto in list)
-            //{
-            //    Console.WriteLine(dto.ID + " - " + dto.TimeStart + " - " + dto.TimeEnd);
-            //}
-
             //for (DateTime date = DateStart; date.Date <= DateEnd; date = date.AddDays(1))
             //{
             //    if(date.DayOfWeek == "Monday" || date.DayOfWeek == "Wednesday")
@@ -89,6 +84,33 @@ namespace TestSQL
             //    DaySelect = dto.
             //    Note = dto.
             //WHERE TE_ID = dto.ID;
+
+
+            //List<TimeEventDTO> list = TimeEventDAO.GetAllDTO(conn);
+            //foreach (TimeEventDTO dto in list)
+            //{
+            //    Console.WriteLine(dto.ID + " - " + dto.DaySelect + " - " + dto.TimeStart + " - " + dto.TimeEnd + " - " + dto.PE_ID + " - " + dto.Note);
+            //}
+
+            //List<PeriodEventDTO> listz = PeriodEventDAO.GetAllDTO(conn);
+            //foreach (PeriodEventDTO dto in listz)
+            //{
+            //    Console.WriteLine(dto.ID + " - " + dto.DaySelect + " - " + dto.TimeStart + " - " + dto.TimeEnd + " - " + dto.Note + " - " + dto.DateStart + " - " + dto.DateEnd);
+            //}
+
+
+            //Tạo một ngày để làm ví dụ cách dùng
+            DateTime vidu = DateTime.Now;
+
+            //Dùng hàm để lấy danh sách các Ngày trong tuần đã chọn, dựa vào dữ liệu Dayselect đưa vào
+            //Ví dụ Dayselect = 1110001
+            List<DayOfWeek> list = SQLFormat.formatDaySelect("1110001");
+
+            if(list.Contains(vidu.DayOfWeek)) //Hàm kiểm tra xem ngày vidu có nắm trong danh sách ngày đã chọn không
+            {
+
+            }
+
 
 
             Console.ReadKey();

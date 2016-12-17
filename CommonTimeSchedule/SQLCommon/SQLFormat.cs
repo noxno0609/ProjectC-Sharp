@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CommonTimeSchedule;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -46,18 +47,7 @@ namespace SQLCommon
             {
                 if(dayselect[i] == '1')
                 {
-                    DayOfWeek day = new DayOfWeek();
-                    switch(i)
-                    {
-                        case 0: { day = DayOfWeek.Monday; break; }
-                        case 1: { day = DayOfWeek.Tuesday; break; }
-                        case 2: { day = DayOfWeek.Wednesday; break; }
-                        case 3: { day = DayOfWeek.Thursday; break; }
-                        case 4: { day = DayOfWeek.Friday; break; }
-                        case 5: { day = DayOfWeek.Saturday; break; }
-                        case 6: { day = DayOfWeek.Sunday; break; }
-                    }
-                    listDay.Add(day);
+                    DayOfWeek day = DateTimeUtils.numberDoW(i+1);
                 }
             }
             return listDay;

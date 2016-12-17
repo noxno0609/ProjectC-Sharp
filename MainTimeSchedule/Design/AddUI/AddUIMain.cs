@@ -25,7 +25,6 @@ namespace MainTimeSchedule.Design.AddUI
             panelcontrol.Controls.Add(obj);
         }
 
-
         private void radioButtonday_CheckedChanged(object sender, EventArgs e)
         {
             TimeEventUI dayform = new TimeEventUI();

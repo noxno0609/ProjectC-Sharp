@@ -236,16 +236,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\59090-up-and-down-arrows-button-200x200.png" />
-    <Content Include="Resources\arrow-icon-clip-art-file-down-arrow-icon-png-balin-icon-arrow-right--32.png" />
-    <Content Include="Resources\qaphai.png" />
     <Content Include="Resources\ResDayUI\arrowchuyen.png" />
     <Content Include="Resources\ResDayUI\arrowdown.png" />
     <Content Include="Resources\ResDayUI\arrowleft.png" />
     <Content Include="Resources\ResDayUI\arrowright.png" />
     <Content Include="Resources\ResDayUI\arrowup.png" />
+    <Content Include="Resources\ResDayUI\daytimeonestick.png" />
     <Content Include="Resources\ResDayUI\mocTG2.png" />
     <Content Include="Resources\ResMainUI\addbutton.png" />
+    <None Include="Resources\ResMainUI\weektimeonestick.png" />
     <None Include="Resources\ResMainUI\editbutton.png" />
   </ItemGroup>
   <ItemGroup />

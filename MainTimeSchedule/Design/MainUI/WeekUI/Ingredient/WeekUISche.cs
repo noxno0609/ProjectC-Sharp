@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CommonTimeSchedule;
 
 namespace WindowsFormsApplication1.Design.WeekUI.Ingredient
 {
@@ -15,21 +16,24 @@ namespace WindowsFormsApplication1.Design.WeekUI.Ingredient
         public WeekUISche()
         {
             InitializeComponent();
+            setupTopBone();
         }
 
-        private void TableMain_Paint(object sender, PaintEventArgs e)
+        public void setupTopBone()
         {
+            topbone.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
+            for (int i = 0; i < topbone.ColumnCount; i++)
+            {
+                Label label = new Label();
+                label.Text = FormatUtils.formatDoW(DateTimeUtils.numberDoW(i + 1));
+                label.Dock = DockStyle.Fill;
+                label.TextAlign = ContentAlignment.MiddleCenter;
+                label.Padding = new Padding(0);
+                label.Margin = new Padding(0);
+                topbone.Controls.Add(label, i, 0);
 
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
+                
+            }
         }
     }
 }

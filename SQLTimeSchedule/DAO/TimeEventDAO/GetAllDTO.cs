@@ -25,8 +25,8 @@ namespace SQLTS
             {
                 TimeEventDTO dto = new TimeEventDTO();
                 dto.ID = Convert.ToInt32(dr["TE_ID"]);
-                dto.TimeStart = SQLFormat.formatTime(Convert.ToString(dr["TimeStart"]));
-                dto.TimeEnd = SQLFormat.formatTime(Convert.ToString(dr["TimeEnd"]));
+                dto.TimeStart = SQLFormat.formatTime(Convert.ToString(dr["Timestart"]));
+                dto.TimeEnd = SQLFormat.formatTime(Convert.ToString(dr["Timeend"]));
                 dto.DaySelect = Convert.ToDateTime(dr["Dayselect"]);
                 dto.Note = Convert.ToString(dr["Note"]);
                 dto.PE_ID = Convert.ToInt32(dr["PE_ID"]);

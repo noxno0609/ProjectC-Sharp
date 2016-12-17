@@ -180,7 +180,7 @@
             // 
             this.buttonDayUIDaynow.AutoSize = true;
             this.buttonDayUIDaynow.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.buttonDayUIDaynow.BackgroundImage = global::MainTimeSchedule.Properties.Resources.mocTG2;
+            this.buttonDayUIDaynow.BackgroundImage = global::MainTimeSchedule.Properties.Resources.mocTG;
             this.buttonDayUIDaynow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonDayUIDaynow.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonDayUIDaynow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

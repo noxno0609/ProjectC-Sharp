@@ -16,5 +16,20 @@ namespace CommonTimeSchedule
         {
             return date.Hour.ToString("00") + "/" + date.Minute.ToString("00") + "/" + date.Second.ToString("00");
         }
+        public static string formatDoW(DayOfWeek dow)
+        {
+            string result;
+            switch(dow)
+            {
+                case DayOfWeek.Monday: return "Thứ Hai";
+                case DayOfWeek.Tuesday: return "Thứ Ba";
+                case DayOfWeek.Wednesday: return "Thứ Tư";
+                case DayOfWeek.Thursday: return "Thứ Năm";
+                case DayOfWeek.Friday: return "Thứ Sáu";
+                case DayOfWeek.Saturday: return "Thứ Bảy";
+                case DayOfWeek.Sunday: return "Chủ Nhật";
+            }
+            return "";
+        }
     }
 }
