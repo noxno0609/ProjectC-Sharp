@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using TSProject.Design.EditEvent;
+using TSProject.Design.ListEvent;
+using MainTimeSchedule.Design.AddUI;
 
 namespace MainTimeSchedule.Design.ToolBarUI
 {
@@ -20,7 +21,13 @@ namespace MainTimeSchedule.Design.ToolBarUI
 
         private void buttonxem_Click(object sender, EventArgs e)
         {
-            EditPeriodUIMain frm = new EditPeriodUIMain();
+            ListEventForm frm = new ListEventForm();
+            frm.ShowDialog();
+        }
+
+        private void buttonadd_Click(object sender, EventArgs e)
+        {
+            AddUIMain frm = new AddUIMain();
             frm.ShowDialog();
         }
     }

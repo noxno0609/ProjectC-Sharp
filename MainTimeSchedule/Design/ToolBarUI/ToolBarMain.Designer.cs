@@ -70,6 +70,7 @@
             this.buttonadd.TabIndex = 0;
             this.buttonadd.Text = "Thêm sự kiện";
             this.buttonadd.UseVisualStyleBackColor = true;
+            this.buttonadd.Click += new System.EventHandler(this.buttonadd_Click);
             // 
             // buttondelete
             // 

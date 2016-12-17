@@ -114,7 +114,9 @@
             this.ClientSize = new System.Drawing.Size(317, 49);
             this.Controls.Add(this.tableLayoutPanel1);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(333, 88);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(333, 88);
             this.Name = "DayCalenderPicker";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "DayCalenderPicker";

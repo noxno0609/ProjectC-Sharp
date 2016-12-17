@@ -17,5 +17,16 @@ namespace TSProject.Design.ListEvent
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            EditEvent.ListEventForm frm = new EditEvent.ListEventForm();
+            frm.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

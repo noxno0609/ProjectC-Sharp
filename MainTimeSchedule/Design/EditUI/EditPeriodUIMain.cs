@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TSProject.Design.EditEvent
 {
-    public partial class EditPeriodUIMain : Form
+    public partial class ListEventForm : Form
     {
-        public EditPeriodUIMain()
+        public ListEventForm()
         {
             InitializeComponent();
         }
@@ -24,9 +24,9 @@ namespace TSProject.Design.EditEvent
 
         private void button3_Click(object sender, EventArgs e)
         { 
-            DialogResult traloi;
-            traloi = MessageBox.Show("Bạn muốn đóng bảng sửa?", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (traloi == DialogResult.OK)
+            DialogResult answer;
+            answer = MessageBox.Show("Bạn muốn đóng bảng sửa?", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (answer == DialogResult.OK)
                 Close();
         }
     }

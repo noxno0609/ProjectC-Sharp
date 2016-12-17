@@ -1,6 +1,6 @@
 ﻿namespace TSProject.Design.EditEvent
 {
-    partial class EditPeriodUIMain
+    partial class ListEventForm
     {
         /// <summary>
         /// Required designer variable.
