@@ -28,11 +28,11 @@ namespace TSProject.Design.WeekUI.Ingredient
                timepanel.Padding = new Padding(0);
                contentbone.Controls.Add(timepanel, 0, i);
 
-               int timepos = i + 1;
-               if(timepos == contentbone.RowCount/2)
+               int timepos = i;
+               if(timepos == 0 || timepos == 6 || timepos == 12 || timepos == 18 || timepos == 24)
                {
                    Label label = new Label();
-                   label.Text = "12";
+                   label.Text = timepos.ToString();
                    label.TextAlign = ContentAlignment.MiddleCenter;
                    label.AutoSize = false;
                    label.Padding = new Padding(0);

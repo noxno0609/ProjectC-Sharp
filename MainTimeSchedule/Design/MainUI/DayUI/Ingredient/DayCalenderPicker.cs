@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CommonTimeSchedule;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,7 +28,6 @@ namespace MainTimeSchedule.Design.MainUI.DayUI.Ingredient
             DayPicked = dateTimePicker1.Value;
             this.Close();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             Close();

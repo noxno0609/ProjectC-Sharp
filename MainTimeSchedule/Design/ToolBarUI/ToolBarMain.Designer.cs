@@ -62,45 +62,45 @@
             // buttonadd
             // 
             this.buttonadd.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonadd.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonadd.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonadd.Location = new System.Drawing.Point(5, 5);
             this.buttonadd.Margin = new System.Windows.Forms.Padding(5);
             this.buttonadd.Name = "buttonadd";
             this.buttonadd.Size = new System.Drawing.Size(107, 47);
             this.buttonadd.TabIndex = 0;
-            this.buttonadd.Text = "Thêm sự kiện";
+            this.buttonadd.Text = "Thêm Sự Kiện";
             this.buttonadd.UseVisualStyleBackColor = true;
             this.buttonadd.Click += new System.EventHandler(this.buttonadd_Click);
             // 
             // buttondelete
             // 
             this.buttondelete.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttondelete.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttondelete.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttondelete.Location = new System.Drawing.Point(5, 62);
             this.buttondelete.Margin = new System.Windows.Forms.Padding(5);
             this.buttondelete.Name = "buttondelete";
             this.buttondelete.Size = new System.Drawing.Size(107, 47);
             this.buttondelete.TabIndex = 0;
-            this.buttondelete.Text = "Sửa/Xóa sự kiện";
+            this.buttondelete.Text = "Sửa/Xóa Sự Kiện";
             this.buttondelete.UseVisualStyleBackColor = true;
             // 
             // buttonxem
             // 
             this.buttonxem.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonxem.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonxem.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonxem.Location = new System.Drawing.Point(5, 119);
             this.buttonxem.Margin = new System.Windows.Forms.Padding(5);
             this.buttonxem.Name = "buttonxem";
             this.buttonxem.Size = new System.Drawing.Size(107, 47);
             this.buttonxem.TabIndex = 0;
-            this.buttonxem.Text = "Xem lịch trình";
+            this.buttonxem.Text = "Xem Lịch Trình";
             this.buttonxem.UseVisualStyleBackColor = true;
             this.buttonxem.Click += new System.EventHandler(this.buttonxem_Click);
             // 
             // buttonmail
             // 
             this.buttonmail.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonmail.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonmail.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonmail.Location = new System.Drawing.Point(5, 176);
             this.buttonmail.Margin = new System.Windows.Forms.Padding(5);
             this.buttonmail.Name = "buttonmail";
@@ -112,7 +112,7 @@
             // buttonexcel
             // 
             this.buttonexcel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonexcel.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonexcel.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonexcel.Location = new System.Drawing.Point(5, 233);
             this.buttonexcel.Margin = new System.Windows.Forms.Padding(5);
             this.buttonexcel.Name = "buttonexcel";

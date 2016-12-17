@@ -30,19 +30,22 @@
         {
             this.footer = new System.Windows.Forms.StatusStrip();
             this.menuicon = new System.Windows.Forms.ToolStrip();
-            this.addicon = new System.Windows.Forms.ToolStripButton();
-            this.editicon = new System.Windows.Forms.ToolStripButton();
             this.menumain = new System.Windows.Forms.MenuStrip();
-            this.filemenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.filemenuexit = new System.Windows.Forms.ToolStripMenuItem();
-            this.editmenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpmenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.contentbone = new System.Windows.Forms.TableLayoutPanel();
+            this.menufile = new System.Windows.Forms.ToolStripMenuItem();
+            this.menufileexit = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuedit = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuhelp = new System.Windows.Forms.ToolStripMenuItem();
+            this.bonecontent = new System.Windows.Forms.TableLayoutPanel();
             this.weekUIMain = new WindowsFormsApplication1.Design.WeekUI.WeekUIMain();
             this.toolBarMain = new MainTimeSchedule.Design.ToolBarUI.ToolBarMain();
+            this.iconadd = new System.Windows.Forms.ToolStripButton();
+            this.iconedit = new System.Windows.Forms.ToolStripButton();
+            this.menuhelpcopyright = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.menuicon.SuspendLayout();
             this.menumain.SuspendLayout();
-            this.contentbone.SuspendLayout();
+            this.bonecontent.SuspendLayout();
             this.SuspendLayout();
             // 
             // footer
@@ -57,8 +60,8 @@
             // 
             this.menuicon.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuicon.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addicon,
-            this.editicon});
+            this.iconadd,
+            this.iconedit});
             this.menuicon.Location = new System.Drawing.Point(0, 24);
             this.menuicon.Name = "menuicon";
             this.menuicon.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
@@ -66,32 +69,13 @@
             this.menuicon.TabIndex = 1;
             this.menuicon.Text = "toolStrip1";
             // 
-            // addicon
-            // 
-            this.addicon.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.addicon.Image = global::MainTimeSchedule.Properties.Resources.addbutton;
-            this.addicon.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.addicon.Name = "addicon";
-            this.addicon.Size = new System.Drawing.Size(24, 24);
-            this.addicon.Text = "Thêm mốc/lịch";
-            this.addicon.Click += new System.EventHandler(this.addicon_Click);
-            // 
-            // editicon
-            // 
-            this.editicon.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.editicon.Image = global::MainTimeSchedule.Properties.Resources.editbutton;
-            this.editicon.ImageTransparentColor = System.Drawing.Color.White;
-            this.editicon.Name = "editicon";
-            this.editicon.Size = new System.Drawing.Size(24, 24);
-            this.editicon.Text = "Chỉnh mốc";
-            // 
             // menumain
             // 
             this.menumain.GripMargin = new System.Windows.Forms.Padding(0);
             this.menumain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.filemenu,
-            this.editmenu,
-            this.helpmenu});
+            this.menufile,
+            this.menuedit,
+            this.menuhelp});
             this.menumain.Location = new System.Drawing.Point(0, 0);
             this.menumain.Name = "menumain";
             this.menumain.Padding = new System.Windows.Forms.Padding(0);
@@ -99,48 +83,52 @@
             this.menumain.TabIndex = 2;
             this.menumain.Text = "ToolMenu";
             // 
-            // filemenu
+            // menufile
             // 
-            this.filemenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.filemenuexit});
-            this.filemenu.Name = "filemenu";
-            this.filemenu.Size = new System.Drawing.Size(56, 24);
-            this.filemenu.Text = "Tập tin";
+            this.menufile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripSeparator2,
+            this.menufileexit});
+            this.menufile.Name = "menufile";
+            this.menufile.Size = new System.Drawing.Size(56, 24);
+            this.menufile.Text = "Tập tin";
             // 
-            // filemenuexit
+            // menufileexit
             // 
-            this.filemenuexit.Name = "filemenuexit";
-            this.filemenuexit.Size = new System.Drawing.Size(105, 22);
-            this.filemenuexit.Text = "Thoát";
-            this.filemenuexit.Click += new System.EventHandler(this.filemenuexit_Click);
+            this.menufileexit.Name = "menufileexit";
+            this.menufileexit.Size = new System.Drawing.Size(152, 22);
+            this.menufileexit.Text = "Thoát";
+            this.menufileexit.Click += new System.EventHandler(this.filemenuexit_Click);
             // 
-            // editmenu
+            // menuedit
             // 
-            this.editmenu.Name = "editmenu";
-            this.editmenu.Size = new System.Drawing.Size(72, 24);
-            this.editmenu.Text = "Chỉnh sửa";
+            this.menuedit.Name = "menuedit";
+            this.menuedit.Size = new System.Drawing.Size(72, 24);
+            this.menuedit.Text = "Chỉnh sửa";
             // 
-            // helpmenu
+            // menuhelp
             // 
-            this.helpmenu.Name = "helpmenu";
-            this.helpmenu.Size = new System.Drawing.Size(64, 24);
-            this.helpmenu.Text = "Trợ giúp";
+            this.menuhelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripSeparator1,
+            this.menuhelpcopyright});
+            this.menuhelp.Name = "menuhelp";
+            this.menuhelp.Size = new System.Drawing.Size(64, 24);
+            this.menuhelp.Text = "Trợ giúp";
             // 
-            // contentbone
+            // bonecontent
             // 
-            this.contentbone.ColumnCount = 2;
-            this.contentbone.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14F));
-            this.contentbone.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 86F));
-            this.contentbone.Controls.Add(this.weekUIMain, 1, 0);
-            this.contentbone.Controls.Add(this.toolBarMain, 0, 0);
-            this.contentbone.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contentbone.Location = new System.Drawing.Point(0, 51);
-            this.contentbone.Margin = new System.Windows.Forms.Padding(0);
-            this.contentbone.Name = "contentbone";
-            this.contentbone.RowCount = 1;
-            this.contentbone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.contentbone.Size = new System.Drawing.Size(984, 539);
-            this.contentbone.TabIndex = 3;
+            this.bonecontent.ColumnCount = 2;
+            this.bonecontent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14F));
+            this.bonecontent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 86F));
+            this.bonecontent.Controls.Add(this.weekUIMain, 1, 0);
+            this.bonecontent.Controls.Add(this.toolBarMain, 0, 0);
+            this.bonecontent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bonecontent.Location = new System.Drawing.Point(0, 51);
+            this.bonecontent.Margin = new System.Windows.Forms.Padding(0);
+            this.bonecontent.Name = "bonecontent";
+            this.bonecontent.RowCount = 1;
+            this.bonecontent.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.bonecontent.Size = new System.Drawing.Size(984, 539);
+            this.bonecontent.TabIndex = 3;
             // 
             // weekUIMain
             // 
@@ -163,12 +151,48 @@
             this.toolBarMain.TabIndex = 1;
             this.toolBarMain.Load += new System.EventHandler(this.toolBarMain_Load);
             // 
+            // iconadd
+            // 
+            this.iconadd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.iconadd.Image = global::MainTimeSchedule.Properties.Resources.addbutton;
+            this.iconadd.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.iconadd.Name = "iconadd";
+            this.iconadd.Size = new System.Drawing.Size(24, 24);
+            this.iconadd.Text = "Thêm mốc/lịch";
+            this.iconadd.Click += new System.EventHandler(this.addicon_Click);
+            // 
+            // iconedit
+            // 
+            this.iconedit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.iconedit.Image = global::MainTimeSchedule.Properties.Resources.editbutton;
+            this.iconedit.ImageTransparentColor = System.Drawing.Color.White;
+            this.iconedit.Name = "iconedit";
+            this.iconedit.Size = new System.Drawing.Size(24, 24);
+            this.iconedit.Text = "Chỉnh mốc";
+            // 
+            // menuhelpcopyright
+            // 
+            this.menuhelpcopyright.Name = "menuhelpcopyright";
+            this.menuhelpcopyright.Size = new System.Drawing.Size(152, 22);
+            this.menuhelpcopyright.Text = "Sản phẩm";
+            this.menuhelpcopyright.Click += new System.EventHandler(this.menuhelpcopyright_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            // 
             // MainUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 612);
-            this.Controls.Add(this.contentbone);
+            this.Controls.Add(this.bonecontent);
             this.Controls.Add(this.menuicon);
             this.Controls.Add(this.footer);
             this.Controls.Add(this.menumain);
@@ -181,7 +205,7 @@
             this.menuicon.PerformLayout();
             this.menumain.ResumeLayout(false);
             this.menumain.PerformLayout();
-            this.contentbone.ResumeLayout(false);
+            this.bonecontent.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -191,16 +215,19 @@
 
         private System.Windows.Forms.StatusStrip footer;
         private System.Windows.Forms.ToolStrip menuicon;
-        private System.Windows.Forms.ToolStripButton addicon;
-        private System.Windows.Forms.ToolStripButton editicon;
+        private System.Windows.Forms.ToolStripButton iconadd;
+        private System.Windows.Forms.ToolStripButton iconedit;
         private System.Windows.Forms.MenuStrip menumain;
-        private System.Windows.Forms.ToolStripMenuItem filemenu;
-        private System.Windows.Forms.ToolStripMenuItem filemenuexit;
-        private System.Windows.Forms.ToolStripMenuItem editmenu;
-        private System.Windows.Forms.ToolStripMenuItem helpmenu;
-        private System.Windows.Forms.TableLayoutPanel contentbone;
+        private System.Windows.Forms.ToolStripMenuItem menufile;
+        private System.Windows.Forms.ToolStripMenuItem menufileexit;
+        private System.Windows.Forms.ToolStripMenuItem menuedit;
+        private System.Windows.Forms.ToolStripMenuItem menuhelp;
+        private System.Windows.Forms.TableLayoutPanel bonecontent;
         private WindowsFormsApplication1.Design.WeekUI.WeekUIMain weekUIMain;
         private Design.ToolBarUI.ToolBarMain toolBarMain;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem menuhelpcopyright;
     }
 }
 

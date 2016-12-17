@@ -59,7 +59,7 @@
             // numericUpDown2
             // 
             this.numericUpDown2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown2.Location = new System.Drawing.Point(515, 171);
+            this.numericUpDown2.Location = new System.Drawing.Point(515, 160);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             24,
             0,
@@ -72,7 +72,7 @@
             // numericUpDown1
             // 
             this.numericUpDown1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown1.Location = new System.Drawing.Point(579, 171);
+            this.numericUpDown1.Location = new System.Drawing.Point(579, 160);
             this.numericUpDown1.Margin = new System.Windows.Forms.Padding(3, 3, 20, 3);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             60,
@@ -86,7 +86,7 @@
             // numericUpDownM
             // 
             this.numericUpDownM.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDownM.Location = new System.Drawing.Point(259, 171);
+            this.numericUpDownM.Location = new System.Drawing.Point(259, 160);
             this.numericUpDownM.Maximum = new decimal(new int[] {
             60,
             0,
@@ -104,7 +104,7 @@
             0,
             0,
             0});
-            this.numericUpDowngio.Location = new System.Drawing.Point(195, 171);
+            this.numericUpDowngio.Location = new System.Drawing.Point(195, 160);
             this.numericUpDowngio.Maximum = new decimal(new int[] {
             24,
             0,
@@ -119,7 +119,7 @@
             this.dateTimePicker2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.SetColumnSpan(this.dateTimePicker2, 2);
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(515, 39);
+            this.dateTimePicker2.Location = new System.Drawing.Point(515, 36);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(136, 20);
             this.dateTimePicker2.TabIndex = 4;
@@ -129,7 +129,7 @@
             this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.SetColumnSpan(this.dateTimePicker1, 2);
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(195, 39);
+            this.dateTimePicker1.Location = new System.Drawing.Point(195, 36);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(122, 20);
             this.dateTimePicker1.TabIndex = 4;
@@ -139,12 +139,12 @@
             this.tableLayoutPanel1.SetColumnSpan(this.textBox1, 7);
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(195, 228);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 30, 3, 35);
+            this.textBox1.Location = new System.Drawing.Point(192, 217);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(0);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.tableLayoutPanel1.SetRowSpan(this.textBox1, 3);
-            this.textBox1.Size = new System.Drawing.Size(456, 41);
+            this.tableLayoutPanel1.SetRowSpan(this.textBox1, 2);
+            this.textBox1.Size = new System.Drawing.Size(462, 62);
             this.textBox1.TabIndex = 3;
             // 
             // checkBoxCN
@@ -152,10 +152,10 @@
             this.checkBoxCN.AutoSize = true;
             this.checkBoxCN.Dock = System.Windows.Forms.DockStyle.Fill;
             this.checkBoxCN.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxCN.Location = new System.Drawing.Point(577, 100);
+            this.checkBoxCN.Location = new System.Drawing.Point(577, 94);
             this.checkBoxCN.Margin = new System.Windows.Forms.Padding(1);
             this.checkBoxCN.Name = "checkBoxCN";
-            this.checkBoxCN.Size = new System.Drawing.Size(76, 31);
+            this.checkBoxCN.Size = new System.Drawing.Size(76, 29);
             this.checkBoxCN.TabIndex = 2;
             this.checkBoxCN.Text = "Chủ nhật";
             this.checkBoxCN.UseVisualStyleBackColor = true;
@@ -165,10 +165,10 @@
             this.checkBoxthu7.AutoSize = true;
             this.checkBoxthu7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.checkBoxthu7.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxthu7.Location = new System.Drawing.Point(513, 100);
+            this.checkBoxthu7.Location = new System.Drawing.Point(513, 94);
             this.checkBoxthu7.Margin = new System.Windows.Forms.Padding(1);
             this.checkBoxthu7.Name = "checkBoxthu7";
-            this.checkBoxthu7.Size = new System.Drawing.Size(62, 31);
+            this.checkBoxthu7.Size = new System.Drawing.Size(62, 29);
             this.checkBoxthu7.TabIndex = 2;
             this.checkBoxthu7.Text = "Thứ 7";
             this.checkBoxthu7.UseVisualStyleBackColor = true;
@@ -178,10 +178,10 @@
             this.checkBoxthu6.AutoSize = true;
             this.checkBoxthu6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.checkBoxthu6.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxthu6.Location = new System.Drawing.Point(449, 100);
+            this.checkBoxthu6.Location = new System.Drawing.Point(449, 94);
             this.checkBoxthu6.Margin = new System.Windows.Forms.Padding(1);
             this.checkBoxthu6.Name = "checkBoxthu6";
-            this.checkBoxthu6.Size = new System.Drawing.Size(62, 31);
+            this.checkBoxthu6.Size = new System.Drawing.Size(62, 29);
             this.checkBoxthu6.TabIndex = 2;
             this.checkBoxthu6.Text = "Thứ 6";
             this.checkBoxthu6.UseVisualStyleBackColor = true;
@@ -191,10 +191,10 @@
             this.checkBoxthu5.AutoSize = true;
             this.checkBoxthu5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.checkBoxthu5.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxthu5.Location = new System.Drawing.Point(385, 100);
+            this.checkBoxthu5.Location = new System.Drawing.Point(385, 94);
             this.checkBoxthu5.Margin = new System.Windows.Forms.Padding(1);
             this.checkBoxthu5.Name = "checkBoxthu5";
-            this.checkBoxthu5.Size = new System.Drawing.Size(62, 31);
+            this.checkBoxthu5.Size = new System.Drawing.Size(62, 29);
             this.checkBoxthu5.TabIndex = 2;
             this.checkBoxthu5.Text = "Thứ 5";
             this.checkBoxthu5.UseVisualStyleBackColor = true;
@@ -204,10 +204,10 @@
             this.checkBoxthu4.AutoSize = true;
             this.checkBoxthu4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.checkBoxthu4.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxthu4.Location = new System.Drawing.Point(321, 100);
+            this.checkBoxthu4.Location = new System.Drawing.Point(321, 94);
             this.checkBoxthu4.Margin = new System.Windows.Forms.Padding(1);
             this.checkBoxthu4.Name = "checkBoxthu4";
-            this.checkBoxthu4.Size = new System.Drawing.Size(62, 31);
+            this.checkBoxthu4.Size = new System.Drawing.Size(62, 29);
             this.checkBoxthu4.TabIndex = 2;
             this.checkBoxthu4.Text = "Thứ 4";
             this.checkBoxthu4.UseVisualStyleBackColor = true;
@@ -217,10 +217,10 @@
             this.checkBoxthu3.AutoSize = true;
             this.checkBoxthu3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.checkBoxthu3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxthu3.Location = new System.Drawing.Point(257, 100);
+            this.checkBoxthu3.Location = new System.Drawing.Point(257, 94);
             this.checkBoxthu3.Margin = new System.Windows.Forms.Padding(1);
             this.checkBoxthu3.Name = "checkBoxthu3";
-            this.checkBoxthu3.Size = new System.Drawing.Size(62, 31);
+            this.checkBoxthu3.Size = new System.Drawing.Size(62, 29);
             this.checkBoxthu3.TabIndex = 2;
             this.checkBoxthu3.Text = "Thứ 3";
             this.checkBoxthu3.UseVisualStyleBackColor = true;
@@ -230,10 +230,10 @@
             this.checkBoxthu2.AutoSize = true;
             this.checkBoxthu2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.checkBoxthu2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxthu2.Location = new System.Drawing.Point(193, 100);
+            this.checkBoxthu2.Location = new System.Drawing.Point(193, 94);
             this.checkBoxthu2.Margin = new System.Windows.Forms.Padding(1);
             this.checkBoxthu2.Name = "checkBoxthu2";
-            this.checkBoxthu2.Size = new System.Drawing.Size(62, 31);
+            this.checkBoxthu2.Size = new System.Drawing.Size(62, 29);
             this.checkBoxthu2.TabIndex = 2;
             this.checkBoxthu2.Text = "Thứ 2";
             this.checkBoxthu2.UseVisualStyleBackColor = true;
@@ -241,17 +241,17 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 11;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.99366F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.139535F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.005235F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.005235F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.005235F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.005235F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.005235F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.005235F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.005235F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.005235F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.005235F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.89006F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.062828F));
             this.tableLayoutPanel1.Controls.Add(this.labelendtime, 6, 5);
             this.tableLayoutPanel1.Controls.Add(this.labelketthuc, 6, 1);
             this.tableLayoutPanel1.Controls.Add(this.labelnoidung, 1, 7);
@@ -265,7 +265,7 @@
             this.tableLayoutPanel1.Controls.Add(this.checkBoxthu6, 7, 3);
             this.tableLayoutPanel1.Controls.Add(this.checkBoxthu7, 8, 3);
             this.tableLayoutPanel1.Controls.Add(this.checkBoxCN, 9, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 3, 6);
+            this.tableLayoutPanel1.Controls.Add(this.textBox1, 3, 7);
             this.tableLayoutPanel1.Controls.Add(this.dateTimePicker1, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.dateTimePicker2, 8, 1);
             this.tableLayoutPanel1.Controls.Add(this.numericUpDowngio, 3, 5);
@@ -276,18 +276,17 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 9;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowCount = 10;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(719, 304);
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
@@ -298,10 +297,10 @@
             this.tableLayoutPanel1.SetColumnSpan(this.labelendtime, 2);
             this.labelendtime.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelendtime.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelendtime.Location = new System.Drawing.Point(387, 168);
+            this.labelendtime.Location = new System.Drawing.Point(387, 158);
             this.labelendtime.Margin = new System.Windows.Forms.Padding(3);
             this.labelendtime.Name = "labelendtime";
-            this.labelendtime.Size = new System.Drawing.Size(122, 27);
+            this.labelendtime.Size = new System.Drawing.Size(122, 25);
             this.labelendtime.TabIndex = 13;
             this.labelendtime.Text = "Giờ kết thúc:";
             this.labelendtime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -312,10 +311,10 @@
             this.tableLayoutPanel1.SetColumnSpan(this.labelketthuc, 2);
             this.labelketthuc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelketthuc.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelketthuc.Location = new System.Drawing.Point(387, 36);
+            this.labelketthuc.Location = new System.Drawing.Point(387, 34);
             this.labelketthuc.Margin = new System.Windows.Forms.Padding(3);
             this.labelketthuc.Name = "labelketthuc";
-            this.labelketthuc.Size = new System.Drawing.Size(122, 27);
+            this.labelketthuc.Size = new System.Drawing.Size(122, 25);
             this.labelketthuc.TabIndex = 12;
             this.labelketthuc.Text = "Ngày kết thúc:";
             this.labelketthuc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -326,10 +325,10 @@
             this.tableLayoutPanel1.SetColumnSpan(this.labelnoidung, 2);
             this.labelnoidung.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelnoidung.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelnoidung.Location = new System.Drawing.Point(67, 234);
+            this.labelnoidung.Location = new System.Drawing.Point(67, 220);
             this.labelnoidung.Margin = new System.Windows.Forms.Padding(3);
             this.labelnoidung.Name = "labelnoidung";
-            this.labelnoidung.Size = new System.Drawing.Size(122, 27);
+            this.labelnoidung.Size = new System.Drawing.Size(122, 25);
             this.labelnoidung.TabIndex = 11;
             this.labelnoidung.Text = "Nội dung:";
             this.labelnoidung.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -340,10 +339,10 @@
             this.tableLayoutPanel1.SetColumnSpan(this.labelgio, 2);
             this.labelgio.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelgio.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelgio.Location = new System.Drawing.Point(67, 168);
+            this.labelgio.Location = new System.Drawing.Point(67, 158);
             this.labelgio.Margin = new System.Windows.Forms.Padding(3);
             this.labelgio.Name = "labelgio";
-            this.labelgio.Size = new System.Drawing.Size(122, 27);
+            this.labelgio.Size = new System.Drawing.Size(122, 25);
             this.labelgio.TabIndex = 10;
             this.labelgio.Text = "Giờ bắt đầu:";
             this.labelgio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -354,10 +353,10 @@
             this.tableLayoutPanel1.SetColumnSpan(this.labelthu, 2);
             this.labelthu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelthu.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelthu.Location = new System.Drawing.Point(67, 102);
+            this.labelthu.Location = new System.Drawing.Point(67, 96);
             this.labelthu.Margin = new System.Windows.Forms.Padding(3);
             this.labelthu.Name = "labelthu";
-            this.labelthu.Size = new System.Drawing.Size(122, 27);
+            this.labelthu.Size = new System.Drawing.Size(122, 25);
             this.labelthu.TabIndex = 9;
             this.labelthu.Text = "Chọn thứ:";
             this.labelthu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -368,21 +367,21 @@
             this.tableLayoutPanel1.SetColumnSpan(this.labeldaysart, 2);
             this.labeldaysart.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labeldaysart.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labeldaysart.Location = new System.Drawing.Point(67, 36);
+            this.labeldaysart.Location = new System.Drawing.Point(67, 34);
             this.labeldaysart.Margin = new System.Windows.Forms.Padding(3);
             this.labeldaysart.Name = "labeldaysart";
-            this.labeldaysart.Size = new System.Drawing.Size(122, 27);
+            this.labeldaysart.Size = new System.Drawing.Size(122, 25);
             this.labeldaysart.TabIndex = 8;
             this.labeldaysart.Text = "Ngày bắt đầu:";
             this.labeldaysart.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.labeldaysart.Click += new System.EventHandler(this.label1_Click_2);
             // 
-            // WeekEventUI
+            // PeriodEventUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "WeekEventUI";
+            this.Name = "PeriodEventUI";
             this.Size = new System.Drawing.Size(719, 304);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();

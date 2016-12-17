@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MainTimeSchedule</RootNamespace>
-    <AssemblyName>MainTimeSchedule</AssemblyName>
+    <AssemblyName>Time Schedule</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -71,6 +71,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CopyrightUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CopyrightUI.Designer.cs">
+      <DependentUpon>CopyrightUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="Design\EditUI\EditTimeUIMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +187,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Utils\DBUtils.cs" />
+    <EmbeddedResource Include="CopyrightUI.resx">
+      <DependentUpon>CopyrightUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Design\EditUI\EditTimeUIMain.resx">
       <DependentUpon>EditTimeUIMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -237,7 +246,6 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

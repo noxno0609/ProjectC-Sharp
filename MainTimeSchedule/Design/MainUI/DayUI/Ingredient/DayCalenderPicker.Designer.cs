@@ -50,7 +50,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(317, 49);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(317, 50);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // dateTimePicker1
@@ -78,19 +78,19 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(317, 26);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(317, 27);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // buttonOK
             // 
             this.buttonOK.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.buttonOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.buttonOK.Location = new System.Drawing.Point(53, 0);
             this.buttonOK.Margin = new System.Windows.Forms.Padding(0);
             this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(95, 26);
+            this.buttonOK.Size = new System.Drawing.Size(95, 27);
             this.buttonOK.TabIndex = 0;
-            this.buttonOK.Text = "OK";
+            this.buttonOK.Text = "Chọn";
             this.buttonOK.UseVisualStyleBackColor = true;
             this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
             // 
@@ -101,9 +101,9 @@
             this.button1.Location = new System.Drawing.Point(167, 0);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 26);
+            this.button1.Size = new System.Drawing.Size(95, 27);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Cancel";
+            this.button1.Text = "Đóng";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -111,7 +111,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(317, 49);
+            this.ClientSize = new System.Drawing.Size(317, 50);
             this.Controls.Add(this.tableLayoutPanel1);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(333, 88);
@@ -119,7 +119,7 @@
             this.MinimumSize = new System.Drawing.Size(333, 88);
             this.Name = "DayCalenderPicker";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "DayCalenderPicker";
+            this.Text = "Chọn Ngày";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -129,9 +129,9 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button buttonOK;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

@@ -44,5 +44,12 @@ namespace MainTimeSchedule
             addUI.StartPosition = FormStartPosition.CenterParent;
             addUI.ShowDialog();
         }
+
+        private void menuhelpcopyright_Click(object sender, EventArgs e)
+        {
+            CopyrightUI frm = new CopyrightUI();
+            frm.StartPosition = FormStartPosition.CenterParent;
+            frm.ShowDialog();
+        }
     }
 }

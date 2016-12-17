@@ -129,16 +129,14 @@
             // 
             // textBoxnoidung
             // 
-            this.textBoxnoidung.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tableLayoutPanel1.SetColumnSpan(this.textBoxnoidung, 7);
             this.textBoxnoidung.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxnoidung.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxnoidung.Location = new System.Drawing.Point(198, 200);
-            this.textBoxnoidung.Margin = new System.Windows.Forms.Padding(0);
+            this.textBoxnoidung.Location = new System.Drawing.Point(201, 203);
             this.textBoxnoidung.Multiline = true;
             this.textBoxnoidung.Name = "textBoxnoidung";
             this.tableLayoutPanel1.SetRowSpan(this.textBoxnoidung, 2);
-            this.textBoxnoidung.Size = new System.Drawing.Size(462, 80);
+            this.textBoxnoidung.Size = new System.Drawing.Size(456, 74);
             this.textBoxnoidung.TabIndex = 4;
             // 
             // numericUpDown1
@@ -217,12 +215,12 @@
             this.numericUpDown4.Size = new System.Drawing.Size(60, 20);
             this.numericUpDown4.TabIndex = 6;
             // 
-            // DayEventUI
+            // TimeEventUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "DayEventUI";
+            this.Name = "TimeEventUI";
             this.Size = new System.Drawing.Size(736, 320);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

@@ -48,7 +48,7 @@
             this.buttonOK.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonOK.Location = new System.Drawing.Point(491, 377);
             this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(116, 31);
+            this.buttonOK.Size = new System.Drawing.Size(116, 32);
             this.buttonOK.TabIndex = 2;
             this.buttonOK.Text = "Thêm";
             this.buttonOK.UseVisualStyleBackColor = true;
@@ -60,9 +60,9 @@
             this.buttonCancel.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCancel.Location = new System.Drawing.Point(613, 377);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(118, 31);
+            this.buttonCancel.Size = new System.Drawing.Size(118, 32);
             this.buttonCancel.TabIndex = 2;
-            this.buttonCancel.Text = "Thoát";
+            this.buttonCancel.Text = "Đóng";
             this.buttonCancel.UseVisualStyleBackColor = true;
             // 
             // radioButtonweek
@@ -70,13 +70,13 @@
             this.radioButtonweek.AutoSize = true;
             this.selectbone.SetColumnSpan(this.radioButtonweek, 2);
             this.radioButtonweek.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButtonweek.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonweek.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonweek.Location = new System.Drawing.Point(475, 3);
             this.radioButtonweek.Name = "radioButtonweek";
             this.radioButtonweek.Size = new System.Drawing.Size(112, 37);
             this.radioButtonweek.TabIndex = 0;
             this.radioButtonweek.TabStop = true;
-            this.radioButtonweek.Text = "Lịch";
+            this.radioButtonweek.Text = "Lịch trình";
             this.radioButtonweek.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.radioButtonweek.UseVisualStyleBackColor = true;
             this.radioButtonweek.CheckedChanged += new System.EventHandler(this.radioButtonweek_CheckedChanged);
@@ -86,7 +86,7 @@
             this.radioButtonday.AutoSize = true;
             this.selectbone.SetColumnSpan(this.radioButtonday, 2);
             this.radioButtonday.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButtonday.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonday.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonday.Location = new System.Drawing.Point(121, 3);
             this.radioButtonday.Name = "radioButtonday";
             this.radioButtonday.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -144,7 +144,7 @@
             this.editbone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.editbone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.editbone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.editbone.Size = new System.Drawing.Size(734, 411);
+            this.editbone.Size = new System.Drawing.Size(734, 412);
             this.editbone.TabIndex = 0;
             // 
             // panelcontrol
@@ -205,7 +205,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(734, 411);
+            this.ClientSize = new System.Drawing.Size(734, 412);
             this.Controls.Add(this.editbone);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(750, 450);
