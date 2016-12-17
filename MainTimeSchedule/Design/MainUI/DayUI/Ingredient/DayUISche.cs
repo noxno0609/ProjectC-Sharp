@@ -28,11 +28,11 @@ namespace WindowsFormsApplication1
                 timepanel.Padding = new Padding(0);
                 tableLayoutPanelHour.Controls.Add(timepanel, i,0);
 
-                int timepos = i + 1;
-                if (timepos == tableLayoutPanelHour.ColumnCount / 2)
+                int timepos = i;
+                if (timepos == 0 || timepos == 6 || timepos == 12 || timepos == 18 || timepos == 24)
                 {
                     Label label = new Label();
-                    label.Text = "12";
+                    label.Text = timepos.ToString();
                     label.Dock = DockStyle.Fill;
                     label.TextAlign = ContentAlignment.MiddleCenter;
                     label.Padding = new Padding(0);
