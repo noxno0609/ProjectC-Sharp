@@ -12,7 +12,7 @@ namespace SQLTS
 {
     public partial class PeriodEventDAO 
     {
-        public static PeriodEventDTO GetOneDTOByID(int id, MySqlConnection conn)
+        public static PeriodEventDTO GetDTOByID(int id, MySqlConnection conn)
         {   
             PeriodEventDTO dto = new PeriodEventDTO();
             conn.Open();
