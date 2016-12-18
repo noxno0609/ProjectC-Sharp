@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="DAO\PeriodEventDAO\GetAllDTO.cs" />
     <Compile Include="DAO\PeriodEventDAO\GetDTOByID.cs" />
+    <Compile Include="DAO\TimeEventDAO\DeleteOneDTOByID.cs" />
     <Compile Include="DAO\TimeEventDAO\GetAllDTO.cs" />
     <Compile Include="DAO\TimeEventDAO\GetDTOByID.cs" />
     <Compile Include="DAO\TimeEventDAO\Insert.cs" />
