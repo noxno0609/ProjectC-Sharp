@@ -9,7 +9,7 @@ namespace SQLTS
 {
     public class TimeEventDTO //Data Transfer Object
     {
-        public int ID;
+        internal int ID;
         public int PE_ID;
         public DateTime TimeStart;
         public DateTime TimeEnd;
