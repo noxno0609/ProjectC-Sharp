@@ -10,13 +10,19 @@ namespace SQLTS
 {
     public partial class TimeEventDAO
     {
-        public static void Delete(TimeEventDTO dto, MySqlConnection conn)
+        public static bool Delete(TimeEventDTO dto, MySqlConnection conn)
         {
             conn.Open();
             string sql = "DELETE FROM timeevent WHERE TE_ID = " + dto.ID;
             MySqlCommand cmd = new MySqlCommand(sql, conn);
-            cmd.ExecuteNonQuery();
+            int kqua = cmd.ExecuteNonQuery();
             conn.Close();
+            if (kqua != 0)
+            {
+                return true;
+            }
+            else
+                return false;
         }
     }
 }

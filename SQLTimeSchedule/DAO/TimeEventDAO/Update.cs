@@ -11,7 +11,7 @@ namespace SQLTS
 {
     public partial class TimeEventDAO
     {
-        public static void Update(TimeEventDTO dto, MySqlConnection conn)
+        public static bool Update(TimeEventDTO dto, MySqlConnection conn)
         {
             conn.Open();
             string sql = String.Format(@"UPDATE timeevent 
@@ -24,9 +24,14 @@ namespace SQLTS
             SQLFormat.addDateTime(dto.DaySelect),
             dto.ID);
             MySqlCommand cmd = new MySqlCommand(sql, conn);
-            cmd.ExecuteNonQuery();
+            int kqua = cmd.ExecuteNonQuery();
             conn.Close();
-
+            if (kqua != 0)
+            {
+                return true;
+            }
+            else
+                return false;
         }
     }
 }
