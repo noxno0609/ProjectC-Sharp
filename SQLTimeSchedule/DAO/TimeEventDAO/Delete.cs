@@ -10,7 +10,7 @@ namespace SQLTS
 {
     public partial class TimeEventDAO
     {
-        public static void DeleteOneDTOByID(TimeEventDTO dto, MySqlConnection conn)
+        public static void Delete(TimeEventDTO dto, MySqlConnection conn)
         {
             conn.Open();
             string sql = string.Format(@"DELETE FROM timeevent WHERE TE_ID = '{0}'", dto.ID);
