@@ -13,7 +13,7 @@ namespace SQLTS
         public static void Delete(TimeEventDTO dto, MySqlConnection conn)
         {
             conn.Open();
-            string sql = string.Format(@"DELETE FROM timeevent WHERE TE_ID = '{0}'", dto.ID);
+            string sql = "DELETE FROM timeevent WHERE TE_ID = " + dto.ID;
             MySqlCommand cmd = new MySqlCommand(sql, conn);
             cmd.ExecuteNonQuery();
             conn.Close();
