@@ -51,6 +51,7 @@
     <Compile Include="DAO\TimeEventDAO\GetAllDTO.cs" />
     <Compile Include="DAO\TimeEventDAO\GetDTOByID.cs" />
     <Compile Include="DAO\TimeEventDAO\Insert.cs" />
+    <Compile Include="DAO\TimeEventDAO\Update.cs" />
     <Compile Include="DTO\PeriodEventDTO.cs" />
     <Compile Include="DTO\TimeEventDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
