@@ -26,12 +26,11 @@ namespace SQLTS
             MySqlCommand cmd = new MySqlCommand(sql, conn);
             int kqua = cmd.ExecuteNonQuery();
             conn.Close();
+
             if (kqua != 0)
-            {
                 return true;
-            }
-            else
-                return false;
+            
+            return false;
         }
     }
 }
