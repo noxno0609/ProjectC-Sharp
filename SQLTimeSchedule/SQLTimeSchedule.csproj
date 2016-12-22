@@ -45,8 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\PeriodEventDAO\Addtimeevent.cs" />
+    <Compile Include="DAO\PeriodEventDAO\DeletePeriodDTO.cs" />
+    <Compile Include="DAO\PeriodEventDAO\deletetimeevent.cs" />
     <Compile Include="DAO\PeriodEventDAO\GetAllDTO.cs" />
     <Compile Include="DAO\PeriodEventDAO\GetDTOByID.cs" />
+    <Compile Include="DAO\PeriodEventDAO\InsertPeriodDTO.cs" />
     <Compile Include="DAO\TimeEventDAO\Delete.cs" />
     <Compile Include="DAO\TimeEventDAO\GetAllDTO.cs" />
     <Compile Include="DAO\TimeEventDAO\GetDTOByID.cs" />
