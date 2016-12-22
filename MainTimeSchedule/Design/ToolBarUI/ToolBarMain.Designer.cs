@@ -83,6 +83,7 @@
             this.buttondelete.TabIndex = 0;
             this.buttondelete.Text = "Sửa/Xóa Sự Kiện";
             this.buttondelete.UseVisualStyleBackColor = true;
+            this.buttondelete.Click += new System.EventHandler(this.buttondelete_Click);
             // 
             // buttonxem
             // 

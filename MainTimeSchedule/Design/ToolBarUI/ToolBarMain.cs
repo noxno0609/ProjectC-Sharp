@@ -31,6 +31,12 @@ namespace MainTimeSchedule.Design.ToolBarUI
             AddUIMain frm = new AddUIMain();
             frm.StartPosition = FormStartPosition.CenterParent;
             frm.ShowDialog();
+            
+        }
+
+        private void buttondelete_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

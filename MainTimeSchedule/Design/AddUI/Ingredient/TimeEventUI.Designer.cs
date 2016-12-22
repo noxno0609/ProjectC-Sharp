@@ -33,17 +33,17 @@
             this.labelTime = new System.Windows.Forms.Label();
             this.labelNoidung = new System.Windows.Forms.Label();
             this.textBoxnoidung = new System.Windows.Forms.TextBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.mnrHstart = new System.Windows.Forms.NumericUpDown();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.mnrMinstart = new System.Windows.Forms.NumericUpDown();
             this.labeltimeend = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.mnrHourEnd = new System.Windows.Forms.NumericUpDown();
+            this.mnrMinEnd = new System.Windows.Forms.NumericUpDown();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mnrHstart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mnrMinstart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mnrHourEnd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mnrMinEnd)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -64,12 +64,12 @@
             this.tableLayoutPanel1.Controls.Add(this.labelTime, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.labelNoidung, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.textBoxnoidung, 3, 5);
-            this.tableLayoutPanel1.Controls.Add(this.numericUpDown1, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.mnrHstart, 3, 3);
             this.tableLayoutPanel1.Controls.Add(this.dateTimePicker1, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.numericUpDown3, 4, 3);
+            this.tableLayoutPanel1.Controls.Add(this.mnrMinstart, 4, 3);
             this.tableLayoutPanel1.Controls.Add(this.labeltimeend, 6, 3);
-            this.tableLayoutPanel1.Controls.Add(this.numericUpDown2, 8, 3);
-            this.tableLayoutPanel1.Controls.Add(this.numericUpDown4, 9, 3);
+            this.tableLayoutPanel1.Controls.Add(this.mnrHourEnd, 8, 3);
+            this.tableLayoutPanel1.Controls.Add(this.mnrMinEnd, 9, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -139,18 +139,18 @@
             this.textBoxnoidung.Size = new System.Drawing.Size(456, 74);
             this.textBoxnoidung.TabIndex = 4;
             // 
-            // numericUpDown1
+            // mnrHstart
             // 
-            this.numericUpDown1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown1.Location = new System.Drawing.Point(201, 130);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.mnrHstart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.mnrHstart.Location = new System.Drawing.Point(201, 130);
+            this.mnrHstart.Maximum = new decimal(new int[] {
             24,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(60, 20);
-            this.numericUpDown1.TabIndex = 6;
+            this.mnrHstart.Name = "mnrHstart";
+            this.mnrHstart.Size = new System.Drawing.Size(60, 20);
+            this.mnrHstart.TabIndex = 6;
             // 
             // dateTimePicker1
             // 
@@ -162,18 +162,18 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(126, 20);
             this.dateTimePicker1.TabIndex = 2;
             // 
-            // numericUpDown3
+            // mnrMinstart
             // 
-            this.numericUpDown3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown3.Location = new System.Drawing.Point(267, 130);
-            this.numericUpDown3.Maximum = new decimal(new int[] {
+            this.mnrMinstart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.mnrMinstart.Location = new System.Drawing.Point(267, 130);
+            this.mnrMinstart.Maximum = new decimal(new int[] {
             60,
             0,
             0,
             0});
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(60, 20);
-            this.numericUpDown3.TabIndex = 6;
+            this.mnrMinstart.Name = "mnrMinstart";
+            this.mnrMinstart.Size = new System.Drawing.Size(60, 20);
+            this.mnrMinstart.TabIndex = 6;
             // 
             // labeltimeend
             // 
@@ -189,31 +189,31 @@
             this.labeltimeend.Text = "Giờ kết thúc:";
             this.labeltimeend.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // numericUpDown2
+            // mnrHourEnd
             // 
-            this.numericUpDown2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown2.Location = new System.Drawing.Point(531, 130);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.mnrHourEnd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.mnrHourEnd.Location = new System.Drawing.Point(531, 130);
+            this.mnrHourEnd.Maximum = new decimal(new int[] {
             24,
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(60, 20);
-            this.numericUpDown2.TabIndex = 6;
+            this.mnrHourEnd.Name = "mnrHourEnd";
+            this.mnrHourEnd.Size = new System.Drawing.Size(60, 20);
+            this.mnrHourEnd.TabIndex = 6;
             // 
-            // numericUpDown4
+            // mnrMinEnd
             // 
-            this.numericUpDown4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown4.Location = new System.Drawing.Point(597, 130);
-            this.numericUpDown4.Maximum = new decimal(new int[] {
+            this.mnrMinEnd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.mnrMinEnd.Location = new System.Drawing.Point(597, 130);
+            this.mnrMinEnd.Maximum = new decimal(new int[] {
             60,
             0,
             0,
             0});
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(60, 20);
-            this.numericUpDown4.TabIndex = 6;
+            this.mnrMinEnd.Name = "mnrMinEnd";
+            this.mnrMinEnd.Size = new System.Drawing.Size(60, 20);
+            this.mnrMinEnd.TabIndex = 6;
             // 
             // TimeEventUI
             // 
@@ -224,10 +224,10 @@
             this.Size = new System.Drawing.Size(736, 320);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mnrHstart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mnrMinstart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mnrHourEnd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mnrMinEnd)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -239,12 +239,12 @@
         private System.Windows.Forms.Label labelTime;
         private System.Windows.Forms.Label labelNoidung;
         private System.Windows.Forms.TextBox textBoxnoidung;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown mnrHstart;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.NumericUpDown mnrMinstart;
         private System.Windows.Forms.Label labeltimeend;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
+        private System.Windows.Forms.NumericUpDown mnrHourEnd;
+        private System.Windows.Forms.NumericUpDown mnrMinEnd;
 
 
     }

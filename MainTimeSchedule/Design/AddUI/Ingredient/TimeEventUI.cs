@@ -12,6 +12,33 @@ namespace TSProject.Design.EditEvent.Ingredient
 {
     public partial class TimeEventUI : UserControl
     {
+        public DateTime getday
+        {
+            get { return dateTimePicker1.Value; }
+        }
+        public decimal hourstart
+        {
+            get { return mnrHstart.Value; }
+        }
+        public decimal Minstart
+        {
+            get { return mnrMinstart.Value; }
+        }
+        public string note
+        {
+            get
+            {
+                 return textBoxnoidung.Text;
+            }
+        }
+        public decimal hourend
+        {
+            get { return mnrHourEnd.Value; }
+        }
+        public decimal minrend
+        {
+            get { return mnrMinEnd.Value; }
+        }
         public TimeEventUI()
         {
             InitializeComponent();
@@ -21,11 +48,6 @@ namespace TSProject.Design.EditEvent.Ingredient
         {
             TimeEventUI d = (TimeEventUI)this.Parent;
             d.Hide();
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
