@@ -14,6 +14,7 @@ namespace MainTimeSchedule.Design.ToolBarUI
 {
     public partial class ToolBarMain : UserControl
     {
+        
         public ToolBarMain()
         {
             InitializeComponent();

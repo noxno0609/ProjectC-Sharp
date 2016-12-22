@@ -16,41 +16,95 @@ namespace TSProject.Design.EditEvent.Ingredient
         {
             InitializeComponent();
         }
-
+        public DateTime getdayStart
+        {
+            get { return dateStart.Value; }
+        }
+        public DateTime getdayEnd
+        {
+            get { return dateEnd.Value; }
+        }
+        public decimal hourstart
+        {
+            get { return nmrHourStart.Value; }
+        }
+        public decimal Minstart
+        {
+            get { return nmrMinStart.Value; }
+        }
+        public string note
+        {
+            get
+            {
+                return textBox1.Text;
+            }
+        }
+        public decimal hourend
+        {
+            get { return nmrHourEnd.Value; }
+        }
+        public decimal minrend
+        {
+            get { return mnrMinEnd.Value; }
+        }
+        public string thu2
+        {
+            get { if (checkBoxthu2.Checked == true) return "1";
+                return "0";
+            }
+        }
+        public string thu3
+        {
+            get
+            {
+                if (checkBoxthu3.Checked == true) return "1";
+                return "0";
+            }
+        }
+        public string thu4
+        {
+            get
+            {
+                if (checkBoxthu4.Checked == true) return "1";
+                return "0";
+            }
+        }
+        public string thu5
+        {
+            get
+            {
+                if (checkBoxthu5.Checked == true) return "1";
+                return "0";
+            }
+        }
+        public string thu6
+        {
+            get
+            {
+                if (checkBoxthu6.Checked == true) return "1";
+                return "0";
+            }
+        }
+        public string thu7
+        {
+            get
+            {
+                if (checkBoxthu7.Checked == true) return "1";
+                return "0";
+            }
+        }
+        public string CN
+        {
+            get
+            {
+                if (checkBoxCN.Checked == true) return "1";
+                return "0";
+            }
+        }
         private void buttonCancel_Click(object sender, EventArgs e)
         {
             PeriodEventUI w = (PeriodEventUI)this.Parent;
             w.Hide();
-        }
-
-        private void labelstart_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonOK_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
