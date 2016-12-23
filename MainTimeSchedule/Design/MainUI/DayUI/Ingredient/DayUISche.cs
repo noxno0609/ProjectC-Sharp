@@ -18,15 +18,44 @@ namespace WindowsFormsApplication1
             setNumberforTable();
         }
 
-        private  void setNumberforTable()
+        private void setNumberforTable()
         {
-            for (int i = 0; i < tableLayoutPanelHour.ColumnCount ; i++)
+            for (int i = 0; i < tableLayoutPanelContent.ColumnCount; i++)
+            {
+                if (i == 0 || i == 26)
+                {
+                    Panel timepanel = new Panel();
+                    timepanel.Dock = DockStyle.Fill;
+                    timepanel.Margin = new Padding(0);
+                    timepanel.Padding = new Padding(0);
+                    timepanel.BackColor = Color.Gray;
+                    tableLayoutPanelContent.Controls.Add(timepanel, i, 0);
+                  
+                }
+            }
+            for (int i = 0; i < tableLayoutPanelHour.ColumnCount; i++)
             {
                 Panel timepanel = new Panel();
                 timepanel.Dock = DockStyle.Fill;
                 timepanel.Margin = new Padding(0);
                 timepanel.Padding = new Padding(0);
-                tableLayoutPanelHour.Controls.Add(timepanel, i,0);
+                timepanel.BorderStyle = BorderStyle.FixedSingle;
+                tableLayoutPanelHour.Controls.Add(timepanel, i, 0);
+                if (i == 0 || i == 24)
+                    tableLayoutPanelContent.SetColumnSpan(timepanel, 2);
+
+
+                //if (i==1)
+                //{
+                //    int j = 0;
+                //    while(j<30)
+                //    { 
+                //        tableLayoutPanelHour.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.33F));
+                //        j++;
+                //    }
+                //    tableLayoutPanelHour.Controls.Add(timepanel, i, 0);
+                //    tableLayoutPanelHour.SetColumnSpan(timepanel, 15);
+                //}
 
                 int timepos = i;
                 if (timepos == 0 || timepos == 6 || timepos == 12 || timepos == 18 || timepos == 24)
@@ -43,7 +72,25 @@ namespace WindowsFormsApplication1
                     timepanel.BackgroundImage = global::MainTimeSchedule.Properties.Resources.daytimeonestick;
                     timepanel.BackgroundImageLayout = ImageLayout.Stretch;
                 }
+
+                //if(i==0)
+                //{
+                //    TableLayoutPanel x = new TableLayoutPanel();
+                //    x.Dock = DockStyle.Fill;
+                //    x.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+                //    x.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+                //    Panel p = new Panel();
+                //    p.Dock = DockStyle.Fill;
+                //    p.BackColor = Color.Gray;
+                //    x.Controls.Add(p, 2, 0);
+                //    timepanel.Controls.Add(x);
+                //}
             }
+
+           
+                
+           
+
         }
     }
 }
