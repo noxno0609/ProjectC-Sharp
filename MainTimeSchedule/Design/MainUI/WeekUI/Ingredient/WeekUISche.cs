@@ -40,7 +40,7 @@ namespace WindowsFormsApplication1.Design.WeekUI.Ingredient
             }
             float height = borderschebone.Height * 2 / 100;
             paneldropbottom.Height = Convert.ToInt32(height * 1.5);
-            paneldroptop.Height = Convert.ToInt32(height * 1.5);
+            paneldroptop.Height = Convert.ToInt32(height * 1.0);
            
             //for (int i = 0; i < schebone.RowCount; i++)
             //{

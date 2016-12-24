@@ -51,7 +51,7 @@
             // 
             // footer
             // 
-            this.footer.Location = new System.Drawing.Point(0, 540);
+            this.footer.Location = new System.Drawing.Point(0, 421);
             this.footer.Name = "footer";
             this.footer.Size = new System.Drawing.Size(984, 22);
             this.footer.TabIndex = 0;
@@ -166,7 +166,7 @@
             this.bonecontent.RowCount = 1;
             this.bonecontent.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.bonecontent.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.bonecontent.Size = new System.Drawing.Size(984, 489);
+            this.bonecontent.Size = new System.Drawing.Size(984, 370);
             this.bonecontent.TabIndex = 3;
             // 
             // weekUIMain
@@ -175,13 +175,13 @@
             this.weekUIMain.Location = new System.Drawing.Point(137, 0);
             this.weekUIMain.Margin = new System.Windows.Forms.Padding(0);
             this.weekUIMain.Name = "weekUIMain";
-            this.weekUIMain.Size = new System.Drawing.Size(847, 469);
+            this.weekUIMain.Size = new System.Drawing.Size(847, 350);
             this.weekUIMain.TabIndex = 0;
             // 
             // dayUIMain
             // 
             this.dayUIMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dayUIMain.Location = new System.Drawing.Point(0, 469);
+            this.dayUIMain.Location = new System.Drawing.Point(0, 350);
             this.dayUIMain.Margin = new System.Windows.Forms.Padding(0);
             this.dayUIMain.Name = "dayUIMain";
             this.dayUIMain.Size = new System.Drawing.Size(137, 20);
@@ -195,7 +195,7 @@
             this.toolBarMain.Location = new System.Drawing.Point(0, 0);
             this.toolBarMain.Margin = new System.Windows.Forms.Padding(0);
             this.toolBarMain.Name = "toolBarMain";
-            this.toolBarMain.Size = new System.Drawing.Size(137, 469);
+            this.toolBarMain.Size = new System.Drawing.Size(137, 350);
             this.toolBarMain.TabIndex = 1;
             this.toolBarMain.Load += new System.EventHandler(this.toolBarMain_Load);
             // 
@@ -203,16 +203,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 562);
+            this.ClientSize = new System.Drawing.Size(984, 443);
             this.Controls.Add(this.bonecontent);
             this.Controls.Add(this.menuicon);
             this.Controls.Add(this.footer);
             this.Controls.Add(this.menumain);
             this.MainMenuStrip = this.menumain;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1000, 600);
+            this.MaximumSize = new System.Drawing.Size(1000, 481);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(1000, 600);
+            this.MinimumSize = new System.Drawing.Size(16, 481);
             this.Name = "MainUI";
             this.Text = "Time Schedule";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainUI_FormClosing);

@@ -39,6 +39,8 @@
             this.labeltimeend = new System.Windows.Forms.Label();
             this.mnrHourEnd = new System.Windows.Forms.NumericUpDown();
             this.mnrMinEnd = new System.Windows.Forms.NumericUpDown();
+            this.labelcolor = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mnrHstart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mnrMinstart)).BeginInit();
@@ -60,6 +62,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel1.Controls.Add(this.labelcolor, 6, 1);
             this.tableLayoutPanel1.Controls.Add(this.labelDay, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.labelTime, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.labelNoidung, 1, 5);
@@ -70,6 +73,7 @@
             this.tableLayoutPanel1.Controls.Add(this.labeltimeend, 6, 3);
             this.tableLayoutPanel1.Controls.Add(this.mnrHourEnd, 8, 3);
             this.tableLayoutPanel1.Controls.Add(this.mnrMinEnd, 9, 3);
+            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 8, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -215,6 +219,29 @@
             this.mnrMinEnd.Size = new System.Drawing.Size(60, 20);
             this.mnrMinEnd.TabIndex = 6;
             // 
+            // labelcolor
+            // 
+            this.labelcolor.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.labelcolor, 2);
+            this.labelcolor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelcolor.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelcolor.Location = new System.Drawing.Point(399, 43);
+            this.labelcolor.Margin = new System.Windows.Forms.Padding(3);
+            this.labelcolor.Name = "labelcolor";
+            this.labelcolor.Size = new System.Drawing.Size(126, 34);
+            this.labelcolor.TabIndex = 8;
+            this.labelcolor.Text = "Chọn màu nền:";
+            this.labelcolor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(531, 49);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(60, 21);
+            this.comboBox1.TabIndex = 9;
+            // 
             // TimeEventUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -245,6 +272,8 @@
         private System.Windows.Forms.Label labeltimeend;
         private System.Windows.Forms.NumericUpDown mnrHourEnd;
         private System.Windows.Forms.NumericUpDown mnrMinEnd;
+        private System.Windows.Forms.Label labelcolor;
+        private System.Windows.Forms.ComboBox comboBox1;
 
 
     }

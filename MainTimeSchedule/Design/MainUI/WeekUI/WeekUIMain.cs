@@ -29,22 +29,30 @@ namespace WindowsFormsApplication1.Design.WeekUI
         public void setupSche()
         {
             weekUISche.ScheBone.RowStyles.Clear();
-            weekUISche.ScheBone.RowCount = 100;
+            weekUISche.ScheBone.RowCount = 288;
             //weekUISche.ScheBone.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
             //weekUISche.ScheBone.CellBorderStyle = TableLayoutPanelCellBorderStyle.Outset;
+            float height = weekUISche.Height / 288;
             for (int i = 0; i < weekUISche.ScheBone.RowCount; i++)
             {
-                weekUISche.ScheBone.RowStyles.Add(new RowStyle(SizeType.Percent, 2.0F));
+                weekUISche.ScheBone.RowStyles.Add(new RowStyle(SizeType.Absolute, height));
             }
             //weekUISche.ScheBone.RowCount += 2;
             //weekUISche.ScheBone.RowStyles.Add(new RowStyle(SizeType.AutoSize));
             //weekUISche.ScheBone.RowStyles.Add(new RowStyle(SizeType.Absolute, 0.0F));
             loadWeekUI();
+            //Panel eventpanel = new Panel();
+            //eventpanel.BackColor = Color.Green;
+            //eventpanel.Dock = DockStyle.Fill;
+            //eventpanel.Margin = new Padding(0);
+            //eventpanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            //weekUISche.ScheBone.Controls.Add(eventpanel, 0, 0);
+            //weekUISche.ScheBone.SetRowSpan(eventpanel, 287);
         }
         public void displayTimeEvent(TimeEventDTO dto, int columnpos)
         {
             Panel eventpanel = new Panel();
-            eventpanel.BackColor = Color.Green;
+            eventpanel.BackColor = Color.Brown;
             eventpanel.Dock = DockStyle.Fill;
             eventpanel.Margin = new Padding(0);
             eventpanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -58,14 +66,19 @@ namespace WindowsFormsApplication1.Design.WeekUI
             eventpaneltip.ShowAlways = true;
             eventpaneltip.SetToolTip(eventpanel, content);
 
-            int rowposStart = dto.TimeStart.Hour * 5 + (dto.TimeStart.Minute/12);
-            int rowposEnd = dto.TimeEnd.Hour * 5 + (dto.TimeEnd.Minute/12);
+            int rowposStart = dto.TimeStart.Hour * 12 + (dto.TimeStart.Minute/5);
+            int rowposEnd = dto.TimeEnd.Hour * 12 + (dto.TimeEnd.Minute/5);
             int rowposSpan = rowposEnd - rowposStart;
-            if(rowposSpan > 3)
+            if(rowposSpan > 12)
             {
                 Label labelep = new Label();
                 labelep.Dock = DockStyle.Fill;
                 labelep.Text = dto.Note;
+                if (rowposSpan > 24)
+                {
+                    labelep.Text = "Ngày: " + dto.DaySelect.Day.ToString("00") + "/" + dto.DaySelect.Month.ToString("00")
+                + "/" + dto.DaySelect.Year.ToString("0000") + "\nNội dung: " + dto.Note;
+                }
                 labelep.ForeColor = Color.White;
                 labelep.TextAlign = ContentAlignment.MiddleCenter;
 

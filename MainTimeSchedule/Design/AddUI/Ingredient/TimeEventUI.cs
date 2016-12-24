@@ -15,6 +15,7 @@ namespace TSProject.Design.EditEvent.Ingredient
         public DateTime getday
         {
             get { return dateTimePicker1.Value; }
+
         }
         public decimal hourstart
         {
