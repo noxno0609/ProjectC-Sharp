@@ -37,5 +37,4 @@ namespace SQLTS
             return listdto;
         }
     }
-
 }

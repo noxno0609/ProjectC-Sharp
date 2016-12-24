@@ -16,6 +16,9 @@ namespace WindowsFormsApplication1.Design.WeekUI.Ingredient
     {
         WeekCalenderPicker weekpicker = new WeekCalenderPicker();
 
+        public DateTime startDoW = new DateTime();
+        public DateTime endDoW = new DateTime();
+
         public DateTime daypicked = DateTime.Now;
         public WeekUITop()
         {
@@ -24,8 +27,8 @@ namespace WindowsFormsApplication1.Design.WeekUI.Ingredient
         }
         public void UpdateButtonDate()
         {
-            DateTime startDoW = DateTimeUtils.getFirstDoW(daypicked);
-            DateTime endDoW = DateTimeUtils.getLastDoW(daypicked);
+            startDoW = DateTimeUtils.getFirstDoW(daypicked.Date);
+            endDoW = DateTimeUtils.getLastDoW(daypicked.Date);
             buttonDate.Text = FormatUtils.formatDate(startDoW) + " - " + FormatUtils.formatDate(endDoW);
         }
 

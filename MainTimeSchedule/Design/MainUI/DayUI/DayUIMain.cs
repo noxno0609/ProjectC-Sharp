@@ -14,17 +14,13 @@ namespace WindowsFormsApplication1.DayUI
 {
     public partial class DayUIMain : UserControl
     {
+        public DayUITool daytool
+        {
+            get { return dayUITool; }
+        }
         public DayUIMain()
         {
             InitializeComponent();
-            dayUITool.buttonchange.Click += new EventHandler(ButtonSwitch_Click);
-        }
-        private void ButtonSwitch_Click(object sender, EventArgs e)
-        {
-            this.Controls.Clear();
-            WeekUIMain dayform = new WeekUIMain();
-            dayform.Dock = DockStyle.Fill;
-            this.Controls.Add(dayform);
         }
     }
 }

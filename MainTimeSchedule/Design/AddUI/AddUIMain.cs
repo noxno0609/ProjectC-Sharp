@@ -39,7 +39,6 @@ namespace MainTimeSchedule.Design.AddUI
 
         private void radioButtonweek_CheckedChanged(object sender, EventArgs e)
         {
-            
             showControl(weekform);
         }
         private void buttonCancel_Click(object sender, EventArgs e)
@@ -55,75 +54,48 @@ namespace MainTimeSchedule.Design.AddUI
                 dto.Note = dayform.note;
                 dto.DaySelect = dayform.getday;
                 dto.PE_ID = 0;
-                string start = dayform.hourstart + ":" + dayform.Minstart + ":00";
-                var result = Convert.ToDateTime(start);
-                string end = dayform.hourend + ":" + dayform.minrend + ":00";
-                var result1 = Convert.ToDateTime(end);
-                dto.TimeStart = result;
-                dto.TimeEnd = result1;
+                dto.TimeStart = Convert.ToDateTime(dayform.hourstart + ":" + dayform.Minstart + ":00");
+                dto.TimeEnd = Convert.ToDateTime(dayform.hourend + ":" + dayform.minrend + ":00");
 
                 if (dto.TimeStart.AddMinutes(4) >= dto.TimeEnd)
-                {
-                        MessageBox.Show("Sự kiện phải ít nhất 5 phút!");
-                }
+                    MessageBox.Show("Giờ bắt đầu phải trước giờ kết thúc và cách ít nhất 5 phút!!", "Thêm Sự Kiện", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                else if ("".Equals(dayform.note))
+                    MessageBox.Show("Nội dung sự kiện không được trống!", "Thêm Sự Kiện", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 else
                 {
-                    if (string.IsNullOrEmpty(dayform.note))
-                        MessageBox.Show("Nội dung sự kiện không được trống!");
+                    if(TimeEventDAO.Insert(dto, conn) > 1)
+                        MessageBox.Show("Thêm sự kiện thành công!", "Thêm Sự Kiện", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     else
-                    { 
-                        TimeEventDAO.Insert(dto, conn);
-                        MessageBox.Show("Thêm thành công!");
-                    }
+                        MessageBox.Show("Thêm sự kiện không thành công!", "Thêm Sự Kiện", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             if (radioButtonweek.Checked == true)
             {
-
                 PeriodEventDTO dtoP = new PeriodEventDTO();
                 dtoP.Note = weekform.note;
                 dtoP.DateStart = weekform.getdayStart;
                 dtoP.DateEnd = weekform.getdayEnd;
                 dtoP.DaySelect = weekform.thu2 + weekform.thu3 + weekform.thu4 + weekform.thu5 + weekform.thu6 + weekform.thu7 + weekform.CN;
-                string start = weekform.hourstart + ":" + weekform.Minstart + ":00";
-                var result = Convert.ToDateTime(start);
-                string end = weekform.hourend + ":" + weekform.minrend + ":00";
-                var result1 = Convert.ToDateTime(end);
-                dtoP.TimeStart = result;
-                dtoP.TimeEnd = result1;
+                dtoP.TimeStart = Convert.ToDateTime(weekform.hourstart + ":" + weekform.Minstart + ":00");
+                dtoP.TimeEnd = Convert.ToDateTime(weekform.hourend + ":" + weekform.minrend + ":00");
 
-                if(dtoP.DateEnd<dtoP.DateStart)
-                
-                    MessageBox.Show("Chọn ngày kết thúc sai! Chọn lại!");
-
+                if (dtoP.DateEnd <= dtoP.DateStart)
+                    MessageBox.Show("Ngày kết thúc phải là ngày sau ngày bắt đầu!!", "Thêm Sự Kiện", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                else if (dtoP.DaySelect == "0000000")
+                    MessageBox.Show("Chọn ít nhất một ngày trong tuần!", "Thêm Sự Kiện", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                else if (dtoP.TimeStart.AddMinutes(4) >= dtoP.TimeEnd)
+                    MessageBox.Show("Giờ bắt đầu phải trước giờ kết thúc và cách ít nhất 5 phút!", "Thêm Sự Kiện", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                else if ("".Equals(weekform.note))
+                    MessageBox.Show("Nội dung sự kiện không được trống!", "Thêm Sự Kiện", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 else
                 {
-                    if(dtoP.DaySelect=="0000000")
-                        MessageBox.Show("Chọn ít nhất một ngày trong tuần!");
+                    if (PeriodEventDAO.Insert(dtoP, conn) != 0)
+                        MessageBox.Show("Thêm lịch trình thành công!", "Thêm Sự Kiện", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     else
-                    { 
-                        if (dtoP.TimeStart.AddMinutes(4) >= dtoP.TimeEnd)
-                            {
-                                MessageBox.Show("Sự kiện phải ít nhất 5 phút!");
-                            }
-                            else
-                            {
-                                if (string.IsNullOrEmpty(weekform.note))
-                                    MessageBox.Show("Nội dung sự kiện không được trống!");
-                                else
-                                {
-                                   if( PeriodEventDAO.InsertPeriod(dtoP, conn)!=0)
-                                      MessageBox.Show("Thêm thành công!");
-                                   else
-                                      MessageBox.Show("Thêm không thành công!");
-                                }
-                            }
-                         }
-                     }
-               }
-    
+                        MessageBox.Show("Thêm lịch trình không thành công!", "Thêm Sự Kiện", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-
+        }
         private void AddUIMain_Load(object sender, EventArgs e)
         {
             radioButtonday.Checked = true;

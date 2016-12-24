@@ -30,7 +30,6 @@ namespace WindowsFormsApplication1
                     timepanel.Padding = new Padding(0);
                     timepanel.BackColor = Color.Gray;
                     tableLayoutPanelContent.Controls.Add(timepanel, i, 0);
-                  
                 }
             }
             for (int i = 0; i < tableLayoutPanelHour.ColumnCount; i++)
@@ -39,10 +38,9 @@ namespace WindowsFormsApplication1
                 timepanel.Dock = DockStyle.Fill;
                 timepanel.Margin = new Padding(0);
                 timepanel.Padding = new Padding(0);
-                timepanel.BorderStyle = BorderStyle.FixedSingle;
                 tableLayoutPanelHour.Controls.Add(timepanel, i, 0);
-                if (i == 0 || i == 24)
-                    tableLayoutPanelContent.SetColumnSpan(timepanel, 2);
+                //if (i == 0 || i == 24)
+                //    tableLayoutPanelContent.SetColumnSpan(timepanel, 2);
 
 
                 //if (i==1)

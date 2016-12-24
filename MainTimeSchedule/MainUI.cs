@@ -51,5 +51,26 @@ namespace MainTimeSchedule
             frm.StartPosition = FormStartPosition.CenterParent;
             frm.ShowDialog();
         }
+
+        private void MainUI_Load(object sender, EventArgs e)
+        {
+            weekUIMain.weektool.buttonswitch.Click += new EventHandler(ButtonSwitch_Click);
+            dayUIMain.daytool.buttonchange.Click += new EventHandler(ButtonSwitch_Click);
+            dayUIMain.Hide();
+        }
+
+        private void ButtonSwitch_Click(object sender, EventArgs e)
+        {
+            if (weekUIMain.Visible == true)
+            {
+                weekUIMain.Hide();
+                dayUIMain.Show();
+            }
+            else
+            {
+                dayUIMain.Hide();
+                weekUIMain.Show();
+            }
+        }
     }
 }

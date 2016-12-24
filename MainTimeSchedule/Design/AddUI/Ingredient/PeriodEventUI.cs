@@ -18,11 +18,19 @@ namespace TSProject.Design.EditEvent.Ingredient
         }
         public DateTime getdayStart
         {
-            get { return dateStart.Value; }
+            get 
+            { 
+                DateTime datetemp = dateStart.Value;
+                return datetemp.Date;
+            }
         }
         public DateTime getdayEnd
         {
-            get { return dateEnd.Value; }
+            get 
+            {
+                DateTime datetemp = dateEnd.Value;
+                return datetemp.Date;
+            }
         }
         public decimal hourstart
         {

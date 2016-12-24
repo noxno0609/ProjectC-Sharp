@@ -100,19 +100,16 @@ namespace TestSQL
 
 
             //Tạo một ngày để làm ví dụ cách dùng
-            DateTime vidu = DateTime.Now;
+            //DateTime vidu = DateTime.Now;
 
             //Dùng hàm để lấy danh sách các Ngày trong tuần đã chọn, dựa vào dữ liệu Dayselect đưa vào
             //Ví dụ Dayselect = 1110001
-            List<DayOfWeek> list = SQLFormat.formatDaySelect("1110001");
+            //List<DayOfWeek> list = SQLFormat.formatDaySelect("1110001");
 
-            if(list.Contains(vidu.DayOfWeek)) //Hàm kiểm tra xem ngày vidu có nắm trong danh sách ngày đã chọn không
-            {
+            //if(list.Contains(vidu.DayOfWeek)) //Hàm kiểm tra xem ngày vidu có nắm trong danh sách ngày đã chọn không
+            //{
 
-            }
-
-
-
+            //}
             Console.ReadKey();
         }
     }

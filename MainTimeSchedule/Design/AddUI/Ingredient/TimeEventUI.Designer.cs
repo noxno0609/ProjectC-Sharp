@@ -144,7 +144,7 @@
             this.mnrHstart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.mnrHstart.Location = new System.Drawing.Point(201, 130);
             this.mnrHstart.Maximum = new decimal(new int[] {
-            24,
+            23,
             0,
             0,
             0});
@@ -167,7 +167,7 @@
             this.mnrMinstart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.mnrMinstart.Location = new System.Drawing.Point(267, 130);
             this.mnrMinstart.Maximum = new decimal(new int[] {
-            60,
+            59,
             0,
             0,
             0});
@@ -194,7 +194,7 @@
             this.mnrHourEnd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.mnrHourEnd.Location = new System.Drawing.Point(531, 130);
             this.mnrHourEnd.Maximum = new decimal(new int[] {
-            24,
+            23,
             0,
             0,
             0});
@@ -207,7 +207,7 @@
             this.mnrMinEnd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.mnrMinEnd.Location = new System.Drawing.Point(597, 130);
             this.mnrMinEnd.Maximum = new decimal(new int[] {
-            60,
+            59,
             0,
             0,
             0});

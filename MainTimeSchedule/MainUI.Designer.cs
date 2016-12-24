@@ -30,19 +30,20 @@
         {
             this.footer = new System.Windows.Forms.StatusStrip();
             this.menuicon = new System.Windows.Forms.ToolStrip();
+            this.iconadd = new System.Windows.Forms.ToolStripButton();
+            this.iconedit = new System.Windows.Forms.ToolStripButton();
             this.menumain = new System.Windows.Forms.MenuStrip();
             this.menufile = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.menufileexit = new System.Windows.Forms.ToolStripMenuItem();
             this.menuedit = new System.Windows.Forms.ToolStripMenuItem();
             this.menuhelp = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.menuhelpcopyright = new System.Windows.Forms.ToolStripMenuItem();
             this.bonecontent = new System.Windows.Forms.TableLayoutPanel();
             this.weekUIMain = new WindowsFormsApplication1.Design.WeekUI.WeekUIMain();
+            this.dayUIMain = new WindowsFormsApplication1.DayUI.DayUIMain();
             this.toolBarMain = new MainTimeSchedule.Design.ToolBarUI.ToolBarMain();
-            this.iconadd = new System.Windows.Forms.ToolStripButton();
-            this.iconedit = new System.Windows.Forms.ToolStripButton();
-            this.menuhelpcopyright = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.menuicon.SuspendLayout();
             this.menumain.SuspendLayout();
             this.bonecontent.SuspendLayout();
@@ -50,7 +51,7 @@
             // 
             // footer
             // 
-            this.footer.Location = new System.Drawing.Point(0, 590);
+            this.footer.Location = new System.Drawing.Point(0, 540);
             this.footer.Name = "footer";
             this.footer.Size = new System.Drawing.Size(984, 22);
             this.footer.TabIndex = 0;
@@ -68,6 +69,25 @@
             this.menuicon.Size = new System.Drawing.Size(984, 27);
             this.menuicon.TabIndex = 1;
             this.menuicon.Text = "toolStrip1";
+            // 
+            // iconadd
+            // 
+            this.iconadd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.iconadd.Image = global::MainTimeSchedule.Properties.Resources.addbutton;
+            this.iconadd.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.iconadd.Name = "iconadd";
+            this.iconadd.Size = new System.Drawing.Size(24, 24);
+            this.iconadd.Text = "Thêm mốc/lịch";
+            this.iconadd.Click += new System.EventHandler(this.addicon_Click);
+            // 
+            // iconedit
+            // 
+            this.iconedit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.iconedit.Image = global::MainTimeSchedule.Properties.Resources.editbutton;
+            this.iconedit.ImageTransparentColor = System.Drawing.Color.White;
+            this.iconedit.Name = "iconedit";
+            this.iconedit.Size = new System.Drawing.Size(24, 24);
+            this.iconedit.Text = "Chỉnh mốc";
             // 
             // menumain
             // 
@@ -92,10 +112,15 @@
             this.menufile.Size = new System.Drawing.Size(56, 24);
             this.menufile.Text = "Tập tin";
             // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(102, 6);
+            // 
             // menufileexit
             // 
             this.menufileexit.Name = "menufileexit";
-            this.menufileexit.Size = new System.Drawing.Size(152, 22);
+            this.menufileexit.Size = new System.Drawing.Size(105, 22);
             this.menufileexit.Text = "Thoát";
             this.menufileexit.Click += new System.EventHandler(this.filemenuexit_Click);
             // 
@@ -114,12 +139,25 @@
             this.menuhelp.Size = new System.Drawing.Size(64, 24);
             this.menuhelp.Text = "Trợ giúp";
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(124, 6);
+            // 
+            // menuhelpcopyright
+            // 
+            this.menuhelpcopyright.Name = "menuhelpcopyright";
+            this.menuhelpcopyright.Size = new System.Drawing.Size(127, 22);
+            this.menuhelpcopyright.Text = "Sản phẩm";
+            this.menuhelpcopyright.Click += new System.EventHandler(this.menuhelpcopyright_Click);
+            // 
             // bonecontent
             // 
             this.bonecontent.ColumnCount = 2;
             this.bonecontent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14F));
             this.bonecontent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 86F));
             this.bonecontent.Controls.Add(this.weekUIMain, 1, 0);
+            this.bonecontent.Controls.Add(this.dayUIMain, 1, 0);
             this.bonecontent.Controls.Add(this.toolBarMain, 0, 0);
             this.bonecontent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bonecontent.Location = new System.Drawing.Point(0, 51);
@@ -127,7 +165,8 @@
             this.bonecontent.Name = "bonecontent";
             this.bonecontent.RowCount = 1;
             this.bonecontent.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.bonecontent.Size = new System.Drawing.Size(984, 539);
+            this.bonecontent.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.bonecontent.Size = new System.Drawing.Size(984, 489);
             this.bonecontent.TabIndex = 3;
             // 
             // weekUIMain
@@ -136,8 +175,17 @@
             this.weekUIMain.Location = new System.Drawing.Point(137, 0);
             this.weekUIMain.Margin = new System.Windows.Forms.Padding(0);
             this.weekUIMain.Name = "weekUIMain";
-            this.weekUIMain.Size = new System.Drawing.Size(847, 539);
+            this.weekUIMain.Size = new System.Drawing.Size(847, 469);
             this.weekUIMain.TabIndex = 0;
+            // 
+            // dayUIMain
+            // 
+            this.dayUIMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dayUIMain.Location = new System.Drawing.Point(0, 469);
+            this.dayUIMain.Margin = new System.Windows.Forms.Padding(0);
+            this.dayUIMain.Name = "dayUIMain";
+            this.dayUIMain.Size = new System.Drawing.Size(137, 20);
+            this.dayUIMain.TabIndex = 0;
             // 
             // toolBarMain
             // 
@@ -147,60 +195,28 @@
             this.toolBarMain.Location = new System.Drawing.Point(0, 0);
             this.toolBarMain.Margin = new System.Windows.Forms.Padding(0);
             this.toolBarMain.Name = "toolBarMain";
-            this.toolBarMain.Size = new System.Drawing.Size(137, 539);
+            this.toolBarMain.Size = new System.Drawing.Size(137, 469);
             this.toolBarMain.TabIndex = 1;
             this.toolBarMain.Load += new System.EventHandler(this.toolBarMain_Load);
-            // 
-            // iconadd
-            // 
-            this.iconadd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.iconadd.Image = global::MainTimeSchedule.Properties.Resources.addbutton;
-            this.iconadd.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.iconadd.Name = "iconadd";
-            this.iconadd.Size = new System.Drawing.Size(24, 24);
-            this.iconadd.Text = "Thêm mốc/lịch";
-            this.iconadd.Click += new System.EventHandler(this.addicon_Click);
-            // 
-            // iconedit
-            // 
-            this.iconedit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.iconedit.Image = global::MainTimeSchedule.Properties.Resources.editbutton;
-            this.iconedit.ImageTransparentColor = System.Drawing.Color.White;
-            this.iconedit.Name = "iconedit";
-            this.iconedit.Size = new System.Drawing.Size(24, 24);
-            this.iconedit.Text = "Chỉnh mốc";
-            // 
-            // menuhelpcopyright
-            // 
-            this.menuhelpcopyright.Name = "menuhelpcopyright";
-            this.menuhelpcopyright.Size = new System.Drawing.Size(152, 22);
-            this.menuhelpcopyright.Text = "Sản phẩm";
-            this.menuhelpcopyright.Click += new System.EventHandler(this.menuhelpcopyright_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
             // 
             // MainUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 612);
+            this.ClientSize = new System.Drawing.Size(984, 562);
             this.Controls.Add(this.bonecontent);
             this.Controls.Add(this.menuicon);
             this.Controls.Add(this.footer);
             this.Controls.Add(this.menumain);
             this.MainMenuStrip = this.menumain;
-            this.MinimumSize = new System.Drawing.Size(900, 550);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1000, 600);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1000, 600);
             this.Name = "MainUI";
             this.Text = "Time Schedule";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainUI_FormClosing);
+            this.Load += new System.EventHandler(this.MainUI_Load);
             this.menuicon.ResumeLayout(false);
             this.menuicon.PerformLayout();
             this.menumain.ResumeLayout(false);
@@ -224,6 +240,7 @@
         private System.Windows.Forms.ToolStripMenuItem menuhelp;
         private System.Windows.Forms.TableLayoutPanel bonecontent;
         private WindowsFormsApplication1.Design.WeekUI.WeekUIMain weekUIMain;
+        private WindowsFormsApplication1.DayUI.DayUIMain dayUIMain;
         private Design.ToolBarUI.ToolBarMain toolBarMain;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;

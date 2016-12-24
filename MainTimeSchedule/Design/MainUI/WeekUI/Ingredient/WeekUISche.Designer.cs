@@ -30,11 +30,15 @@
         {
             this.mainbone = new System.Windows.Forms.TableLayoutPanel();
             this.borderschebone = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.schebone = new System.Windows.Forms.TableLayoutPanel();
+            this.paneldropbottom = new System.Windows.Forms.Panel();
+            this.paneldroptop = new System.Windows.Forms.Panel();
             this.bordertopbone = new System.Windows.Forms.Panel();
             this.topbone = new System.Windows.Forms.TableLayoutPanel();
             this.mainbone.SuspendLayout();
             this.borderschebone.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.bordertopbone.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,19 +55,32 @@
             this.mainbone.RowCount = 2;
             this.mainbone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.mainbone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.mainbone.Size = new System.Drawing.Size(583, 324);
+            this.mainbone.Size = new System.Drawing.Size(650, 438);
             this.mainbone.TabIndex = 0;
             // 
             // borderschebone
             // 
             this.borderschebone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.borderschebone.Controls.Add(this.schebone);
+            this.borderschebone.Controls.Add(this.panel1);
+            this.borderschebone.Controls.Add(this.paneldropbottom);
+            this.borderschebone.Controls.Add(this.paneldroptop);
             this.borderschebone.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.borderschebone.Location = new System.Drawing.Point(0, 32);
+            this.borderschebone.Location = new System.Drawing.Point(0, 43);
             this.borderschebone.Margin = new System.Windows.Forms.Padding(0);
             this.borderschebone.Name = "borderschebone";
-            this.borderschebone.Size = new System.Drawing.Size(583, 292);
+            this.borderschebone.Size = new System.Drawing.Size(650, 395);
             this.borderschebone.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.schebone);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 26);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(648, 320);
+            this.panel1.TabIndex = 2;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // schebone
             // 
@@ -79,34 +96,79 @@
             this.schebone.Location = new System.Drawing.Point(0, 0);
             this.schebone.Margin = new System.Windows.Forms.Padding(0);
             this.schebone.Name = "schebone";
-            this.schebone.RowCount = 25;
-            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.schebone.Size = new System.Drawing.Size(581, 290);
+            this.schebone.RowCount = 1;
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 6F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.schebone.Size = new System.Drawing.Size(648, 320);
             this.schebone.TabIndex = 0;
+            // 
+            // paneldropbottom
+            // 
+            this.paneldropbottom.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.paneldropbottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.paneldropbottom.Location = new System.Drawing.Point(0, 346);
+            this.paneldropbottom.Margin = new System.Windows.Forms.Padding(0);
+            this.paneldropbottom.Name = "paneldropbottom";
+            this.paneldropbottom.Size = new System.Drawing.Size(648, 47);
+            this.paneldropbottom.TabIndex = 0;
+            // 
+            // paneldroptop
+            // 
+            this.paneldroptop.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.paneldroptop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.paneldroptop.Location = new System.Drawing.Point(0, 0);
+            this.paneldroptop.Margin = new System.Windows.Forms.Padding(0);
+            this.paneldroptop.Name = "paneldroptop";
+            this.paneldroptop.Size = new System.Drawing.Size(648, 26);
+            this.paneldroptop.TabIndex = 1;
             // 
             // bordertopbone
             // 
@@ -115,7 +177,7 @@
             this.bordertopbone.Location = new System.Drawing.Point(0, 0);
             this.bordertopbone.Margin = new System.Windows.Forms.Padding(0);
             this.bordertopbone.Name = "bordertopbone";
-            this.bordertopbone.Size = new System.Drawing.Size(583, 32);
+            this.bordertopbone.Size = new System.Drawing.Size(650, 43);
             this.bordertopbone.TabIndex = 0;
             // 
             // topbone
@@ -135,20 +197,20 @@
             this.topbone.Name = "topbone";
             this.topbone.RowCount = 1;
             this.topbone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.topbone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.topbone.Size = new System.Drawing.Size(583, 32);
-            this.topbone.TabIndex = 1;
+            this.topbone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.topbone.Size = new System.Drawing.Size(650, 43);
+            this.topbone.TabIndex = 0;
             // 
             // WeekUISche
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.mainbone);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "WeekUISche";
-            this.Size = new System.Drawing.Size(583, 324);
+            this.Size = new System.Drawing.Size(650, 438);
             this.mainbone.ResumeLayout(false);
             this.borderschebone.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.bordertopbone.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -159,9 +221,11 @@
         private System.Windows.Forms.TableLayoutPanel mainbone;
         private System.Windows.Forms.Panel borderschebone;
         private System.Windows.Forms.Panel bordertopbone;
-        private System.Windows.Forms.TableLayoutPanel schebone;
         private System.Windows.Forms.TableLayoutPanel topbone;
-
+        private System.Windows.Forms.Panel paneldropbottom;
+        private System.Windows.Forms.Panel paneldroptop;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TableLayoutPanel schebone;
 
     }
 }
