@@ -63,7 +63,7 @@ namespace MainTimeSchedule.Design.AddUI
                     MessageBox.Show("Nội dung sự kiện không được trống!", "Thêm Sự Kiện", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 else
                 {
-                    if(TimeEventDAO.Insert(dto, conn) > 1)
+                    if(TimeEventDAO.Insert(dto, conn) >= 1)
                         MessageBox.Show("Thêm sự kiện thành công!", "Thêm Sự Kiện", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     else
                         MessageBox.Show("Thêm sự kiện không thành công!", "Thêm Sự Kiện", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -89,7 +89,7 @@ namespace MainTimeSchedule.Design.AddUI
                     MessageBox.Show("Nội dung sự kiện không được trống!", "Thêm Sự Kiện", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 else
                 {
-                    if (PeriodEventDAO.Insert(dtoP, conn) != 0)
+                    if (PeriodEventDAO.Insert(dtoP, conn) >= 0)
                         MessageBox.Show("Thêm lịch trình thành công!", "Thêm Sự Kiện", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     else
                         MessageBox.Show("Thêm lịch trình không thành công!", "Thêm Sự Kiện", MessageBoxButtons.OK, MessageBoxIcon.Error);
