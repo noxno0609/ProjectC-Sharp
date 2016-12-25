@@ -120,8 +120,5 @@
         private System.Windows.Forms.TableLayoutPanel weekUITopBone;
         private TSProject.Design.WeekUI.Ingredient.WeekUITool weekUITool;
         private Ingredient.WeekUISche weekUISche;
-
-
-
     }
 }

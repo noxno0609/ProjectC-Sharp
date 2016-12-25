@@ -76,11 +76,10 @@
             this.panel1.AutoScroll = true;
             this.panel1.Controls.Add(this.schebone);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 26);
+            this.panel1.Location = new System.Drawing.Point(0, 79);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(648, 320);
+            this.panel1.Size = new System.Drawing.Size(648, 182);
             this.panel1.TabIndex = 2;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // schebone
             // 
@@ -147,17 +146,17 @@
             this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.schebone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.schebone.Size = new System.Drawing.Size(648, 320);
+            this.schebone.Size = new System.Drawing.Size(648, 182);
             this.schebone.TabIndex = 0;
             // 
             // paneldropbottom
             // 
             this.paneldropbottom.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.paneldropbottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.paneldropbottom.Location = new System.Drawing.Point(0, 346);
+            this.paneldropbottom.Location = new System.Drawing.Point(0, 261);
             this.paneldropbottom.Margin = new System.Windows.Forms.Padding(0);
             this.paneldropbottom.Name = "paneldropbottom";
-            this.paneldropbottom.Size = new System.Drawing.Size(648, 47);
+            this.paneldropbottom.Size = new System.Drawing.Size(648, 132);
             this.paneldropbottom.TabIndex = 0;
             // 
             // paneldroptop
@@ -167,7 +166,7 @@
             this.paneldroptop.Location = new System.Drawing.Point(0, 0);
             this.paneldroptop.Margin = new System.Windows.Forms.Padding(0);
             this.paneldroptop.Name = "paneldroptop";
-            this.paneldroptop.Size = new System.Drawing.Size(648, 26);
+            this.paneldroptop.Size = new System.Drawing.Size(648, 79);
             this.paneldroptop.TabIndex = 1;
             // 
             // bordertopbone
