@@ -48,6 +48,7 @@ namespace SQLCommon
                 if(dayselect[i] == '1')
                 {
                     DayOfWeek day = DateTimeUtils.numberDoW(i+1);
+                    listDay.Add(day);
                 }
             }
             return listDay;

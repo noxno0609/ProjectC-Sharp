@@ -18,7 +18,6 @@ namespace CommonTimeSchedule
         }
         public static string formatDoW(DayOfWeek dow)
         {
-            string result;
             switch(dow)
             {
                 case DayOfWeek.Monday: return "Thứ Hai";
@@ -33,7 +32,6 @@ namespace CommonTimeSchedule
         }
         public static int numberDoW(DayOfWeek dow)
         {
-            string result;
             switch (dow)
             {
                 case DayOfWeek.Monday: return 1;
