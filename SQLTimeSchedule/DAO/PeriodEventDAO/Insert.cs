@@ -14,9 +14,10 @@ namespace SQLTS
     {
         public static int Insert(PeriodEventDTO dto, MySqlConnection conn)
         {
+            
+            #region Insert Period Event
             conn.Open();
 
-            #region Insert Period Event
             string sql = String.Format(@"INSERT INTO PeriodEvent (Note, TimeStart, TimeEnd, DaySelect, DateStart, DateEnd)
                                         VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}')",
 
@@ -29,8 +30,9 @@ namespace SQLTS
             MySqlCommand cmd = new MySqlCommand(sql, conn);
             cmd.ExecuteNonQuery();
             int newId = Convert.ToInt32(cmd.LastInsertedId);
-            #endregion
 
+            conn.Close();
+            #endregion
 
             #region Insert Time Event Depend On Period
             //
@@ -49,8 +51,6 @@ namespace SQLTS
                 }
             }
             #endregion
-
-            conn.Close();
             return newId;
         }
     }
