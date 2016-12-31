@@ -48,7 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>timeschedule.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\timeschedule.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CommonTimeSchedule, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -251,7 +251,6 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report1.rdlc" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -266,7 +265,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="timeschedule.ico" />
+    <Content Include="Resources\timeschedule.ico" />
     <None Include="Resources\ResMainUI\schebutton.png" />
     <Content Include="Resources\ResScheUI\arrowchuyen.png" />
     <Content Include="Resources\ResScheUI\arrowdown.png" />
