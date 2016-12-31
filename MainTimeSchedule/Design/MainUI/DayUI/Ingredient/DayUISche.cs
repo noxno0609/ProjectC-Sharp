@@ -12,15 +12,23 @@ namespace WindowsFormsApplication1
 {
     public partial class DayUISche : UserControl
     {
+        public TableLayoutPanel ScheBone
+        {
+            get { return scheBone; }
+            set { scheBone = value; }
+        }
         public DayUISche()
         {
             InitializeComponent();
             setNumberforTable();
+            
+            float height = (scheBone.Width + panelleft.Width + panelright.Width) * 2 / 100;
+            panelleft.Width = Convert.ToInt32(height*1.3);
+            panelright.Width = Convert.ToInt32(height*1.5);
         }
-
         private void setNumberforTable()
         {
-            for (int i = 0; i < tableLayoutPanelContent.ColumnCount; i++)
+            for (int i = 0; i < scheBone.ColumnCount; i++)
             {
                 if (i == 0 || i == 26)
                 {
@@ -29,7 +37,7 @@ namespace WindowsFormsApplication1
                     timepanel.Margin = new Padding(0);
                     timepanel.Padding = new Padding(0);
                     timepanel.BackColor = Color.Gray;
-                    tableLayoutPanelContent.Controls.Add(timepanel, i, 0);
+                    scheBone.Controls.Add(timepanel, i, 0);
                 }
             }
             for (int i = 0; i < tableLayoutPanelHour.ColumnCount; i++)
@@ -84,10 +92,6 @@ namespace WindowsFormsApplication1
                 //    timepanel.Controls.Add(x);
                 //}
             }
-
-           
-                
-           
 
         }
     }

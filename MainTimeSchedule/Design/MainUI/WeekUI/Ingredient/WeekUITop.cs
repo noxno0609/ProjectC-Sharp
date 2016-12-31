@@ -14,6 +14,7 @@ namespace WindowsFormsApplication1.Design.WeekUI.Ingredient
 {
     public partial class WeekUITop : UserControl
     {
+        public event EventHandler updateRequest;
         WeekCalenderPicker weekpicker = new WeekCalenderPicker();
 
         public DateTime startDoW = new DateTime();
@@ -31,17 +32,18 @@ namespace WindowsFormsApplication1.Design.WeekUI.Ingredient
             endDoW = DateTimeUtils.getLastDoW(daypicked.Date);
             buttonDate.Text = FormatUtils.formatDate(startDoW) + " - " + FormatUtils.formatDate(endDoW);
         }
-
         private void buttonRight_Click(object sender, EventArgs e)
         {
             daypicked = daypicked.AddDays(7);
             UpdateButtonDate();
+            updateRequest(this, null);
         }
 
         private void buttonLeft_Click(object sender, EventArgs e)
         {
             daypicked = daypicked.AddDays(-7);
             UpdateButtonDate();
+            updateRequest(this, null);
         }
 
         private void buttonDate_Click(object sender, EventArgs e)
@@ -60,6 +62,7 @@ namespace WindowsFormsApplication1.Design.WeekUI.Ingredient
                 daypicked = weekpicker.DayPicked;
                 UpdateButtonDate();
             }
+            updateRequest(this, null);
         }
     }
 }

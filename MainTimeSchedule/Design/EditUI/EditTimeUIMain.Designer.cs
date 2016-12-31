@@ -30,10 +30,10 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.dayEventUI1 = new TSProject.Design.EditEvent.Ingredient.TimeEventUI();
+            this.btsave = new System.Windows.Forms.Button();
+            this.btdelete = new System.Windows.Forms.Button();
+            this.btclose = new System.Windows.Forms.Button();
+            this.dayeventUI = new TSProject.Design.EditEvent.Ingredient.TimeEventUI();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -43,7 +43,7 @@
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.dayEventUI1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.dayeventUI, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
@@ -64,9 +64,9 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3F));
-            this.tableLayoutPanel2.Controls.Add(this.button1, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.button2, 3, 0);
-            this.tableLayoutPanel2.Controls.Add(this.button3, 5, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btsave, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btdelete, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btclose, 5, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 273);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
@@ -77,50 +77,53 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(741, 41);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
-            // button1
+            // btsave
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(363, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 36);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Lưu";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btsave.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btsave.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btsave.Location = new System.Drawing.Point(363, 0);
+            this.btsave.Margin = new System.Windows.Forms.Padding(0);
+            this.btsave.Name = "btsave";
+            this.btsave.Size = new System.Drawing.Size(103, 36);
+            this.btsave.TabIndex = 0;
+            this.btsave.Text = "Lưu";
+            this.btsave.UseVisualStyleBackColor = true;
+            this.btsave.Click += new System.EventHandler(this.btsave_Click);
             // 
-            // button2
+            // btdelete
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button2.Location = new System.Drawing.Point(488, 0);
-            this.button2.Margin = new System.Windows.Forms.Padding(0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 36);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Xóa";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btdelete.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btdelete.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btdelete.Location = new System.Drawing.Point(488, 0);
+            this.btdelete.Margin = new System.Windows.Forms.Padding(0);
+            this.btdelete.Name = "btdelete";
+            this.btdelete.Size = new System.Drawing.Size(103, 36);
+            this.btdelete.TabIndex = 0;
+            this.btdelete.Text = "Xóa";
+            this.btdelete.UseVisualStyleBackColor = true;
+            this.btdelete.Click += new System.EventHandler(this.btdelete_Click);
             // 
-            // button3
+            // btclose
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button3.Location = new System.Drawing.Point(613, 0);
-            this.button3.Margin = new System.Windows.Forms.Padding(0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(103, 36);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Đóng";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btclose.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btclose.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btclose.Location = new System.Drawing.Point(613, 0);
+            this.btclose.Margin = new System.Windows.Forms.Padding(0);
+            this.btclose.Name = "btclose";
+            this.btclose.Size = new System.Drawing.Size(103, 36);
+            this.btclose.TabIndex = 0;
+            this.btclose.Text = "Đóng";
+            this.btclose.UseVisualStyleBackColor = true;
+            this.btclose.Click += new System.EventHandler(this.btclose_Click);
             // 
-            // dayEventUI1
+            // dayeventUI
             // 
-            this.dayEventUI1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dayEventUI1.Location = new System.Drawing.Point(0, 0);
-            this.dayEventUI1.Margin = new System.Windows.Forms.Padding(0);
-            this.dayEventUI1.Name = "dayEventUI1";
-            this.dayEventUI1.Size = new System.Drawing.Size(741, 273);
-            this.dayEventUI1.TabIndex = 1;
+            this.dayeventUI.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dayeventUI.Location = new System.Drawing.Point(0, 0);
+            this.dayeventUI.Margin = new System.Windows.Forms.Padding(0);
+            this.dayeventUI.Name = "dayeventUI";
+            this.dayeventUI.Size = new System.Drawing.Size(741, 273);
+            this.dayeventUI.TabIndex = 1;
             // 
             // EditTimeUIMain
             // 
@@ -128,7 +131,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(741, 314);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(757, 352);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(757, 352);
             this.Name = "EditTimeUIMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Sửa sự kiện";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -140,9 +148,9 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private Ingredient.TimeEventUI dayEventUI1;
+        private System.Windows.Forms.Button btsave;
+        private System.Windows.Forms.Button btdelete;
+        private System.Windows.Forms.Button btclose;
+        private Ingredient.TimeEventUI dayeventUI;
     }
 }

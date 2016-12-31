@@ -16,12 +16,13 @@ namespace WindowsFormsApplication1.DayUI.Ingredient
 {
     public partial class DayUITool : UserControl
     {
+        public event EventHandler updateRequest;
         public Button buttonchange
         {
             get { return buttonDayUIChange; }
         }
-        public DateTime daypicked = DateTime.Now;
-        DayCalenderPicker dayselect = new DayCalenderPicker();
+        public DateTime daypicked = DateTime.Now.Date + new TimeSpan(0, 0, 0);
+        public DayCalenderPicker dayselect = new DayCalenderPicker();
         public DayUITool()
         {
             InitializeComponent();
@@ -63,11 +64,13 @@ namespace WindowsFormsApplication1.DayUI.Ingredient
         {
             daypicked = daypicked.AddDays(1);
             Updateday();
+            updateRequest(this, null);
         }
         private void buttonDown_click(object sender, EventArgs e)
         {
             daypicked = daypicked.AddDays(-1);
             Updateday();
+            updateRequest(this, null);
         }
         private void buttonDayUIDaynow_Click(object sender, EventArgs e)
         {
@@ -81,9 +84,10 @@ namespace WindowsFormsApplication1.DayUI.Ingredient
             DayCalenderPicker dayselect = (DayCalenderPicker)sender;
             if (dayselect.DayPicked != DateTime.MinValue)
             {
-                daypicked = dayselect.DayPicked;
+                daypicked = dayselect.DayPicked.Date + new TimeSpan(0, 0, 0);
                 Updateday();
             }
+            updateRequest(this, null);
         }
     }
 }   

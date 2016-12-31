@@ -13,9 +13,10 @@ namespace SQLTS
     {
         public static List<TimeEventDTO> GetAllDTO(MySqlConnection conn)
         {
+            conn.Open();
+
             List<TimeEventDTO> listdto = new List<TimeEventDTO>();
 
-            conn.Open();
             string sql = "SELECT * FROM timeevent";
             MySqlDataAdapter adapter = new MySqlDataAdapter(sql, conn);
             DataTable dt = new DataTable();

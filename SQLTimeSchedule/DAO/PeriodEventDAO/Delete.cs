@@ -26,7 +26,7 @@ namespace SQLTS
 
             conn.Close();
 
-            return (periodresult > 1 && timeresult > 1) ? true : false;
+            return (periodresult > 0 && timeresult > 0) ? true : false;
         }
     }
 }

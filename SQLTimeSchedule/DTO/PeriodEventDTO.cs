@@ -10,6 +10,7 @@ namespace SQLTS
     public class PeriodEventDTO
     {
         internal int ID;
+        public string Name;
         public string Note;
         public DateTime DateStart;
         public DateTime DateEnd;

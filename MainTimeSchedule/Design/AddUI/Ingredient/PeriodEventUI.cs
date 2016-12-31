@@ -15,99 +15,83 @@ namespace TSProject.Design.EditEvent.Ingredient
         public PeriodEventUI()
         {
             InitializeComponent();
+            tbdatestart.CustomFormat = "dd/MM/yyyy";
+            tbdateend.CustomFormat = "dd/MM/yyyy";
         }
-        public DateTime getdayStart
+        public TextBox tbName
         {
-            get 
-            { 
-                DateTime datetemp = dateStart.Value;
-                return datetemp.Date;
-            }
+            get { return tbname; }
+            set { tbName = value; }
         }
-        public DateTime getdayEnd
+        public DateTimePicker tbDatestart
         {
-            get 
-            {
-                DateTime datetemp = dateEnd.Value;
-                return datetemp.Date;
-            }
+            get { return tbdatestart; }
+            set { tbdatestart = value;  }
         }
-        public decimal hourstart
+        public DateTimePicker tbDateend
         {
-            get { return nmrHourStart.Value; }
+            get { return tbdateend; }
+            set { tbdateend = value; }
         }
-        public decimal Minstart
+        public NumericUpDown tbTimestarth
         {
-            get { return nmrMinStart.Value; }
+            get { return tbtimestarth; }
+            set { tbtimestarth = value; }
         }
-        public string note
+        public NumericUpDown tbTimestartm
         {
-            get
-            {
-                return textBox1.Text;
-            }
+            get { return tbtimestartm; }
+            set { tbtimestartm = value; }
         }
-        public decimal hourend
+        public TextBox tbNote
         {
-            get { return nmrHourEnd.Value; }
+            get { return tbnote; }
+            set { tbnote = value; }
         }
-        public decimal minrend
+        public NumericUpDown tbTimeendh
         {
-            get { return mnrMinEnd.Value; }
+            get { return tbtimeendh; }
+            set { tbtimeendh = value; }
         }
-        public string thu2
+        public NumericUpDown tbTimeendm
         {
-            get { if (checkBoxthu2.Checked == true) return "1";
-                return "0";
-            }
+            get { return tbtimeendm; }
+            set { tbtimeendm = value; }
         }
-        public string thu3
+        public CheckBox cbt2
         {
-            get
-            {
-                if (checkBoxthu3.Checked == true) return "1";
-                return "0";
-            }
+            get { return cb2; }
+            set { cb2 = value; }
         }
-        public string thu4
+        public CheckBox cbt3
         {
-            get
-            {
-                if (checkBoxthu4.Checked == true) return "1";
-                return "0";
-            }
+            get { return cb3; }
+            set { cb3 = value; }
         }
-        public string thu5
+        public CheckBox cbt4
         {
-            get
-            {
-                if (checkBoxthu5.Checked == true) return "1";
-                return "0";
-            }
+            get { return cb4; }
+            set { cb4 = value; }
         }
-        public string thu6
+        public CheckBox cbt5
         {
-            get
-            {
-                if (checkBoxthu6.Checked == true) return "1";
-                return "0";
-            }
+            get { return cb5; }
+            set { cb5 = value; }
         }
-        public string thu7
+        public CheckBox cbt6
         {
-            get
-            {
-                if (checkBoxthu7.Checked == true) return "1";
-                return "0";
-            }
+            get { return cb6; }
+            set { cb6 = value; }
         }
-        public string CN
+        public CheckBox cbt7
         {
-            get
-            {
-                if (checkBoxCN.Checked == true) return "1";
-                return "0";
-            }
+            get { return cb7; }
+            set { cb7 = value; }
+        }
+        public CheckBox cbtCN
+        {
+            get { return cbCN; }
+            set { cbCN = value; }
         }
         private void buttonCancel_Click(object sender, EventArgs e)
         {

@@ -47,11 +47,15 @@
   <ItemGroup>
     <Compile Include="DAO\PeriodEventDAO\Delete.cs" />
     <Compile Include="DAO\PeriodEventDAO\GetAllDTO.cs" />
+    <Compile Include="DAO\PeriodEventDAO\GetCountAllTimeEvent.cs" />
     <Compile Include="DAO\PeriodEventDAO\GetDTOByID.cs" />
     <Compile Include="DAO\PeriodEventDAO\Insert.cs" />
+    <Compile Include="DAO\PeriodEventDAO\Update.cs" />
     <Compile Include="DAO\TimeEventDAO\Delete.cs" />
+    <Compile Include="DAO\TimeEventDAO\GetAllDTOByDate.cs" />
     <Compile Include="DAO\TimeEventDAO\GetAllDTO.cs" />
     <Compile Include="DAO\TimeEventDAO\GetDTOByID.cs" />
+    <Compile Include="DAO\TimeEventDAO\GetDTOByPeriodID.cs" />
     <Compile Include="DAO\TimeEventDAO\Insert.cs" />
     <Compile Include="DAO\TimeEventDAO\Update.cs" />
     <Compile Include="DTO\PeriodEventDTO.cs" />

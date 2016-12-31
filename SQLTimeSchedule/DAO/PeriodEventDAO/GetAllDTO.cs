@@ -17,7 +17,7 @@ namespace SQLTS
             List<PeriodEventDTO> listdto = new List<PeriodEventDTO>();
 
             conn.Open();
-            string sql = "SELECT * FROM PeriodEvent ";
+            string sql = "SELECT * FROM PeriodEvent";
             MySqlDataAdapter adapter = new MySqlDataAdapter(sql, conn);
             DataTable dt = new DataTable();
             adapter.Fill(dt);
@@ -25,6 +25,7 @@ namespace SQLTS
             {
                 PeriodEventDTO dto = new PeriodEventDTO();
                 dto.ID = Convert.ToInt32(dr["PE_ID"]);
+                dto.Name = Convert.ToString(dr["Name"]);
                 dto.DateStart = Convert.ToDateTime(dr["DateStart"]);
                 dto.DateEnd = Convert.ToDateTime(dr["DateEnd"]);
                 dto.TimeStart = SQLFormat.formatTime(dr["TimeStart"].ToString());

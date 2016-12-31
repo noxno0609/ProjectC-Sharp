@@ -30,7 +30,9 @@
         {
             this.tableLayoutPanelDayUISche = new System.Windows.Forms.TableLayoutPanel();
             this.panelContent = new System.Windows.Forms.Panel();
-            this.tableLayoutPanelContent = new System.Windows.Forms.TableLayoutPanel();
+            this.scheBone = new System.Windows.Forms.TableLayoutPanel();
+            this.panelleft = new System.Windows.Forms.Panel();
+            this.panelright = new System.Windows.Forms.Panel();
             this.panelHour = new System.Windows.Forms.Panel();
             this.tableLayoutPanelHour = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelDayUISche.SuspendLayout();
@@ -58,7 +60,9 @@
             // panelContent
             // 
             this.panelContent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelContent.Controls.Add(this.tableLayoutPanelContent);
+            this.panelContent.Controls.Add(this.scheBone);
+            this.panelContent.Controls.Add(this.panelleft);
+            this.panelContent.Controls.Add(this.panelright);
             this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContent.Location = new System.Drawing.Point(0, 30);
             this.panelContent.Margin = new System.Windows.Forms.Padding(0);
@@ -66,44 +70,40 @@
             this.panelContent.Size = new System.Drawing.Size(577, 276);
             this.panelContent.TabIndex = 0;
             // 
-            // tableLayoutPanelContent
+            // scheBone
             // 
-            this.tableLayoutPanelContent.ColumnCount = 27;
-            this.tableLayoutPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2F));
-            this.tableLayoutPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2F));
-            this.tableLayoutPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.5F));
-            this.tableLayoutPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.5F));
-            this.tableLayoutPanelContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanelContent.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanelContent.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanelContent.Name = "tableLayoutPanelContent";
-            this.tableLayoutPanelContent.RowCount = 1;
-            this.tableLayoutPanelContent.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelContent.Size = new System.Drawing.Size(575, 274);
-            this.tableLayoutPanelContent.TabIndex = 0;
+            this.scheBone.ColumnCount = 1;
+            this.scheBone.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.scheBone.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.scheBone.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.scheBone.Location = new System.Drawing.Point(56, 0);
+            this.scheBone.Margin = new System.Windows.Forms.Padding(0);
+            this.scheBone.Name = "scheBone";
+            this.scheBone.RowCount = 1;
+            this.scheBone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.scheBone.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 274F));
+            this.scheBone.Size = new System.Drawing.Size(465, 274);
+            this.scheBone.TabIndex = 3;
+            // 
+            // panelleft
+            // 
+            this.panelleft.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panelleft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelleft.Location = new System.Drawing.Point(0, 0);
+            this.panelleft.Margin = new System.Windows.Forms.Padding(0);
+            this.panelleft.Name = "panelleft";
+            this.panelleft.Size = new System.Drawing.Size(56, 274);
+            this.panelleft.TabIndex = 2;
+            // 
+            // panelright
+            // 
+            this.panelright.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panelright.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelright.Location = new System.Drawing.Point(521, 0);
+            this.panelright.Margin = new System.Windows.Forms.Padding(0);
+            this.panelright.Name = "panelright";
+            this.panelright.Size = new System.Drawing.Size(54, 274);
+            this.panelright.TabIndex = 1;
             // 
             // panelHour
             // 
@@ -176,8 +176,10 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelDayUISche;
         private System.Windows.Forms.Panel panelContent;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelContent;
         private System.Windows.Forms.Panel panelHour;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelHour;
+        private System.Windows.Forms.TableLayoutPanel scheBone;
+        private System.Windows.Forms.Panel panelleft;
+        private System.Windows.Forms.Panel panelright;
     }
 }

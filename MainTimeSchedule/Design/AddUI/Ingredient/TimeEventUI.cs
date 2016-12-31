@@ -12,37 +12,41 @@ namespace TSProject.Design.EditEvent.Ingredient
 {
     public partial class TimeEventUI : UserControl
     {
-        public DateTime getday
+        public DateTimePicker tbPickdate
         {
-            get { return dateTimePicker1.Value; }
+            get { return tbpickdate; }
+            set { tbpickdate = value; }
+        }
+        public NumericUpDown tbTimestarth
+        {
+            get { return tbtimestarth; }
+            set { tbtimestarth = value; }
+        }
+        public NumericUpDown tbTimestartm
+        {
+            get { return tbtimestartm; }
+            set { tbtimestartm = value; }
+        }
+        public NumericUpDown tbTimeendh
+        {
+            get { return tbtimeendh; }
+            set { tbtimeendh = value; }
+        }
+        public NumericUpDown tbTimeendm
+        {
+            get { return tbtimeendm; }
+            set { tbtimeendm = value; }
+        }
+        public TextBox tbNote
+        {
+            get { return tbnote; }
+            set { tbnote = value; }
+        }
 
-        }
-        public decimal hourstart
-        {
-            get { return mnrHstart.Value; }
-        }
-        public decimal Minstart
-        {
-            get { return mnrMinstart.Value; }
-        }
-        public string note
-        {
-            get
-            {
-                 return textBoxnoidung.Text;
-            }
-        }
-        public decimal hourend
-        {
-            get { return mnrHourEnd.Value; }
-        }
-        public decimal minrend
-        {
-            get { return mnrMinEnd.Value; }
-        }
         public TimeEventUI()
         {
             InitializeComponent();
+            tbpickdate.CustomFormat = "dd/MM/yyyy";
         }
 
         private void buttonCancel_Click(object sender, EventArgs e)

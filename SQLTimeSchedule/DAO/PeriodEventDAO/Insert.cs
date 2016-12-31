@@ -14,19 +14,19 @@ namespace SQLTS
     {
         public static int Insert(PeriodEventDTO dto, MySqlConnection conn)
         {
-            
             #region Insert Period Event
             conn.Open();
 
-            string sql = String.Format(@"INSERT INTO PeriodEvent (Note, TimeStart, TimeEnd, DaySelect, DateStart, DateEnd)
-                                        VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}')",
+            string sql = String.Format(@"INSERT INTO PeriodEvent (Note, TimeStart, TimeEnd, DaySelect, DateStart, DateEnd, Name)
+                                        VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}')",
 
             dto.Note,
             SQLFormat.addDateTime(dto.TimeStart),
             SQLFormat.addDateTime(dto.TimeEnd),
             dto.DaySelect,
-            SQLFormat.addDateTime(dto.TimeStart),
-            SQLFormat.addDateTime(dto.DateEnd));
+            SQLFormat.addDateTime(dto.DateStart),
+            SQLFormat.addDateTime(dto.DateEnd),
+            dto.Name);
             MySqlCommand cmd = new MySqlCommand(sql, conn);
             cmd.ExecuteNonQuery();
             int newId = Convert.ToInt32(cmd.LastInsertedId);
@@ -39,7 +39,7 @@ namespace SQLTS
             List<DayOfWeek> list = SQLFormat.formatDaySelect(dto.DaySelect);
             for (DateTime date = dto.DateStart; date <= dto.DateEnd; date = date.AddDays(1))
             {
-                if (list.Contains(date.DayOfWeek) == true)
+                if (list.Contains(date.DayOfWeek))
                 {
                     TimeEventDTO dtotemp = new TimeEventDTO();
                     dtotemp.PE_ID = newId;
@@ -51,6 +51,7 @@ namespace SQLTS
                 }
             }
             #endregion
+
             return newId;
         }
     }

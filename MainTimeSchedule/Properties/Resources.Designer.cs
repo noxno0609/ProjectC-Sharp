@@ -183,6 +183,16 @@ namespace MainTimeSchedule.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap schebutton {
+            get {
+                object obj = ResourceManager.GetObject("schebutton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap weektimedownstick {
             get {
                 object obj = ResourceManager.GetObject("weektimedownstick", resourceCulture);

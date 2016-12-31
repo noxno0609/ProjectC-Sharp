@@ -56,7 +56,8 @@
       <HintPath>..\Common\Library\MessageBoxManager.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data, Version=6.8.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
-    <Reference Include="SQLTS">
+    <Reference Include="SQLTS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Common\Library\SQLTS.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -168,10 +169,10 @@
     <Compile Include="Design\MainUI\WeekUI\WeekUIMain.Designer.cs">
       <DependentUpon>WeekUIMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Design\ToolBarUI\ToolBarMain.cs">
+    <Compile Include="Design\MainUI\ToolBarUI\ToolBarMain.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Design\ToolBarUI\ToolBarMain.Designer.cs">
+    <Compile Include="Design\MainUI\ToolBarUI\ToolBarMain.Designer.cs">
       <DependentUpon>ToolBarMain.cs</DependentUpon>
     </Compile>
     <Compile Include="MainUI.cs">
@@ -236,7 +237,7 @@
     <EmbeddedResource Include="Design\MainUI\WeekUI\WeekUIMain.resx">
       <DependentUpon>WeekUIMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Design\ToolBarUI\ToolBarMain.resx">
+    <EmbeddedResource Include="Design\MainUI\ToolBarUI\ToolBarMain.resx">
       <DependentUpon>ToolBarMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainUI.resx">
@@ -247,6 +248,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -261,6 +263,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\ResMainUI\schebutton.png" />
     <Content Include="Resources\ResScheUI\arrowchuyen.png" />
     <Content Include="Resources\ResScheUI\arrowdown.png" />
     <Content Include="Resources\ResScheUI\arrowleft.png" />

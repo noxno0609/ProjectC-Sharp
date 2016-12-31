@@ -110,7 +110,27 @@ namespace TestSQL
             //{
 
             //}
-            Console.ReadKey();
+
+            DateTime date = DateTime.Now;
+            //PeriodEventDTO dto = new PeriodEventDTO();
+            //dto.Note = "ABCD";
+            //dto.DateStart = date.AddDays(-15) + new TimeSpan(0, 0, 0);
+            //dto.DateEnd = date + new TimeSpan(0, 0, 0);
+            //dto.TimeStart = Convert.ToDateTime(date.Date + new TimeSpan(12, 0, 0));
+            //dto.TimeEnd = Convert.ToDateTime(date.Date + new TimeSpan(15, 0, 0));
+            //dto.DaySelect = "1111111";
+
+            //PeriodEventDAO.Insert(dto, conn);
+
+            //PeriodEventDTO dtoz = PeriodEventDAO.GetDTOByID(1, conn);
+            //dtoz.Note = "ABCDXYZABCD";
+            //dtoz.DateStart = date.AddDays(-30).Date + new TimeSpan(0, 0, 0);
+            //dtoz.DateEnd = date.Date + new TimeSpan(0, 0, 0);
+            //dtoz.TimeStart = Convert.ToDateTime(date.Date + new TimeSpan(9, 0, 0));
+            //dtoz.TimeEnd = Convert.ToDateTime(date.Date + new TimeSpan(16, 0, 0));
+            //dtoz.DaySelect = "0000001";
+
+            PeriodEventDAO.Update(dtoz, conn);
         }
     }
 }

@@ -13,11 +13,16 @@ using MainTimeSchedule.Utils;
 using CommonTimeSchedule;
 using TSProject.Design.WeekUI.Ingredient;
 using WindowsFormsApplication1.Design.WeekUI.Ingredient;
+using System.Collections;
 
 namespace WindowsFormsApplication1.Design.WeekUI
 {
     public partial class WeekUIMain : UserControl
     {
+        public TimeEventDTO SelectDTO = new TimeEventDTO();
+        private Panel SelectPanel = new Panel();
+        Hashtable labelPanelMap = new Hashtable();
+        Hashtable labelDTOMap = new Hashtable();
         public WeekUITool weekuitool
         {
             get { return weekUITool; }
@@ -30,15 +35,21 @@ namespace WindowsFormsApplication1.Design.WeekUI
         {
             InitializeComponent();
             setupSche();
+            weekUITop.updateRequest += new EventHandler(onUpdateEvent);
+        }
+        private void onUpdateEvent(Object obj, EventArgs e)
+        {
+            updateWeekUI();
         }
         public void setupSche()
         {
             weekUISche.ScheBone.RowStyles.Clear();
             weekUISche.ScheBone.RowCount = 288;
-            float height = weekUISche.Height / 288;
+            //float height = weekUISche.Height / 288F * 100;
+            float height = 1F / 288F * 100F;
             for (int i = 0; i < weekUISche.ScheBone.RowCount; i++)
             {
-                weekUISche.ScheBone.RowStyles.Add(new RowStyle(SizeType.Absolute, height));
+                weekUISche.ScheBone.RowStyles.Add(new RowStyle(SizeType.Percent, height));
             }
             loadWeekUI();
             //Panel eventpanel = new Panel();
@@ -48,6 +59,28 @@ namespace WindowsFormsApplication1.Design.WeekUI
             //eventpanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             //weekUISche.ScheBone.Controls.Add(eventpanel, 0, 0);
             //weekUISche.ScheBone.SetRowSpan(eventpanel, 287);
+        }
+        public void ClickHoverTimeEvent(Object sender, EventArgs e)
+        {
+            if(SelectPanel != null)
+            {
+                SelectPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+                SelectPanel.BackColor = Color.Brown;
+            }
+            Label label = (Label)sender;
+            Panel panel = (Panel)labelPanelMap[label];
+            panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            panel.BackColor = Color.Red;
+            SelectDTO = (TimeEventDTO)labelDTOMap[label];
+            SelectPanel = (Panel)panel;
+        }
+        public void ClickLeaveTimeEvent(Object sender, EventArgs e)
+        {
+            Label label = (Label)sender;
+            Panel panel = (Panel)labelPanelMap[label];
+            panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            panel.BackColor = Color.Brown;
+            SelectDTO = new TimeEventDTO();
         }
         public void displayTimeEvent(TimeEventDTO dto, int columnpos)
         {
@@ -60,10 +93,10 @@ namespace WindowsFormsApplication1.Design.WeekUI
                 eventpanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 
                 string content = @"Ngày: " + dto.DaySelect.Day.ToString("00") + "/" + dto.DaySelect.Month.ToString("00")
-                    + "/" + dto.DaySelect.Year.ToString("0000") + "\n"
-                    + "Bắt đầu: " + dto.TimeStart.TimeOfDay + "\n"
-                    + "Kết thúc: " + dto.TimeEnd.TimeOfDay + "\n"
-                    + "Nội dung: " + dto.Note;
+                                    + "/" + dto.DaySelect.Year.ToString("0000") + "\n"
+                                    + "Bắt đầu: " + dto.TimeStart.TimeOfDay + "\n"
+                                    + "Kết thúc: " + dto.TimeEnd.TimeOfDay + "\n"
+                                    + "Nội dung: " + dto.Note;
                 ToolTip eventpaneltip = new ToolTip();
                 eventpaneltip.ShowAlways = true;
                 eventpaneltip.SetToolTip(eventpanel, content);
@@ -71,26 +104,32 @@ namespace WindowsFormsApplication1.Design.WeekUI
                 int rowposStart = dto.TimeStart.Hour * 12 + (dto.TimeStart.Minute / 5);
                 int rowposEnd = dto.TimeEnd.Hour * 12 + (dto.TimeEnd.Minute / 5);
                 int rowposSpan = rowposEnd - rowposStart;
-                if (rowposSpan > 12)
+                Label labelep = new Label();
+                labelep.Dock = DockStyle.Fill;
+                labelep.Text = (rowposSpan > 12) ? dto.Note : "";
+                if (rowposSpan > 24)
                 {
-                    Label labelep = new Label();
-                    labelep.Dock = DockStyle.Fill;
-                    labelep.Text = dto.Note;
-                    if (rowposSpan > 24)
-                    {
-                        labelep.Text = "Ngày: " + dto.DaySelect.Day.ToString("00") + "/" + dto.DaySelect.Month.ToString("00")
-                    + "/" + dto.DaySelect.Year.ToString("0000") + "\nNội dung: " + dto.Note;
-                    }
-                    labelep.ForeColor = Color.White;
-                    labelep.TextAlign = ContentAlignment.MiddleCenter;
+                    labelep.Text = @"Ngày: " + dto.DaySelect.Day.ToString("00") + "/" + dto.DaySelect.Month.ToString("00")
+                        + "/" + dto.DaySelect.Year.ToString("0000") + "\nNội dung: " + dto.Note;
+                }
+                else if(rowposSpan >32)
+                    labelep.Text = content;
 
-                    eventpanel.Controls.Add(labelep);
-                    eventpaneltip.SetToolTip(labelep, content);
-                }
-                if (weekUISche.ScheBone.RowCount > 0)
-                {
-                    Console.Write(weekUISche.ScheBone.RowCount);
-                }
+                labelep.ForeColor = Color.White;
+                labelep.TextAlign = ContentAlignment.MiddleCenter;
+
+                labelep.Click += new EventHandler(ClickHoverTimeEvent);
+                labelep.LostFocus += new EventHandler(ClickLeaveTimeEvent);
+
+                labelPanelMap.Add(labelep, eventpanel);
+                labelDTOMap.Add(labelep, dto);
+
+                eventpanel.Controls.Add(labelep);
+                eventpaneltip.SetToolTip(labelep, content);
+                //if (weekUISche.ScheBone.RowCount > 0)
+                //{
+                //    Console.Write(weekUISche.ScheBone.RowCount);
+                //}
                 weekUISche.ScheBone.Controls.Add(eventpanel, columnpos, rowposStart);
                 weekUISche.ScheBone.SetRowSpan(eventpanel, rowposSpan);
                 weekUISche.ScheBone.Refresh();

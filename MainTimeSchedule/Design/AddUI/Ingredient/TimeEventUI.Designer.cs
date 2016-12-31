@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.labelcolor = new System.Windows.Forms.Label();
             this.labelDay = new System.Windows.Forms.Label();
             this.labelTime = new System.Windows.Forms.Label();
             this.labelNoidung = new System.Windows.Forms.Label();
-            this.textBoxnoidung = new System.Windows.Forms.TextBox();
-            this.mnrHstart = new System.Windows.Forms.NumericUpDown();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.mnrMinstart = new System.Windows.Forms.NumericUpDown();
+            this.tbnote = new System.Windows.Forms.TextBox();
+            this.tbtimestarth = new System.Windows.Forms.NumericUpDown();
+            this.tbtimestartm = new System.Windows.Forms.NumericUpDown();
             this.labeltimeend = new System.Windows.Forms.Label();
-            this.mnrHourEnd = new System.Windows.Forms.NumericUpDown();
-            this.mnrMinEnd = new System.Windows.Forms.NumericUpDown();
-            this.labelcolor = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.tbtimeendh = new System.Windows.Forms.NumericUpDown();
+            this.tbtimeendm = new System.Windows.Forms.NumericUpDown();
+            this.boxcolor = new System.Windows.Forms.ComboBox();
+            this.tbpickdate = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mnrHstart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mnrMinstart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mnrHourEnd)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mnrMinEnd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbtimestarth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbtimestartm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbtimeendh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbtimeendm)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -66,14 +66,14 @@
             this.tableLayoutPanel1.Controls.Add(this.labelDay, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.labelTime, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.labelNoidung, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.textBoxnoidung, 3, 5);
-            this.tableLayoutPanel1.Controls.Add(this.mnrHstart, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.dateTimePicker1, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.mnrMinstart, 4, 3);
+            this.tableLayoutPanel1.Controls.Add(this.tbnote, 3, 5);
+            this.tableLayoutPanel1.Controls.Add(this.tbtimestarth, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.tbtimestartm, 4, 3);
             this.tableLayoutPanel1.Controls.Add(this.labeltimeend, 6, 3);
-            this.tableLayoutPanel1.Controls.Add(this.mnrHourEnd, 8, 3);
-            this.tableLayoutPanel1.Controls.Add(this.mnrMinEnd, 9, 3);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 8, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tbtimeendh, 8, 3);
+            this.tableLayoutPanel1.Controls.Add(this.tbtimeendm, 9, 3);
+            this.tableLayoutPanel1.Controls.Add(this.boxcolor, 8, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tbpickdate, 3, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -88,6 +88,20 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(736, 320);
             this.tableLayoutPanel1.TabIndex = 2;
+            // 
+            // labelcolor
+            // 
+            this.labelcolor.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.labelcolor, 2);
+            this.labelcolor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelcolor.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelcolor.Location = new System.Drawing.Point(399, 43);
+            this.labelcolor.Margin = new System.Windows.Forms.Padding(3);
+            this.labelcolor.Name = "labelcolor";
+            this.labelcolor.Size = new System.Drawing.Size(126, 34);
+            this.labelcolor.TabIndex = 8;
+            this.labelcolor.Text = "Chọn màu nền:";
+            this.labelcolor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelDay
             // 
@@ -131,53 +145,43 @@
             this.labelNoidung.Text = "Nội dung:";
             this.labelNoidung.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBoxnoidung
+            // tbnote
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.textBoxnoidung, 7);
-            this.textBoxnoidung.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxnoidung.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxnoidung.Location = new System.Drawing.Point(201, 203);
-            this.textBoxnoidung.Multiline = true;
-            this.textBoxnoidung.Name = "textBoxnoidung";
-            this.tableLayoutPanel1.SetRowSpan(this.textBoxnoidung, 2);
-            this.textBoxnoidung.Size = new System.Drawing.Size(456, 74);
-            this.textBoxnoidung.TabIndex = 4;
+            this.tableLayoutPanel1.SetColumnSpan(this.tbnote, 7);
+            this.tbnote.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbnote.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbnote.Location = new System.Drawing.Point(201, 203);
+            this.tbnote.Multiline = true;
+            this.tbnote.Name = "tbnote";
+            this.tableLayoutPanel1.SetRowSpan(this.tbnote, 2);
+            this.tbnote.Size = new System.Drawing.Size(456, 74);
+            this.tbnote.TabIndex = 4;
             // 
-            // mnrHstart
+            // tbtimestarth
             // 
-            this.mnrHstart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.mnrHstart.Location = new System.Drawing.Point(201, 130);
-            this.mnrHstart.Maximum = new decimal(new int[] {
+            this.tbtimestarth.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbtimestarth.Location = new System.Drawing.Point(201, 130);
+            this.tbtimestarth.Maximum = new decimal(new int[] {
             23,
             0,
             0,
             0});
-            this.mnrHstart.Name = "mnrHstart";
-            this.mnrHstart.Size = new System.Drawing.Size(60, 20);
-            this.mnrHstart.TabIndex = 6;
+            this.tbtimestarth.Name = "tbtimestarth";
+            this.tbtimestarth.Size = new System.Drawing.Size(60, 20);
+            this.tbtimestarth.TabIndex = 6;
             // 
-            // dateTimePicker1
+            // tbtimestartm
             // 
-            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.SetColumnSpan(this.dateTimePicker1, 2);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(201, 50);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(126, 20);
-            this.dateTimePicker1.TabIndex = 2;
-            // 
-            // mnrMinstart
-            // 
-            this.mnrMinstart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.mnrMinstart.Location = new System.Drawing.Point(267, 130);
-            this.mnrMinstart.Maximum = new decimal(new int[] {
+            this.tbtimestartm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbtimestartm.Location = new System.Drawing.Point(267, 130);
+            this.tbtimestartm.Maximum = new decimal(new int[] {
             59,
             0,
             0,
             0});
-            this.mnrMinstart.Name = "mnrMinstart";
-            this.mnrMinstart.Size = new System.Drawing.Size(60, 20);
-            this.mnrMinstart.TabIndex = 6;
+            this.tbtimestartm.Name = "tbtimestartm";
+            this.tbtimestartm.Size = new System.Drawing.Size(60, 20);
+            this.tbtimestartm.TabIndex = 6;
             // 
             // labeltimeend
             // 
@@ -193,54 +197,50 @@
             this.labeltimeend.Text = "Giờ kết thúc:";
             this.labeltimeend.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // mnrHourEnd
+            // tbtimeendh
             // 
-            this.mnrHourEnd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.mnrHourEnd.Location = new System.Drawing.Point(531, 130);
-            this.mnrHourEnd.Maximum = new decimal(new int[] {
+            this.tbtimeendh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbtimeendh.Location = new System.Drawing.Point(531, 130);
+            this.tbtimeendh.Maximum = new decimal(new int[] {
             23,
             0,
             0,
             0});
-            this.mnrHourEnd.Name = "mnrHourEnd";
-            this.mnrHourEnd.Size = new System.Drawing.Size(60, 20);
-            this.mnrHourEnd.TabIndex = 6;
+            this.tbtimeendh.Name = "tbtimeendh";
+            this.tbtimeendh.Size = new System.Drawing.Size(60, 20);
+            this.tbtimeendh.TabIndex = 6;
             // 
-            // mnrMinEnd
+            // tbtimeendm
             // 
-            this.mnrMinEnd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.mnrMinEnd.Location = new System.Drawing.Point(597, 130);
-            this.mnrMinEnd.Maximum = new decimal(new int[] {
+            this.tbtimeendm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbtimeendm.Location = new System.Drawing.Point(597, 130);
+            this.tbtimeendm.Maximum = new decimal(new int[] {
             59,
             0,
             0,
             0});
-            this.mnrMinEnd.Name = "mnrMinEnd";
-            this.mnrMinEnd.Size = new System.Drawing.Size(60, 20);
-            this.mnrMinEnd.TabIndex = 6;
+            this.tbtimeendm.Name = "tbtimeendm";
+            this.tbtimeendm.Size = new System.Drawing.Size(60, 20);
+            this.tbtimeendm.TabIndex = 6;
             // 
-            // labelcolor
+            // boxcolor
             // 
-            this.labelcolor.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.labelcolor, 2);
-            this.labelcolor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelcolor.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelcolor.Location = new System.Drawing.Point(399, 43);
-            this.labelcolor.Margin = new System.Windows.Forms.Padding(3);
-            this.labelcolor.Name = "labelcolor";
-            this.labelcolor.Size = new System.Drawing.Size(126, 34);
-            this.labelcolor.TabIndex = 8;
-            this.labelcolor.Text = "Chọn màu nền:";
-            this.labelcolor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.boxcolor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.boxcolor.FormattingEnabled = true;
+            this.boxcolor.Location = new System.Drawing.Point(531, 49);
+            this.boxcolor.Name = "boxcolor";
+            this.boxcolor.Size = new System.Drawing.Size(60, 21);
+            this.boxcolor.TabIndex = 9;
             // 
-            // comboBox1
+            // tbpickdate
             // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(531, 49);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(60, 21);
-            this.comboBox1.TabIndex = 9;
+            this.tbpickdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.SetColumnSpan(this.tbpickdate, 2);
+            this.tbpickdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.tbpickdate.Location = new System.Drawing.Point(201, 50);
+            this.tbpickdate.Name = "tbpickdate";
+            this.tbpickdate.Size = new System.Drawing.Size(126, 20);
+            this.tbpickdate.TabIndex = 10;
             // 
             // TimeEventUI
             // 
@@ -251,10 +251,10 @@
             this.Size = new System.Drawing.Size(736, 320);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mnrHstart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mnrMinstart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mnrHourEnd)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mnrMinEnd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbtimestarth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbtimestartm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbtimeendh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbtimeendm)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -265,15 +265,15 @@
         private System.Windows.Forms.Label labelDay;
         private System.Windows.Forms.Label labelTime;
         private System.Windows.Forms.Label labelNoidung;
-        private System.Windows.Forms.TextBox textBoxnoidung;
-        private System.Windows.Forms.NumericUpDown mnrHstart;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.NumericUpDown mnrMinstart;
+        private System.Windows.Forms.TextBox tbnote;
+        private System.Windows.Forms.NumericUpDown tbtimestarth;
+        private System.Windows.Forms.NumericUpDown tbtimestartm;
         private System.Windows.Forms.Label labeltimeend;
-        private System.Windows.Forms.NumericUpDown mnrHourEnd;
-        private System.Windows.Forms.NumericUpDown mnrMinEnd;
+        private System.Windows.Forms.NumericUpDown tbtimeendh;
+        private System.Windows.Forms.NumericUpDown tbtimeendm;
         private System.Windows.Forms.Label labelcolor;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox boxcolor;
+        private System.Windows.Forms.DateTimePicker tbpickdate;
 
 
     }

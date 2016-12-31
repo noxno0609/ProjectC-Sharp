@@ -23,6 +23,7 @@ namespace SQLTS
 
             DataRow dr = dt.Rows[0];
             dto.ID = Convert.ToInt32(dr["PE_ID"]);
+            dto.Name = Convert.ToString(dr["Name"]);
             dto.DateStart = Convert.ToDateTime(dr["DateStart"]);
             dto.DateEnd = Convert.ToDateTime(dr["DateEnd"]);
             dto.TimeStart = SQLFormat.formatTime(dr["TimeStart"].ToString());

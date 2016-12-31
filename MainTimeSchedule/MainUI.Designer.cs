@@ -32,6 +32,7 @@
             this.menuicon = new System.Windows.Forms.ToolStrip();
             this.iconadd = new System.Windows.Forms.ToolStripButton();
             this.iconedit = new System.Windows.Forms.ToolStripButton();
+            this.iconsche = new System.Windows.Forms.ToolStripButton();
             this.menumain = new System.Windows.Forms.MenuStrip();
             this.menufile = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
@@ -51,9 +52,9 @@
             // 
             // footer
             // 
-            this.footer.Location = new System.Drawing.Point(0, 421);
+            this.footer.Location = new System.Drawing.Point(0, 420);
             this.footer.Name = "footer";
-            this.footer.Size = new System.Drawing.Size(984, 22);
+            this.footer.Size = new System.Drawing.Size(974, 22);
             this.footer.TabIndex = 0;
             this.footer.Text = "statusStrip1";
             // 
@@ -62,11 +63,12 @@
             this.menuicon.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuicon.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.iconadd,
-            this.iconedit});
+            this.iconedit,
+            this.iconsche});
             this.menuicon.Location = new System.Drawing.Point(0, 24);
             this.menuicon.Name = "menuicon";
             this.menuicon.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.menuicon.Size = new System.Drawing.Size(984, 27);
+            this.menuicon.Size = new System.Drawing.Size(974, 27);
             this.menuicon.TabIndex = 1;
             this.menuicon.Text = "toolStrip1";
             // 
@@ -88,6 +90,17 @@
             this.iconedit.Name = "iconedit";
             this.iconedit.Size = new System.Drawing.Size(24, 24);
             this.iconedit.Text = "Chỉnh mốc";
+            this.iconedit.Click += new System.EventHandler(this.showEditUI);
+            // 
+            // iconsche
+            // 
+            this.iconsche.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.iconsche.Image = global::MainTimeSchedule.Properties.Resources.schebutton;
+            this.iconsche.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.iconsche.Name = "iconsche";
+            this.iconsche.Size = new System.Drawing.Size(24, 24);
+            this.iconsche.Text = "Xem lịch trình";
+            this.iconsche.Click += new System.EventHandler(this.iconsche_Click);
             // 
             // menumain
             // 
@@ -99,7 +112,7 @@
             this.menumain.Location = new System.Drawing.Point(0, 0);
             this.menumain.Name = "menumain";
             this.menumain.Padding = new System.Windows.Forms.Padding(0);
-            this.menumain.Size = new System.Drawing.Size(984, 24);
+            this.menumain.Size = new System.Drawing.Size(974, 24);
             this.menumain.TabIndex = 2;
             this.menumain.Text = "ToolMenu";
             // 
@@ -166,25 +179,25 @@
             this.bonecontent.RowCount = 1;
             this.bonecontent.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.bonecontent.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.bonecontent.Size = new System.Drawing.Size(984, 370);
+            this.bonecontent.Size = new System.Drawing.Size(974, 369);
             this.bonecontent.TabIndex = 3;
             // 
             // weekUIMain
             // 
             this.weekUIMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.weekUIMain.Location = new System.Drawing.Point(137, 0);
+            this.weekUIMain.Location = new System.Drawing.Point(136, 0);
             this.weekUIMain.Margin = new System.Windows.Forms.Padding(0);
             this.weekUIMain.Name = "weekUIMain";
-            this.weekUIMain.Size = new System.Drawing.Size(847, 350);
+            this.weekUIMain.Size = new System.Drawing.Size(838, 349);
             this.weekUIMain.TabIndex = 0;
             // 
             // dayUIMain
             // 
             this.dayUIMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dayUIMain.Location = new System.Drawing.Point(0, 350);
+            this.dayUIMain.Location = new System.Drawing.Point(0, 349);
             this.dayUIMain.Margin = new System.Windows.Forms.Padding(0);
             this.dayUIMain.Name = "dayUIMain";
-            this.dayUIMain.Size = new System.Drawing.Size(137, 20);
+            this.dayUIMain.Size = new System.Drawing.Size(136, 20);
             this.dayUIMain.TabIndex = 0;
             // 
             // toolBarMain
@@ -195,7 +208,7 @@
             this.toolBarMain.Location = new System.Drawing.Point(0, 0);
             this.toolBarMain.Margin = new System.Windows.Forms.Padding(0);
             this.toolBarMain.Name = "toolBarMain";
-            this.toolBarMain.Size = new System.Drawing.Size(137, 350);
+            this.toolBarMain.Size = new System.Drawing.Size(136, 349);
             this.toolBarMain.TabIndex = 1;
             this.toolBarMain.Load += new System.EventHandler(this.toolBarMain_Load);
             // 
@@ -203,16 +216,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 443);
+            this.ClientSize = new System.Drawing.Size(974, 442);
             this.Controls.Add(this.bonecontent);
             this.Controls.Add(this.menuicon);
             this.Controls.Add(this.footer);
             this.Controls.Add(this.menumain);
             this.MainMenuStrip = this.menumain;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1000, 481);
+            this.MaximumSize = new System.Drawing.Size(990, 480);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(16, 481);
+            this.MinimumSize = new System.Drawing.Size(990, 480);
             this.Name = "MainUI";
             this.Text = "Time Schedule";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainUI_FormClosing);
@@ -245,6 +258,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem menuhelpcopyright;
+        private System.Windows.Forms.ToolStripButton iconsche;
     }
 }
 

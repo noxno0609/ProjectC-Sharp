@@ -41,5 +41,13 @@ namespace CommonTimeSchedule
             }
             return DayOfWeek.Monday;
         }
+
+        public static bool checkTimeOverlap(DateTime timestart, DateTime timeend, DateTime timerangestart, DateTime timerangeend)
+        {
+            if((timestart < timerangestart && timeend <= timerangestart) || 
+                (timestart >= timerangeend && timeend > timerangeend))
+                return false;
+            return true;
+        }
     }
 }
