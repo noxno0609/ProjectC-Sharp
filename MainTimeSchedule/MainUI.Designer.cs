@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainUI));
             this.footer = new System.Windows.Forms.StatusStrip();
             this.menuicon = new System.Windows.Forms.ToolStrip();
             this.iconadd = new System.Windows.Forms.ToolStripButton();
@@ -221,6 +222,7 @@
             this.Controls.Add(this.menuicon);
             this.Controls.Add(this.footer);
             this.Controls.Add(this.menumain);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menumain;
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(990, 480);
