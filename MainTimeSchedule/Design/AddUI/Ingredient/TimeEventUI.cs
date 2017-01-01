@@ -7,11 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MainTimeSchedule.Utils;
 
 namespace TSProject.Design.EditEvent.Ingredient
 {
     public partial class TimeEventUI : UserControl
     {
+        public ColorComboBox cbColor
+        {
+            get { return colorbox; }
+            set { colorbox = value; }
+        }
         public DateTimePicker tbPickdate
         {
             get { return tbpickdate; }

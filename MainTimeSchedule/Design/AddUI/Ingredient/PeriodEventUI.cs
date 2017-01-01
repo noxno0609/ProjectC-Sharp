@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MainTimeSchedule.Utils;
 
 namespace TSProject.Design.EditEvent.Ingredient
 {
@@ -17,6 +18,11 @@ namespace TSProject.Design.EditEvent.Ingredient
             InitializeComponent();
             tbdatestart.CustomFormat = "dd/MM/yyyy";
             tbdateend.CustomFormat = "dd/MM/yyyy";
+        }
+        public ColorComboBox cbColor
+        {
+            get { return colorbox; }
+            set { colorbox = value; }
         }
         public TextBox tbName
         {

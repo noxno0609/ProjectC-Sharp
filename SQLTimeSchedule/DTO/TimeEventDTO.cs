@@ -15,6 +15,7 @@ namespace SQLTS
         public DateTime TimeEnd;
         public string Note;
         public DateTime DaySelect;
+        public string Color;
 
         public TimeEventDTO(TimeEventDTO dto)
         {
@@ -24,6 +25,7 @@ namespace SQLTS
             this.TimeEnd = dto.TimeEnd;
             this.Note = dto.Note;
             this.DaySelect = dto.DaySelect;
+            this.Color = dto.Color;
         }
         public TimeEventDTO()
         {
@@ -33,6 +35,7 @@ namespace SQLTS
             this.TimeEnd = DateTime.MinValue;
             this.Note = null;
             this.DaySelect = DateTime.MinValue;
+            this.Color = "#FFFFFFFF";
         }
     }
 }

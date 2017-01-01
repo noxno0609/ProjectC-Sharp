@@ -18,8 +18,8 @@ namespace SQLTS
             conn.Open();
 
             string sql = String.Format(@"UPDATE periodevent 
-                SET Datestart = '{0}', Dateend = '{1}', Timestart = '{2}', Timeend = '{3}', Dayselect = '{4}' , Note = '{5}', Name = '{6}'
-                WHERE PE_ID = {7}",
+                SET Datestart = '{0}', Dateend = '{1}', Timestart = '{2}', Timeend = '{3}', Dayselect = '{4}' , Note = '{5}', Name = '{6}', Color = '{7}'
+                WHERE PE_ID = {8}",
             SQLFormat.addDateTime(dto.DateStart),
             SQLFormat.addDateTime(dto.DateEnd),
             SQLFormat.addDateTime(dto.TimeStart),
@@ -27,6 +27,7 @@ namespace SQLTS
             dto.DaySelect,
             dto.Note,
             dto.Name,
+            dto.Color,
             dto.ID);
             MySqlCommand cmd = new MySqlCommand(sql, conn);
             int resultperiod = cmd.ExecuteNonQuery();
@@ -46,6 +47,7 @@ namespace SQLTS
                 dtoTE.TimeEnd = dto.TimeEnd;
                 dtoTE.Note = dto.Note;
                 dtoTE.PE_ID = dto.ID;
+                dtoTE.Color = dto.Color;
                 if (!listDoW.Contains(dtoTE.DaySelect.DayOfWeek))
                 {
                     TimeEventDAO.Delete(dtoTE, conn);
@@ -76,6 +78,7 @@ namespace SQLTS
                         dtotemp.TimeStart = dto.TimeStart;
                         dtotemp.TimeEnd = dto.TimeEnd;
                         dtotemp.DaySelect = date;
+                        dtotemp.Color = dto.Color;
                         TimeEventDAO.Insert(dtotemp, conn);
                     }
                 }

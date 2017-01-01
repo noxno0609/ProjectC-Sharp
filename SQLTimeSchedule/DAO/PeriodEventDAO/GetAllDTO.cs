@@ -32,6 +32,7 @@ namespace SQLTS
                 dto.TimeEnd = SQLFormat.formatTime(dr["TimeEnd"].ToString());
                 dto.DaySelect = Convert.ToString(dr["Dayselect"]);
                 dto.Note = Convert.ToString(dr["Note"]);
+                dto.Color = Convert.ToString(dr["Color"]);
                 listdto.Add(dto);
             }
             conn.Close();

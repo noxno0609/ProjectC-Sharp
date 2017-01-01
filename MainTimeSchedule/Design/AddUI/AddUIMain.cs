@@ -148,6 +148,8 @@ namespace MainTimeSchedule.Design.AddUI
                 dto.PE_ID = 0;
                 dto.TimeStart = DateTime.MinValue + new TimeSpan(Convert.ToInt32(dayform.tbTimestarth.Value), Convert.ToInt32(dayform.tbTimestartm.Value), 0);
                 dto.TimeEnd = DateTime.MinValue + new TimeSpan(Convert.ToInt32(dayform.tbTimeendh.Value), Convert.ToInt32(dayform.tbTimeendm.Value), 0);
+                Color colortemp = (Color)dayform.cbColor.SelectedItem;
+                dto.Color = Convert.ToString(colortemp.R + "," + colortemp.G + "," + colortemp.B);
 
                 if (dto.TimeStart.AddMinutes(4) >= dto.TimeEnd)
                     MessageBox.Show("Giờ bắt đầu phải trước giờ kết thúc và cách ít nhất 5 phút!!", "Thêm Sự Kiện", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -179,6 +181,8 @@ namespace MainTimeSchedule.Design.AddUI
                                     numberCheck(weekform.cbt5).ToString() + numberCheck(weekform.cbt6).ToString() + numberCheck(weekform.cbt7).ToString() + numberCheck(weekform.cbtCN).ToString();
                 dtoP.TimeStart = DateTime.MinValue + new TimeSpan(Convert.ToInt32(weekform.tbTimestarth.Value), Convert.ToInt32(weekform.tbTimestartm.Value), 0);
                 dtoP.TimeEnd = DateTime.MinValue + new TimeSpan(Convert.ToInt32(weekform.tbTimeendh.Value), Convert.ToInt32(weekform.tbTimeendm.Value), 0);
+                Color colortemp = (Color)weekform.cbColor.SelectedItem;
+                dtoP.Color = Convert.ToString(colortemp.R + "," + colortemp.G + "," + colortemp.B);
 
                 if(dtoP.Name == null)
                     MessageBox.Show("Tên lịch trình không được để trống!!", "Thêm Sự Kiện", MessageBoxButtons.OK, MessageBoxIcon.Warning);

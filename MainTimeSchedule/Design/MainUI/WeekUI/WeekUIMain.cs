@@ -21,6 +21,7 @@ namespace WindowsFormsApplication1.Design.WeekUI
     {
         public TimeEventDTO SelectDTO = new TimeEventDTO();
         private Panel SelectPanel = new Panel();
+        private Hashtable SelectAlreadyPanel = new Hashtable();
         Hashtable labelPanelMap = new Hashtable();
         Hashtable labelDTOMap = new Hashtable();
         public WeekUITool weekuitool
@@ -62,24 +63,47 @@ namespace WindowsFormsApplication1.Design.WeekUI
         }
         public void ClickHoverTimeEvent(Object sender, EventArgs e)
         {
+            Label label = (Label)sender;
+            Panel panel = (Panel)labelPanelMap[label];
+            if (SelectAlreadyPanel.Contains(panel))
+                return;
+
             if(SelectPanel != null)
             {
                 SelectPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-                SelectPanel.BackColor = Color.Brown;
+                Color coloringre = SelectPanel.BackColor;
+                int colorR = (coloringre.R <= 30) ? coloringre.R : coloringre.R - 30;
+                int colorG = (coloringre.G <= 30) ? coloringre.G : coloringre.G - 30;
+                int colorB = (coloringre.B <= 30) ? coloringre.B : coloringre.B - 30;
+
+                SelectPanel.BackColor = Color.FromArgb(colorR, colorG, colorB);
             }
-            Label label = (Label)sender;
-            Panel panel = (Panel)labelPanelMap[label];
+                       
+            Color colorhover = panel.BackColor;
+            int colorRhover = (colorhover.R >= 225) ? colorhover.R : colorhover.R + 30;
+            int colorGhover = (colorhover.G >= 225) ? colorhover.G : colorhover.G + 30;
+            int colorBhover = (colorhover.B >= 225) ? colorhover.B : colorhover.B + 30;
+
+            panel.BackColor = Color.FromArgb(colorRhover, colorGhover, colorBhover);
             panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            panel.BackColor = Color.Red;
+
             SelectDTO = (TimeEventDTO)labelDTOMap[label];
             SelectPanel = (Panel)panel;
+            SelectAlreadyPanel.Clear();
+            SelectAlreadyPanel[panel] = 1;
         }
         public void ClickLeaveTimeEvent(Object sender, EventArgs e)
         {
             Label label = (Label)sender;
             Panel panel = (Panel)labelPanelMap[label];
             panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            panel.BackColor = Color.Brown;
+            Color coloringre = panel.BackColor;
+            int colorR = (coloringre.R <= 30) ? coloringre.R : coloringre.R - 30;
+            int colorG = (coloringre.G <= 30) ? coloringre.G : coloringre.G - 30;
+            int colorB = (coloringre.B <= 30) ? coloringre.B : coloringre.B - 30;
+
+            panel.BackColor = Color.FromArgb(colorR, colorG, colorB);
+
             SelectDTO = new TimeEventDTO();
         }
         public void displayTimeEvent(TimeEventDTO dto, int columnpos)
@@ -87,7 +111,8 @@ namespace WindowsFormsApplication1.Design.WeekUI
             if (dto.DaySelect <= weekUITop.endDoW && dto.DaySelect >= weekUITop.startDoW)
             {
                 Panel eventpanel = new Panel();
-                eventpanel.BackColor = Color.Brown;
+                string[] coloringre = dto.Color.Split(',');
+                eventpanel.BackColor = Color.FromArgb(Convert.ToInt32(coloringre[0]), Convert.ToInt32(coloringre[1]), Convert.ToInt32(coloringre[2]));
                 eventpanel.Dock = DockStyle.Fill;
                 eventpanel.Margin = new Padding(0);
                 eventpanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;

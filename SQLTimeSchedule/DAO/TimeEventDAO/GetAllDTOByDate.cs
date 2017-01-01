@@ -30,6 +30,7 @@ namespace SQLTS
                 dto.TimeEnd = SQLFormat.formatTime(Convert.ToString(dr["Timeend"]));
                 dto.DaySelect = Convert.ToDateTime(dr["Dayselect"]);
                 dto.Note = Convert.ToString(dr["Note"]);
+                dto.Color = Convert.ToString(dr["Color"]);
                 dto.PE_ID = Convert.ToInt32(dr["PE_ID"]);
 
                 listdto.Add(dto);

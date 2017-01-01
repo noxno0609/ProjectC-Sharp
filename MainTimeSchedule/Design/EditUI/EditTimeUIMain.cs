@@ -41,6 +41,10 @@ namespace TSProject.Design.EditEvent
             dayeventUI.tbTimestartm.Value = dto.TimeStart.Minute;
             dayeventUI.tbTimeendh.Value = dto.TimeEnd.Hour;
             dayeventUI.tbTimeendm.Value = dto.TimeEnd.Minute;
+
+            string[] coloringre = dto.Color.Split(',');
+            Color color = Color.FromArgb(Convert.ToInt32(coloringre[0]), Convert.ToInt32(coloringre[1]), Convert.ToInt32(coloringre[2]));
+            dayeventUI.cbColor.SelectedIndex = Convert.ToInt32(dayeventUI.cbColor.itemMapIndex[getColorName(color)]);
         }
 
         private void btclose_Click(object sender, EventArgs e)
@@ -54,6 +58,9 @@ namespace TSProject.Design.EditEvent
             dto.DaySelect = dayeventUI.tbPickdate.Value;
             dto.TimeStart = Convert.ToDateTime(dayeventUI.tbTimestarth.Value + ":" + dayeventUI.tbTimestartm.Value + ":00");
             dto.TimeEnd = Convert.ToDateTime(dayeventUI.tbTimeendh.Value + ":" + dayeventUI.tbTimeendm.Value + ":00");
+            Color colortemp = (Color)dayeventUI.cbColor.SelectedItem;
+            dto.Color = Convert.ToString(colortemp.R + "," + colortemp.G + "," + colortemp.B);
+
             if (TimeEventDAO.Update(dto, DBUtils.GetDBConnection()) == true)
                 MessageBox.Show("Đã sửa mốc sự kiện thành công!", "Sửa mốc sự kiện", MessageBoxButtons.OK, MessageBoxIcon.Information);
             updateRequest = 1;
@@ -70,6 +77,21 @@ namespace TSProject.Design.EditEvent
                     updateRequest = 2;
                 }
             }
+        }
+
+        public static string getColorName(Color toCheck)
+        {
+            string result = "";
+            foreach (KnownColor kc in Enum.GetValues(typeof(KnownColor)))
+            {
+                Color c = Color.FromKnownColor(kc);
+                if (toCheck.ToArgb() == c.ToArgb())
+                {
+                    result = c.Name;
+                }
+            }
+
+            return result;
         }
     }
 }

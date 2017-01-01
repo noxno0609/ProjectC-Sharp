@@ -17,5 +17,6 @@ namespace SQLTS
         public string DaySelect;
         public DateTime TimeStart;
         public DateTime TimeEnd;
+        public string Color;
     }
 }

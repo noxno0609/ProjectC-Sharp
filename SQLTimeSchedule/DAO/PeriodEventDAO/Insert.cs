@@ -17,8 +17,8 @@ namespace SQLTS
             #region Insert Period Event
             conn.Open();
 
-            string sql = String.Format(@"INSERT INTO PeriodEvent (Note, TimeStart, TimeEnd, DaySelect, DateStart, DateEnd, Name)
-                                        VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}')",
+            string sql = String.Format(@"INSERT INTO PeriodEvent (Note, TimeStart, TimeEnd, DaySelect, DateStart, DateEnd, Name, Color)
+                                        VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}')",
 
             dto.Note,
             SQLFormat.addDateTime(dto.TimeStart),
@@ -26,7 +26,8 @@ namespace SQLTS
             dto.DaySelect,
             SQLFormat.addDateTime(dto.DateStart),
             SQLFormat.addDateTime(dto.DateEnd),
-            dto.Name);
+            dto.Name,
+            dto.Color);
             MySqlCommand cmd = new MySqlCommand(sql, conn);
             cmd.ExecuteNonQuery();
             int newId = Convert.ToInt32(cmd.LastInsertedId);
@@ -47,6 +48,7 @@ namespace SQLTS
                     dtotemp.TimeStart = dto.TimeStart;
                     dtotemp.TimeEnd = dto.TimeEnd;
                     dtotemp.DaySelect = date;
+                    dtotemp.Color = dto.Color;
                     TimeEventDAO.Insert(dtotemp, conn);
                 }
             }

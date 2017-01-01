@@ -191,6 +191,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Utils\ColorComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Utils\ColorComboBox.Designer.cs">
+      <DependentUpon>ColorComboBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utils\DBUtils.cs" />
     <EmbeddedResource Include="CopyrightUI.resx">
       <DependentUpon>CopyrightUI.cs</DependentUpon>

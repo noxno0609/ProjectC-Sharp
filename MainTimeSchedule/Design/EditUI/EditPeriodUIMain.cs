@@ -45,6 +45,10 @@ namespace TSProject.Design.EditEvent
             weekEventUI.tbTimeendh.Value = dto.TimeEnd.Hour;
             weekEventUI.tbTimeendm.Value = dto.TimeEnd.Minute;
             weekEventUI.tbNote.Text = dto.Note;
+
+            string[] coloringre = dto.Color.Split(',');
+            Color color = Color.FromArgb(Convert.ToInt32(coloringre[0]), Convert.ToInt32(coloringre[1]), Convert.ToInt32(coloringre[2]));
+            weekEventUI.cbColor.SelectedIndex = Convert.ToInt32(weekEventUI.cbColor.itemMapIndex[EditTimeUIMain.getColorName(color)]);
         }
         private bool isChecked(char c)
         {
@@ -70,6 +74,8 @@ namespace TSProject.Design.EditEvent
             dto.TimeStart = Convert.ToDateTime(weekEventUI.tbTimestarth.Value + ":" + weekEventUI.tbTimestartm.Value + ":00");
             dto.TimeEnd = Convert.ToDateTime(weekEventUI.tbTimeendh.Value + ":" + weekEventUI.tbTimeendm.Value + ":00");
             dto.Note = weekEventUI.tbNote.Text;
+            Color colortemp = (Color)weekEventUI.cbColor.SelectedItem;
+            dto.Color = Convert.ToString(colortemp.R + "," + colortemp.G + "," + colortemp.B);
 
             if(PeriodEventDAO.Update(dto, DBUtils.GetDBConnection()) == true)
                 MessageBox.Show("Đã sửa lịch trình thành công!", "Sửa lịch trình", MessageBoxButtons.OK, MessageBoxIcon.Information);
